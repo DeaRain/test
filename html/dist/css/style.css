@@ -1,5 +1,53 @@
 body {
-  color: yellow; }
+  color: red; }
 
 body {
-  background: aqua; }
+  padding: 0px;
+  margin: 0px; }
+
+.test {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 1140px;
+  margin: 0 auto;
+  height: 120px; }
+
+.left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1; }
+
+.menu-text {
+  margin-left: 10px;
+  font-family: Geometria;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: 2.5px;
+  color: #1a1a1a; }
+
+.menu-tel {
+  margin-left: 118px;
+  font-family: Geometria;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.88;
+  letter-spacing: 1px;
+  color: #1a1a1a; }
+
+.center {
+  display: flex;
+  flex-basis: 120px;
+  justify-content: center;
+  align-items: center; }
+
+.right {
+  flex: 1;
+  background: yellow; }
