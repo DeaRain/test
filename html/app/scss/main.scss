@@ -1,0 +1,191 @@
+@import "_font.scss";
+@import "lib";
+
+body{
+  padding: 0px;
+  margin: 0px;
+}
+.test{
+  display: flex;
+  //background: aquamarine;
+  flex-direction: row;
+  justify-content: center;
+  width: 1140px;
+  margin: 0 auto;
+  height: 120px;
+  border-bottom: solid 2px #e6e6e6;;
+}
+.left{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+  //background: green;
+}
+.menu-text{
+  margin-left: 10px;
+  font-family: Geometria;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: 2.5px;
+  color: #1a1a1a;
+}
+.menu-tel{
+  margin-left: 118px;
+  font-family: Geometria;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.88;
+  letter-spacing: 1px;
+
+  color: #1a1a1a;
+}
+.center{
+  display: flex;
+  flex-basis: 120px;
+  //background: red;
+  justify-content: center;
+  align-items: center;
+}
+.right{
+  flex: 1;
+  //background: yellow;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.right-magnifying-glass{
+margin-right: 20px;
+}
+.right-heart{
+  margin-right: 20px;
+}
+.right-heart-block,.right-shopping-bag-block{
+  position: relative;
+}
+.right-heart-count, .shopping-bag-count{
+  width: 15px;
+  height: 15px;
+  border: 2px solid red;
+  border-radius: 50%;
+  //line-height: 12px;  /* подробнее про line-height */
+  text-align: center;  /* выравнять текст по середине по горизонтали */
+  background: red;
+  position: absolute;
+  top:-2px;
+  font-family: ProximaNova;
+  font-size: 10px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.right-heart-count{
+  line-height: 11px;
+  right: 15px;
+}
+.shopping-bag-count{
+  line-height: 12px;
+  right: 15px;
+}
+
+.right-shopping-bag{
+  margin-right: 20px;
+}
+.right-user{
+  margin-right: 19px;
+}
+
+.more-right{
+  display: flex;
+  flex-direction: row;
+}
+.money-text, .language-text{
+  font-family: Geometria;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #1a1a1a;
+}
+.language-arrow{
+  margin-left: 8px;
+}
+.money-arrow{
+  margin-left: 8px;
+  margin-right: 20px;
+}
+.more-right{
+  padding-left: 18px;
+  align-items: center;
+  height: 60px;
+  border-left: solid 3px #e6e6e6;
+}
+
+
+.block-menu{
+  //display: flex;
+  width: 1140px;
+  margin: 0 auto;
+  //height: 50px;
+  //border-bottom: solid 2px #e6e6e6;
+  //background: #9fcdff;
+  justify-content: center;
+}
+
+.ul-menu{
+  //height: 100%;
+  list-style-type: none;
+  padding: 15px 0 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
+}
+.ul-menu{
+  font-family: Geometria;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  font-style: normal;
+
+  font-stretch: normal;
+
+  line-height: 1;
+
+  letter-spacing: 3px;
+
+  color: #1a1a1a;
+}
+.ul-menu-active {
+
+  font-family: Geometria;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  font-style: normal;
+
+  font-stretch: normal;
+
+  line-height: 1;
+
+  letter-spacing: 3px;
+
+  color: #e83c4d;
+}

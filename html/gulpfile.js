@@ -1,8 +1,11 @@
+// з папки upp в папку dist
+
+
 var gulp = require('gulp');
-var sourcemaps = require('gulp-sourcemaps');
 var sass = require('gulp-sass');
-var browserSync = require('browser-sync');
+var browserSync = require('browser-sync').create();
 var rigger = require('gulp-rigger');
+var cssimport = require("gulp-cssimport");
 
 
 gulp.task('html', function () {
@@ -16,25 +19,25 @@ gulp.task('html', function () {
 
 gulp.task('sass', function(){
     return gulp.src('app/scss/**/*.scss')
-        .pipe(sourcemaps.init())
         .pipe(sass())
+        .pipe(cssimport())
         .pipe(gulp.dest('dist/css/'))
         .pipe(browserSync.reload({
             stream: true
         }))
 });
 
-gulp.task('js', function(){
-    return gulp.src('app/js/**/*.js')
-        .pipe(gulp.dest('dist/js/'))
+
+gulp.task('jshint', function() {
+        gulp.src('app/js/**/*.js')
+        .pipe(rigger())
+        .pipe(gulp.dest('dist/js'))
+        .pipe(browserSync.reload({
+            stream: true
+        }))
 });
 
-gulp.task('img', function(){
-    return gulp.src('app/img/**/*.*')
-        .pipe(gulp.dest('dist/img/'))
-});
-
-gulp.task('browserSync',  function() {
+gulp.task('browserSync',  function() {                          // створює сервер
     browserSync.init({
         server: {
             baseDir: 'dist'
@@ -42,18 +45,15 @@ gulp.task('browserSync',  function() {
     })
 });
 
-gulp.task('watch', function(){
-    gulp.watch('app/**/*.js', gulp.series('js'))
-    gulp.watch('app/**/*.*', gulp.series('img'))
-    gulp.watch('app/**/*.html', gulp.series('html'))
-    gulp.watch('app/scss/**/*.scss', gulp.series('sass'));
+gulp.task('watch', function(){                                  // дивиться за змінами
+    gulp.watch('app/**/*.html', gulp.series('html'));
+    gulp.watch('app/scss/**/*.scss', gulp.series('sass'));      // шлях до паки з scss
+    gulp.watch('app/js/**/*.js', gulp.series('jshint'));            // шдях до папки з js
 });
 
-gulp.task('build', gulp.parallel('sass','html','js'));
 
+gulp.task('build', gulp.parallel('sass','html','jshint'));             // будує змінами
 
-
-gulp.task('default', gulp.series(
+gulp.task('default', gulp.series(                               // паралельно запускає
     gulp.parallel('watch', 'build', 'browserSync')
 ));
-

@@ -1,1 +1,2 @@
-//= _lib.js
+console.log('common file');
+$('.single-item').slick();
