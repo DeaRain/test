@@ -54,4 +54,64 @@ body{
 .right{
   flex: 1;
   background: yellow;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.right-magnifying-glass{
+margin-right: 20px;
+}
+.right-heart{
+  margin-right: 20px;
+}
+.right-heart-count{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: red;
+  font-family: ProximaNova;
+  font-size: 10px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #ffffff;
+  text-align: center;
+
+}
+.right-shopping-bag{
+  margin-right: 20px;
+}
+.right-user{
+  margin-right: 19px;
+}
+
+.more-right{
+  display: flex;
+  flex-direction: row;
+}
+.money-text, .language-text{
+  font-family: Geometria;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #1a1a1a;
+}
+.language-arrow{
+  margin-left: 8px;
+}
+.money-arrow{
+  margin-left: 8px;
+  margin-right: 20px;
+}
+.more-right{
+  padding-left: 18px;
+  align-items: center;
+  height: 60px;
+  border-left: solid 3px #e6e6e6;
 }
