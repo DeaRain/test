@@ -4,6 +4,7 @@
 body{
   padding: 0px;
   margin: 0px;
+  //background: #b8daff;
 }
 .test{
   display: flex;
@@ -188,4 +189,72 @@ margin-right: 20px;
   letter-spacing: 3px;
 
   color: #e83c4d;
+}
+.single-item{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.single-item .slick-dots{
+  position: absolute;
+  bottom: 30px;
+}
+.slick-dotted.slick-slider {
+  margin-bottom: 0px;
+}
+.slick-dots li button{
+
+  border-radius: 50%;
+  background: #ffffff;
+  width: 8px;
+  height: 8px;
+  margin: 4px auto;
+}
+.slick-dots li button:before{
+  content: '';
+}
+
+.slick-dots li button:hover{
+  background: #000000;
+}
+
+.slick-dots li.slick-active button{
+  background: #000000;
+
+}
+
+.item{
+  width: 100%;
+  position: relative;
+  text-align: center;
+
+}
+.item a{
+  position: absolute;
+  background: #ffffff;
+  padding-top:20px;
+  bottom: 100px;
+  height: 60px;
+  width: 224px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+
+  //background: #ffffff;
+}
+.slider-button{
+  //position: absolute;
+  //width: 100px;
+  //height: 100px;
+  //background: #ffffff;
+  //bottom:100px;
+  //margin-left: auto;
+  //margin-right: auto;
+  //left: 0;
+  //right: 0;
+}
+.item img{
+  width: 100%;
 }
