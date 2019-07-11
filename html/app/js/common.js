@@ -1,11 +1,6 @@
 console.log('common file');
 
-$(document).ready(function(){
-    $('.slider').slick({
-        dots: true,
-        infinite: true,
-        speed: 500,
-        fade: true,
-        cssEase: 'linear'
-    });
+$('.single-item').slick({
+    dots:true,
+    arrows:false,
 });

@@ -4,7 +4,7 @@
 body{
   padding: 0px;
   margin: 0px;
-  //background: #b8daff;
+  //background: #ffffff;
 }
 .test{
   display: flex;
@@ -200,10 +200,10 @@ margin-right: 20px;
   position: absolute;
   bottom: 30px;
 }
-.slick-dotted.slick-slider {
+.single-item.slick-dotted.slick-slider {
   margin-bottom: 0px;
 }
-.slick-dots li button{
+.single-item .slick-dots li button{
 
   border-radius: 50%;
   background: #ffffff;
@@ -211,15 +211,15 @@ margin-right: 20px;
   height: 8px;
   margin: 4px auto;
 }
-.slick-dots li button:before{
+.single-item .slick-dots li button:before{
   content: '';
 }
 
-.slick-dots li button:hover{
+.single-item .slick-dots li button:hover{
   background: #000000;
 }
 
-.slick-dots li.slick-active button{
+.single-item .slick-dots li.slick-active button{
   background: #000000;
 
 }
@@ -241,20 +241,95 @@ margin-right: 20px;
   margin-right: auto;
   left: 0;
   right: 0;
+}
 
-  //background: #ffffff;
-}
-.slider-button{
-  //position: absolute;
-  //width: 100px;
-  //height: 100px;
-  //background: #ffffff;
-  //bottom:100px;
-  //margin-left: auto;
-  //margin-right: auto;
-  //left: 0;
-  //right: 0;
-}
 .item img{
   width: 100%;
+}
+
+.production{
+  display: flex;
+  //background: aquamarine;
+  flex-direction: column;
+  width: 1140px;
+  margin: 0 auto;
+}
+.production-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+}
+
+.production-header-text{
+
+}
+.production-header-menu{
+  position: absolute;
+  right: 0px;
+}
+.production-slider{
+  //background: #ffffff;
+  position: relative;
+  height: 500px;
+}
+.production-product-slider-item{
+  width: 263px;
+  height: 263px;
+  border: solid 1px #e6e6e6;
+  //background: #0c5460;
+  padding: 0 15px;
+}
+
+.production-slider .slick-dots{
+  position: absolute;
+  bottom: 0px;
+}
+.production-slider.slick-dotted.slick-slider {
+  margin-bottom: 0px;
+}
+.production-slider .slick-dots li button{
+
+  border-radius: 50%;
+  background: #cccccc;
+  width: 8px;
+  height: 8px;
+  margin: 4px auto;
+}
+.production-slider .slick-dots li button:before{
+  content: '';
+}
+
+.production-slider .slick-dots li button:hover{
+  background: #000000;
+}
+
+.production-slider .slick-dots li.slick-active button{
+  background: #000000;
+
+}
+.production-slider button.slick-prev{
+  background: #f6f4f4;
+  width: 15px;
+  height: 45px;
+  z-index: 2;
+  top:125px;
+  left: 0px;
+}
+.production-slider button.slick-prev:before{
+  content: url("/img/right-chevron-1.svg");
+  z-index: 2;
+}
+
+.production-slider button.slick-next{
+  background: #f6f4f4;
+  width: 15px;
+  height: 45px;
+  z-index: 2;
+  top:125px;
+  right: 0px;
+}
+.production-slider button.slick-next:before{
+  content: url("/img/right-chevron-1.svg");
+  z-index: 2;
 }

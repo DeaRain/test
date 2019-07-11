@@ -10362,8 +10362,23 @@ a.text-dark:hover, a.text-dark:focus {
     color: black;
 }
 
-body {
-  color: red; }
+@font-face {
+  font-family: 'Geometria';
+  src: url("Geometria.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Geometria Italic';
+  src: url("Geometria-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Geometria Bold';
+  src: url("Geometria-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
 
 body {
   padding: 0px;
@@ -10532,23 +10547,23 @@ body {
   position: absolute;
   bottom: 30px; }
 
-.slick-dotted.slick-slider {
+.single-item.slick-dotted.slick-slider {
   margin-bottom: 0px; }
 
-.slick-dots li button {
+.single-item .slick-dots li button {
   border-radius: 50%;
   background: #ffffff;
   width: 8px;
   height: 8px;
   margin: 4px auto; }
 
-.slick-dots li button:before {
+.single-item .slick-dots li button:before {
   content: ''; }
 
-.slick-dots li button:hover {
+.single-item .slick-dots li button:hover {
   background: #000000; }
 
-.slick-dots li.slick-active button {
+.single-item .slick-dots li.slick-active button {
   background: #000000; }
 
 .item {
@@ -10570,3 +10585,76 @@ body {
 
 .item img {
   width: 100%; }
+
+.production {
+  display: flex;
+  flex-direction: column;
+  width: 1140px;
+  margin: 0 auto; }
+
+.production-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative; }
+
+.production-header-menu {
+  position: absolute;
+  right: 0px; }
+
+.production-slider {
+  position: relative;
+  height: 500px; }
+
+.production-product-slider-item {
+  width: 263px;
+  height: 263px;
+  border: solid 1px #e6e6e6;
+  padding: 0 15px; }
+
+.production-slider .slick-dots {
+  position: absolute;
+  bottom: 0px; }
+
+.production-slider.slick-dotted.slick-slider {
+  margin-bottom: 0px; }
+
+.production-slider .slick-dots li button {
+  border-radius: 50%;
+  background: #cccccc;
+  width: 8px;
+  height: 8px;
+  margin: 4px auto; }
+
+.production-slider .slick-dots li button:before {
+  content: ''; }
+
+.production-slider .slick-dots li button:hover {
+  background: #000000; }
+
+.production-slider .slick-dots li.slick-active button {
+  background: #000000; }
+
+.production-slider button.slick-prev {
+  background: #f6f4f4;
+  width: 15px;
+  height: 45px;
+  z-index: 2;
+  top: 125px;
+  left: 0px; }
+
+.production-slider button.slick-prev:before {
+  content: url("/img/right-chevron-1.svg");
+  z-index: 2; }
+
+.production-slider button.slick-next {
+  background: #f6f4f4;
+  width: 15px;
+  height: 45px;
+  z-index: 2;
+  top: 125px;
+  right: 0px; }
+
+.production-slider button.slick-next:before {
+  content: url("/img/right-chevron-1.svg");
+  z-index: 2; }

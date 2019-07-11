@@ -25,6 +25,45 @@
 </div>
 
 
+<div class="production">
+    <div class="production-header">
+            <div class="production-header-text">
+                наша продукція
+            </div>
+
+            <div class="production-header-menu">
+                <span class="production-header-menu-item--active">
+                    Новини
+                </span>
+
+                <span class="production-header-menu-item--active">
+                    SALE
+                </span>
+            </div>
+    </div>
+
+    <div class="production-slider">
+        <div class="production-product-slider-item">
+            <img src="img/sock1.jpg" alt="">
+        </div>
+        <div class="production-product-slider-item">
+            <img src="img/sock2.jpg" alt="">
+        </div>
+        <div class="production-product-slider-item">
+            <img src="img/sock1.jpg" alt="">
+        </div>
+        <div class="production-product-slider-item">
+            <img src="img/sock2.jpg" alt="">
+        </div>
+        <div class="production-product-slider-item">
+            <img src="img/sock1.jpg" alt="">
+        </div>
+        <div class="production-product-slider-item">
+            <img src="img/sock2.jpg" alt="">
+        </div>
+    </div>
+</div>
+
 
 
 //= partials/footer.html
@@ -34,11 +73,12 @@
 
 
 <script type="text/javascript">
-    $('.single-item').slick({
+    $('.production-slider').slick({
         dots:true,
-        arrows:false,
+        arrows:true,
+        slidesToShow: 4,
+        slidesToScroll: 2
     });
-
 </script>
 
 </body>

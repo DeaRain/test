@@ -1,3 +1,18 @@
-body{
-  color: red;
+@font-face {
+  font-family: 'Geometria';
+  src: url('Geometria.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Geometria Italic';
+  src: url('Geometria-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Geometria Bold';
+  src: url('Geometria-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
