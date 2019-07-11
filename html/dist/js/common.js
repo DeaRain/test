@@ -1,2 +1,14 @@
 console.log('common file');
-$('.single-item').slick();
+
+$( document ).ready(function() {
+    $('.js-single-item').slick({
+        dots:true,
+        arrows:false,
+    });
+    $('.production-slider').slick({
+        dots:true,
+        arrows:true,
+        slidesToShow: 4,
+        slidesToScroll: 2
+    });
+});
