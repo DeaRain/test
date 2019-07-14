@@ -12,3 +12,7 @@ $( document ).ready(function() {
         slidesToScroll: 2
     });
 });
+
+$(document).ready( function() {
+    $('.dropdown-toggle').dropdown();
+});

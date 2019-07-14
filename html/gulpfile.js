@@ -54,7 +54,7 @@ gulp.task('browserSync',  function() {                          // створю�
 
 gulp.task('watch', function(){                                  // дивиться за змінами
     // gulp.watch('app/**/*.html', gulp.series('html'));
-    gulp.watch('app/*.html', gulp.series('html'));
+    gulp.watch('app/**/*.html', gulp.series('html'));
     gulp.watch('app/scss/**/*.scss', gulp.series('sass'));      // шлях до паки з scss
     gulp.watch('app/js/**/*.js', gulp.series('jshint'));            // шдях до папки з js
     gulp.watch('app/img/**/*', gulp.series('image'));            // шдях до папки з js

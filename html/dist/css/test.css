@@ -1,0 +1,6 @@
+.menu-button {
+  background: black; }
+  .menu-button .menu-button__logo {
+    background: white; }
+  .menu-button .menu-button__text {
+    background: red; }
