@@ -1,7 +1,7 @@
 console.log('common file');
 
 $( document ).ready(function() {
-    $('.js-single-item').slick({
+    $('.js-main-slider').slick({
         dots:true,
         arrows:false,
     });
@@ -9,7 +9,8 @@ $( document ).ready(function() {
         dots:true,
         arrows:true,
         slidesToShow: 4,
-        slidesToScroll: 2
+        slidesToScroll: 2,
+        variableWidth: true
     });
 });
 
