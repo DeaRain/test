@@ -10538,7 +10538,7 @@ body {
     letter-spacing: 2.5px;
     color: #1a1a1a; }
 
-.phone-number {
+.contact {
   font-family: Geometria;
   font-size: 16px;
   font-weight: normal;
@@ -10548,7 +10548,7 @@ body {
   letter-spacing: 1px;
   color: #1a1a1a; }
 
-.phone-number:hover {
+.contact:hover {
   color: #e83c4d;
   text-decoration: none; }
 
@@ -11010,3 +11010,101 @@ body {
       flex: 1 1 auto; }
       .photo-tape .photo-tape__photos .photo-tape__photo img {
         width: 100%; }
+
+.subscribe-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 60px 0px; }
+  .subscribe-container .subscribe-container__header {
+    padding: auto 0px;
+    font-family: Geometria;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    color: #1a1a1a;
+    text-transform: uppercase; }
+  .subscribe-container .subscribe-container__text-box {
+    margin-left: 20px;
+    flex: auto; }
+  .subscribe-container input {
+    height: 60px;
+    border: solid 1px #e6e6e6;
+    background-color: #ffffff;
+    font-family: Geometria;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #b3b3b3; }
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .footer-container .footer-container__item {
+    display: flex;
+    flex-direction: column;
+    width: 200px; }
+    .footer-container .footer-container__item .footer-container__header {
+      padding-bottom: 19px;
+      font-family: Geometria;
+      font-size: 14px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.14;
+      letter-spacing: 2px;
+      color: #1a1a1a;
+      text-transform: uppercase; }
+    .footer-container .footer-container__item .footer-container__url {
+      padding: 6px 0;
+      font-family: Geometria;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      color: #999999; }
+    .footer-container .footer-container__item .footer_container_soc {
+      margin-top: 20px; }
+
+.contact-footer {
+  font-size: 14px;
+  margin-bottom: 14px;
+  line-height: 1; }
+
+.contact-footer-bot {
+  margin-top: auto;
+  margin-bottom: 5px; }
+
+.contact-soc {
+  font-size: 24px;
+  margin-right: 20px; }
+
+.grey-container__footer {
+  background-color: #f6f4f4; }
+
+.copyright-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  padding: 15px 0; }
+  .copyright-container .copyright-container__left {
+    font-family: Geometria;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #1a1a1a; }
