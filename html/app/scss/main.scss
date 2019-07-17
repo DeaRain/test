@@ -404,9 +404,16 @@ body{
   flex-direction: column;
   justify-content: flex-start;
     .our-productions__top{
-      padding: 60px 0px;
+      //padding: 60px 0px;
+
+      padding: 60px 0px 40px 0px;
+
       display: flex;
-      flex-direction: row;
+      //flex-direction: row;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
         .our-productions__header{
           white-space: nowrap;
           font-family: Geometria;
@@ -419,13 +426,17 @@ body{
           text-align: center;
           color: #1a1a1a;
           text-transform: uppercase;
-          margin-left: 50%;
-          transform: translateX(-50%);
+          //margin-left: 50%;
+          //transform: translateX(-50%);
         }
         .our-productions__tabs{
-          margin-left: auto;
+          //margin-left: auto;
           .nav{
             width: 250px;
+
+            padding-top: 20px;
+
+
           }
           a{
             margin-left: 30px;
