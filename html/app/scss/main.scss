@@ -463,8 +463,8 @@ body{
   height: 450px;
 
   .slick-slide {
-    margin-right:14px;
-    margin-left:14px;
+    //margin-right:14px;
+    //margin-left:14px;
   }
   .slick-slide{
     width: 264px;
@@ -473,11 +473,19 @@ body{
       position: relative;
       display: flex;
       flex-direction: column;
+
+      justify-content: center;
+      align-items: center;
+
       text-align: center;
         .production-slider__item-img{
           border: solid 1px #e6e6e6;
           margin-bottom: 15px;
           width: 262px;
+
+          margin-left: 50%;
+          transform: translateX(-50%);
+
         }
         .production-slider__item-name{
           font-family: Geometria;
@@ -517,11 +525,10 @@ body{
         .production-slider_extend-info{
           position: absolute;
           top:10px;
-          left: 10px;
+          left: 25px;
           width: 45px;
           height: 45px;
           background-color: #f6f4f4;
-
           font-family: Geometria;
           font-size: 14px;
           font-weight: bold;
@@ -557,7 +564,7 @@ body{
     border-right: solid 1px #e6e6e6;
   }
   .infoline__item_last{
-    border-right: solid 0px #e6e6e6;
+    border-right: none;
   }
   .infoline__header{
     font-family: Geometria;
@@ -735,9 +742,11 @@ body{
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   padding: 60px 0px;
+  flex-wrap: wrap;
   .subscribe-container__header{
+    flex-basis: 420px;
     padding: auto 0px;
     font-family: Geometria;
     font-size: 20px;
@@ -779,11 +788,19 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  //width: 100%;
+  flex-wrap: wrap;
     .footer-container__item{
       display: flex;
       flex-direction: column;
-      width: 200px;
+      width: 180px;
+      //flex: 0 0 300px;
+      //width: 500px;
+      //flex-wrap: wrap;
+
       .footer-container__header{
+
+
         padding-bottom: 19px;
         font-family: Geometria;
         font-size: 14px;
@@ -817,6 +834,7 @@ body{
   font-size: 14px;
   margin-bottom: 14px;
   line-height: 1;
+  letter-spacing: 0px;
 }
 .contact-footer-bot{
   margin-top: auto;
