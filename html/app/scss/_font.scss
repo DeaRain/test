@@ -5,6 +5,12 @@
   font-style: normal;
 }
 @font-face {
+  font-family: 'Geometria Medium';
+  src: url("Geometria-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'Geometria Italic';
   src: url('Geometria-Italic.ttf') format('truetype');
   font-weight: normal;
@@ -13,6 +19,12 @@
 @font-face {
   font-family: 'Geometria Bold';
   src: url('Geometria-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima-Nova-Bold';
+  src: url('Proxima-Nova-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
