@@ -22,6 +22,7 @@
 /** Имя базы данных для WordPress */
 define( 'DB_NAME', 'wordpress' );
 
+
 /** Имя пользователя MySQL */
 define( 'DB_USER', 'root' );
 
@@ -36,6 +37,8 @@ define( 'DB_CHARSET', 'utf8mb4' );
 
 /** Схема сопоставления. Не меняйте, если не уверены. */
 define( 'DB_COLLATE', '' );
+
+define( 'WP_DEBUG', true );
 
 /**#@+
  * Уникальные ключи и соли для аутентификации.
