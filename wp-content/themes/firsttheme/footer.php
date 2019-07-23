@@ -35,61 +35,68 @@
                 <span class="footer-container__header">
                     Про компанію
                 </span>
-                <a href="#" class="footer-container__url">Про нас</a>
-                <a href="#" class="footer-container__url">Скоро у продажу</a>
-                <a href="#" class="footer-container__url">Таблицяя розмірів</a>
-                <a href="#" class="footer-container__url">Новини</a>
-                <a href="#" class="footer-container__url">Відгуки</a>
-                <a href="#" class="footer-container__url">Контакти</a>
+                <div class="footer_container__toggle">
+                    <a href="#" class="footer-container__url">Про нас</a>
+                    <a href="#" class="footer-container__url">Галерея</a>
+                    <a href="#" class="footer-container__url">Таблиця розмірів</a>
+                    <a href="#" class="footer-container__url">Новини</a>
+                    <a href="#" class="footer-container__url">Відгуки</a>
+                    <a href="#" class="footer-container__url">Контакти</a>
+                </div>
             </div>
-
             <div class="footer-container__item">
                 <span class="footer-container__header">
                     магазин
                 </span>
-                <a href="#" class="footer-container__url">Жінкам</a>
-                <a href="#" class="footer-container__url">Чоловікам</a>
-                <a href="#" class="footer-container__url">Дітям</a>
-                <a href="#" class="footer-container__url">Sale</a>
-                <a href="#" class="footer-container__url">Підписка</a>
-                <a href="#" class="footer-container__url">Подарункові коробки</a>
+                <div class="footer_container__toggle">
+                    <a href="#" class="footer-container__url">Жінкам</a>
+                    <a href="#" class="footer-container__url">Чоловікам</a>
+                    <a href="#" class="footer-container__url">Дітям</a>
+                    <a href="#" class="footer-container__url">Sale</a>
+                    <a href="#" class="footer-container__url">Підписка</a>
+                    <a href="#" class="footer-container__url">Подарункові коробки</a>
+                </div>
             </div>
 
             <div class="footer-container__item">
                 <span class="footer-container__header">
                     Клієнтам
                 </span>
-                <a href="#" class="footer-container__url">Питання-відповідь</a>
-                <a href="#" class="footer-container__url">Доставка і оплата</a>
-                <a href="#" class="footer-container__url">Повернення товару</a>
-                <a href="#" class="contact contact-footer contact-footer-bot">Прайс-лист <span class="icon-download"></span></a>
+                <div class="footer_container__toggle">
+                    <a href="#" class="footer-container__url">Питання-відповідь</a>
+                    <a href="#" class="footer-container__url">Доставка і оплата</a>
+                    <a href="#" class="footer-container__url">Повернення товару</a>
+                    <a href="#" class="contact contact-footer-bot">Прайс-лист  <span class="icon-download"></span></a>
+                </div>
             </div>
 
-            <div class="footer-container__item">
+            <div class="footer-container__item footer-container__item_partner">
                 <span class="footer-container__header">
                     Партнерам
                 </span>
-                <a href="#" class="footer-container__url">Опт</a>
-                <a href="#" class="footer-container__url">Крупний опт</a>
-                <a href="#" class="footer-container__url">Дропшипінг</a>
-                <a href="#" class="footer-container__url">Корпоративні замовлення</a>
+                <div class="footer_container__toggle">
+                    <a href="#" class="footer-container__url">Опт</a>
+                    <a href="#" class="footer-container__url">Крупний опт</a>
+                    <a href="#" class="footer-container__url">Дропшипінг</a>
+                    <a href="#" class="footer-container__url">Корпоративні замовлення</a>
+                </div>
             </div>
 
             <div class="footer-container__item footer-container__item_last">
                 <span class="footer-container__header">
                     Контакти
                 </span>
+                <div class="footer_container__toggle">
+                    <a href="#" class="contact contact-footer ">+38 (096) 762-40-96</a>
+                    <a href="#" class="contact contact-footer ">Nesterenkoluda.ln@gmail.com</a>
 
-                <a href="#" class="contact contact-footer ">+38 (096) 762-40-96</a>
-                <a href="#" class="contact contact-footer ">Nesterenkoluda.ln@gmail.com</a>
-
-                <div class="footer_container_soc">
-                    <a href="#" class="contact contact-soc"><span class="icon-facebook-logo"></span></a>
-                    <a href="#" class="contact contact-soc"><span class="icon-instagram-social-outlined-logo"></span></a>
-                    <a href="#" class="contact contact-soc"><span class="icon-twitter-social-outlined-logo"></span></a>
-                    <a href="#" class="contact contact-soc"><span class="icon-youtube"></span></a>
+                    <div class="footer_container_soc">
+                        <a href="#" class="contact contact-soc"><span class="icon-facebook-logo"></span></a>
+                        <a href="#" class="contact contact-soc"><span class="icon-instagram-social-outlined-logo"></span></a>
+                        <a href="#" class="contact contact-soc"><span class="icon-twitter-social-outlined-logo"></span></a>
+                        <a href="#" class="contact contact-soc"><span class="icon-youtube"></span></a>
+                    </div>
                 </div>
-
             </div>
 
 

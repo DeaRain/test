@@ -38,7 +38,7 @@
                         <span class="icon-magnifying-glass interface-item__icon"></span>
                     </div>
                     <div class="interface-item">
-                        <span class="icon-heart interface-item__icon"></span>
+                        <span class="icon-heart interface-item__icon "></span>
                         <span class="interface-item__counter">4</span>
                     </div>
                     <div class="interface-item">
@@ -51,28 +51,27 @@
 
 
                     <div class="header-container__right-drop-lists">
-                        <div class="dropdown-list">
-                            <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                UAH
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">UAH</a>
-                                <a class="dropdown-item" href="#">USD</a>
+                        <div class="right-drop-list">
+                            <a class="right-drop-list__header" href="#">UAH</a>
+<!--                            <span class="icon-down-arrow-of-angle"></span>-->
+                            <div class="right-drop-list__container">
+                                <a class="right-drop-list__item" href="#">UAH</a>
+                                <a class="right-drop-list__item" href="#">USD</a>
                             </div>
                         </div>
 
-                        <div class="dropdown-list">
-                            <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                UA
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">UA</a>
-                                <a class="dropdown-item" href="#">RU</a>
-                                <a class="dropdown-item" href="#">EN</a>
+                        <div class="right-drop-list">
+                            <a class="right-drop-list__header" href="#">UA</a>
+<!--                            <span class="icon-down-arrow-of-angle"></span>-->
+                            <div class="right-drop-list__container">
+                                <a class="right-drop-list__item" href="#">UA</a>
+                                <a class="right-drop-list__item" href="#">RU</a>
+                                <a class="right-drop-list__item" href="#">EN</a>
                             </div>
                         </div>
 
                     </div>
+
                 </div>
             </div>
     </div>
@@ -82,7 +81,7 @@
             <nav>
                 <div class="top-menu-changer">
                     <span class="top-menu-changer__text">каталог продукції</span>
-                    <span class="icon-down-arrow-of-angle"></span>
+                    <span class="icon-down-arrow-of-angle top-menu-changer__arrow"></span>
                 </div>
                 <ul class="top-menu">
                     <li class="top-menu__item">
@@ -199,14 +198,22 @@
     </div>
 </header>
 
-<div class="main-slider js-main-slider slider__dots_main-theme">
-    <div class="main-slider__item">
+<div class="main-slider main-slider_full js-main-slider slider__dots_main-theme">
+    <div class="main-slider__item ">
             <img src="img/main-slider/slider1.jpg" alt="">
             <a class="main-slider__button" href="#">перейти в каталог</a>
     </div>
-    <div class="main-slider__item"><img src="img/main-slider/slider2.jpg" alt=""></div>
-    <div class="main-slider__item"><img src="img/main-slider/slider3.jpg" alt=""></div>
+    <div class="main-slider__item "><img src="img/main-slider/slider2.jpg" alt=""></div>
+    <div class="main-slider__item "><img src="img/main-slider/slider3.jpg" alt=""></div>
+    <div class="main-slider__item "><img src="img/main-slider/slider3.jpg" alt=""></div>
+
 </div>
+
+<div class="main-slider main-slider_mob js-main-slider slider__dots_main-theme">
+    <div class="main-slider__item "><img src="img/main-slider/slider-mob.jpg" alt=""></div>
+    <div class="main-slider__item "><img src="img/main-slider/slider-mob.jpg" alt=""></div>
+</div>
+
 
 <div class="container">
     <div class="our-productions">
@@ -290,6 +297,17 @@
                                 NEW
                             </div>
                         </div>
+                        <div class="production-slider__item">
+                            <img class="production-slider__item-img" src="img/sock1.jpg" alt="">
+                            <span class="production-slider__item-name">Шкарпетки короткі V&T</span>
+                            <div class="production-slider__item-prices">
+                                <span class="production-slider__item-price">65.00 UAH</span>
+                                <span class="production-slider__item-old-price">70.00 UAH</span>
+                            </div>
+                            <div class="production-slider_extend-info">
+                                NEW
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -305,36 +323,48 @@
 
 <div class="grey-container">
     <div class="container">
-        <div class="infoline">
-            <div class="infoline__item">
-                <span class="infoline__icon icon-like" style="font-size: 50px"></span>
-                <span class="infoline__header">НАЯВНІСТЬ</span>
-                <span class="infoline__info">Весь представлений асортимент є в наявності</span>
+        <div class="infoline infoline-slider-js slider__arrows_main-theme slider__arrows_info-theme">
+            <div class="">
+                <div class="infoline__item">
+                    <span class="infoline__icon icon-like" style="font-size: 45px"></span>
+                    <span class="infoline__header">НАЯВНІСТЬ</span>
+                    <span class="infoline__info">Весь представлений асортимент є в наявності</span>
+                </div>
             </div>
-            <div class="infoline__item">
-                <span class="infoline__icon icon-handshake" style="font-size: 50px"></span>
-                <span class="infoline__header">СПІВПРАЦЯ</span>
-                <span class="infoline__info">Вигідні умови співпраці щодо оптових закупок</span>
+            <div class="">
+                <div class="infoline__item">
+                    <span class="infoline__icon icon-handshake" style="font-size: 54px; margin-top: -5px"></span>
+                    <span class="infoline__header">СПІВПРАЦЯ</span>
+                    <span class="infoline__info">Вигідні умови співпраці щодо оптових закупок</span>
+                </div>
             </div>
-            <div class="infoline__item">
-                <span class="infoline__icon icon-exchange" style="font-size: 50px"></span>
-                <span class="infoline__header">ДРОПШИПІНГ</span>
-                <span class="infoline__info">Працюємо за системою дропшипінгу </span>
+            <div class="">
+                <div class="infoline__item">
+                    <span class="infoline__icon icon-exchange" style="font-size: 45px"></span>
+                    <span class="infoline__header">ДРОПШИПІНГ</span>
+                    <span class="infoline__info">Працюємо за системою дропшипінгу </span>
+                </div>
             </div>
-            <div class="infoline__item">
-                <span class="infoline__icon icon-online-shop" style="font-size: 50px"></span>
-                <span class="infoline__header">ОПЛАТА</span>
-                <span class="infoline__info">Можливість оплатити замовлення на сайті</span>
+            <div class="">
+                <div class="infoline__item">
+                    <span class="infoline__icon icon-online-shop" style="font-size: 49px"></span>
+                    <span class="infoline__header">ОПЛАТА</span>
+                    <span class="infoline__info">Можливість оплатити замовлення на сайті</span>
+                </div>
             </div>
-            <div class="infoline__item">
-                <span class="infoline__icon icon-shipped" style="font-size: 50px"></span>
-                <span class="infoline__header">ДОСТАВКА</span>
-                <span class="infoline__info">Доставка в максимально швидкі терміни </span>
+            <div class="">
+                <div class="infoline__item">
+                    <span class="infoline__icon icon-shipped" style="font-size: 55px; margin-top: -5px"></span>
+                    <span class="infoline__header">ДОСТАВКА</span>
+                    <span class="infoline__info">Доставка в максимально швидкі терміни </span>
+                </div>
             </div>
-            <div class="infoline__item infoline__item_last">
-                <span class="infoline__icon icon-label" style="font-size: 50px"></span>
-                <span class="infoline__header">ЗНИЖКИ</span>
-                <span class="infoline__info">Вигідна система знижок для постійних клієнтів</span>
+            <div class="">
+                <div class="infoline__item infoline__item_last">
+                    <span class="infoline__icon icon-label" style="font-size: 45px"></span>
+                    <span class="infoline__header">ЗНИЖКИ</span>
+                    <span class="infoline__info">Вигідна система знижок для постійних клієнтів</span>
+                </div>
             </div>
         </div>
     </div>
@@ -376,8 +406,8 @@
 
             <span class="about__desc">
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-<p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</span>
+<span class="about__desc about__desc_second">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             </span>
 
             <div class="about__button">
@@ -426,51 +456,58 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
                 <span class="footer-container__header">
                     Про компанію
                 </span>
-                <a href="#" class="footer-container__url">Про нас</a>
-                <a href="#" class="footer-container__url">Скоро у продажу</a>
-                <a href="#" class="footer-container__url">Таблицяя розмірів</a>
-                <a href="#" class="footer-container__url">Новини</a>
-                <a href="#" class="footer-container__url">Відгуки</a>
-                <a href="#" class="footer-container__url">Контакти</a>
+                <div class="footer_container__toggle">
+                    <a href="#" class="footer-container__url">Про нас</a>
+                    <a href="#" class="footer-container__url">Галерея</a>
+                    <a href="#" class="footer-container__url">Таблиця розмірів</a>
+                    <a href="#" class="footer-container__url">Новини</a>
+                    <a href="#" class="footer-container__url">Відгуки</a>
+                    <a href="#" class="footer-container__url">Контакти</a>
+                </div>
             </div>
-
             <div class="footer-container__item">
                 <span class="footer-container__header">
                     магазин
                 </span>
+                <div class="footer_container__toggle">
                 <a href="#" class="footer-container__url">Жінкам</a>
                 <a href="#" class="footer-container__url">Чоловікам</a>
                 <a href="#" class="footer-container__url">Дітям</a>
                 <a href="#" class="footer-container__url">Sale</a>
                 <a href="#" class="footer-container__url">Підписка</a>
                 <a href="#" class="footer-container__url">Подарункові коробки</a>
+                </div>
             </div>
 
             <div class="footer-container__item">
                 <span class="footer-container__header">
                     Клієнтам
                 </span>
+                <div class="footer_container__toggle">
                 <a href="#" class="footer-container__url">Питання-відповідь</a>
                 <a href="#" class="footer-container__url">Доставка і оплата</a>
                 <a href="#" class="footer-container__url">Повернення товару</a>
-                <a href="#" class="contact contact-footer contact-footer-bot">Прайс-лист <span class="icon-download"></span></a>
+                <a href="#" class="contact contact-footer-bot">Прайс-лист  <span class="icon-download"></span></a>
+                </div>
             </div>
 
-            <div class="footer-container__item">
+            <div class="footer-container__item footer-container__item_partner">
                 <span class="footer-container__header">
                     Партнерам
                 </span>
+                <div class="footer_container__toggle">
                 <a href="#" class="footer-container__url">Опт</a>
                 <a href="#" class="footer-container__url">Крупний опт</a>
                 <a href="#" class="footer-container__url">Дропшипінг</a>
                 <a href="#" class="footer-container__url">Корпоративні замовлення</a>
+                </div>
             </div>
 
             <div class="footer-container__item footer-container__item_last">
                 <span class="footer-container__header">
                     Контакти
                 </span>
-
+                <div class="footer_container__toggle">
                 <a href="#" class="contact contact-footer ">+38 (096) 762-40-96</a>
                 <a href="#" class="contact contact-footer ">Nesterenkoluda.ln@gmail.com</a>
 
@@ -480,7 +517,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
                     <a href="#" class="contact contact-soc"><span class="icon-twitter-social-outlined-logo"></span></a>
                     <a href="#" class="contact contact-soc"><span class="icon-youtube"></span></a>
                 </div>
-
+                </div>
             </div>
 
 
@@ -507,6 +544,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <script src="js/lib.js"></script>
 <script src="js/common.js"></script>
+
+<script>
+
+</script>
+
 
 <!--//= ../lib/popper.js/dist/popper.js-->
 

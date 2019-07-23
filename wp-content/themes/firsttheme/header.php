@@ -42,7 +42,7 @@
             </div>
 
             <div class="header-container__center-logo">
-                <img src=" <?php echo get_template_directory_uri() ?>/assets/img/logo.svg" class="logo__img">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/img/logo.svg" class="logo__img">
             </div>
 
             <div class="header-container__right">
@@ -50,7 +50,7 @@
                     <span class="icon-magnifying-glass interface-item__icon"></span>
                 </div>
                 <div class="interface-item">
-                    <span class="icon-heart interface-item__icon"></span>
+                    <span class="icon-heart interface-item__icon "></span>
                     <span class="interface-item__counter">4</span>
                 </div>
                 <div class="interface-item">
@@ -63,39 +63,68 @@
 
 
                 <div class="header-container__right-drop-lists">
-                    <div class="dropdown-list">
-                        <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            UAH
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">UAH</a>
-                            <a class="dropdown-item" href="#">USD</a>
+                    <div class="right-drop-list">
+                        <a class="right-drop-list__header" href="#">UAH</a>
+                        <!--                            <span class="icon-down-arrow-of-angle"></span>-->
+                        <div class="right-drop-list__container">
+                            <a class="right-drop-list__item" href="#">UAH</a>
+                            <a class="right-drop-list__item" href="#">USD</a>
                         </div>
                     </div>
 
-                    <div class="dropdown-list">
-                        <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            UA
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">UA</a>
-                            <a class="dropdown-item" href="#">RU</a>
-                            <a class="dropdown-item" href="#">EN</a>
+                    <div class="right-drop-list">
+                        <a class="right-drop-list__header" href="#">UA</a>
+                        <!--                            <span class="icon-down-arrow-of-angle"></span>-->
+                        <div class="right-drop-list__container">
+                            <a class="right-drop-list__item" href="#">UA</a>
+                            <a class="right-drop-list__item" href="#">RU</a>
+                            <a class="right-drop-list__item" href="#">EN</a>
+
+                            <?php the_widget('qTranslateXWidget', array('widget-css-off' =>true,
+                                'hide-title' =>true,
+                                'hide-title-colon' =>true,
+                                'type' =>'custom',
+                                'format' =>'%c') );?>
                         </div>
+
                     </div>
 
                 </div>
+
             </div>
         </div>
     </div>
+<?php wp_nav_menu( [
+	'theme_location'  => '',
+	'menu'            => 'Menu 1',
+	'container'       => false,
+	'container_class' => false,
+	'container_id'    => false,
+	'menu_class'      => 'top-menu',
+	'menu_id'         => '',
+	'echo'            => true,
+	'fallback_cb'     => 'wp_page_menu',
+	'before'          => '',
+	'after'           => '',
+	'link_before'     => '',
+	'link_after'      => '',
+	'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+	'depth'           => 0,
+	'walker'          => '',
+] ); ?>
+
 
     <div class="container">
         <div class="header-menu-container">
             <nav>
                 <div class="top-menu-changer">
                     <span class="top-menu-changer__text">каталог продукції</span>
-                    <span class="icon-down-arrow-of-angle"></span>
+                    <span class="icon-down-arrow-of-angle top-menu-changer__arrow"></span>
                 </div>
+
+
+
+
                 <ul class="top-menu">
                     <li class="top-menu__item">
                         <a href="#" class="top-menu__item-url">Жінкам</a>
