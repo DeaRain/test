@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package firsttheme
+ * @package firstTheme
  */
 
 ?>
@@ -21,6 +21,8 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+
 <header>
     <div class="container">
         <div class="header-container">
@@ -71,12 +73,14 @@
                     </div>
 
                     <div class="right-drop-list">
-                        <a class="right-drop-list__header" href="#">UA</a>
-                        <!--                            <span class="icon-down-arrow-of-angle"></span>-->
+                        <a class="right-drop-list__header" href="#"><?php echo qtranxf_getLanguage(); ?></a>
                         <div class="right-drop-list__container">
-                            <a class="right-drop-list__item" href="#">UA</a>
-                            <a class="right-drop-list__item" href="#">RU</a>
-                            <a class="right-drop-list__item" href="#">EN</a>
+                            <?php the_widget('qTranslateXWidget', array('widget-css-off' =>true,
+                                'hide-title' =>true,
+                                'hide-title-colon' =>true,
+                                'type' =>'custom',
+                                'format' =>'%c') );
+                            ?>
                         </div>
                     </div>
 
@@ -86,6 +90,47 @@
         </div>
     </div>
 
+<?php wp_nav_menu( [
+	'theme_location'  => '',
+	'menu'            => 'Menu 1',
+	'container'       => false,
+	'container_class' => false,
+	'container_id'    => false,
+	'menu_class'      => 'top-menu',
+	'menu_id'         => '',
+	'echo'            => true,
+	'fallback_cb'     => 'wp_page_menu',
+	'before'          => '',
+	'after'           => '',
+	'link_before'     => '',
+	'link_after'      => '',
+	'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+	'depth'           => 0,
+	'walker'          => '',
+] ); ?>
+
+
+    <?php wp_nav_menu( [
+        'theme_location'  => '',
+        'menu'            => 'Menu-about',
+        'container'       => false,
+        'container_class' => false,
+        'container_id'    => false,
+        'menu_class'      => 'menu-footer',
+        'menu_id'         => '',
+        'echo'            => true,
+        'fallback_cb'     => 'wp_page_menu',
+        'before'          => '',
+        'after'           => '',
+        'link_before'     => '',
+        'link_after'      => '',
+        'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+        'depth'           => 0,
+        'walker'          => '',
+    ] ); ?>
+
+
+
     <div class="container">
         <div class="header-menu-container">
             <nav>
@@ -93,6 +138,10 @@
                     <span class="top-menu-changer__text">каталог продукції</span>
                     <span class="icon-down-arrow-of-angle top-menu-changer__arrow"></span>
                 </div>
+
+
+
+
                 <ul class="top-menu">
                     <li class="top-menu__item">
                         <a href="#" class="top-menu__item-url">Жінкам</a>

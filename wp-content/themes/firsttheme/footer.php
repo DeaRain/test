@@ -6,10 +6,11 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package firsttheme
+ * @package firstTheme
  */
 
 ?>
+
 
 <footer>
     <div class="container">
@@ -110,7 +111,7 @@
                 </div>
 
                 <div class="copyright-container__right">
-                    <img src="img/group.svg"
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/img/group.svg"
                          class="Group">
                 </div>
             </div>
@@ -121,6 +122,5 @@
 </footer>
 
 <?php wp_footer(); ?>
-
 </body>
 </html>

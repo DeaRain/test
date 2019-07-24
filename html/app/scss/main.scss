@@ -60,6 +60,7 @@ body{
     line-height: 1;
     letter-spacing: normal;
     color: #1a1a1a;
+    text-transform: uppercase;
     &:hover{
       text-decoration: none;
     }
@@ -81,6 +82,32 @@ body{
     //display: flex;
     flex-direction: column;
     align-items: center;
+    .qtranxs_widget{
+      margin-bottom: 0px;
+      .language-chooser{
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+        li{
+          a {
+            padding: 5px 8px;
+            font-family: Geometria Medium;
+            font-size: 14px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: uppercase;
+            color: #1a1a1a;
+            &:hover{
+              background: #b8daff;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
   }
   .right-drop-list__container_active{
       display: flex;

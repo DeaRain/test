@@ -1,10 +1,10 @@
 <?php
 /**
- * firsttheme functions and definitions
+ * firstTheme functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package firsttheme
+ * @package firstTheme
  */
 
 if ( ! function_exists( 'firsttheme_setup' ) ) :
@@ -19,7 +19,7 @@ if ( ! function_exists( 'firsttheme_setup' ) ) :
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on firsttheme, use a find and replace
+		 * If you're building a theme based on firstTheme, use a find and replace
 		 * to change 'firsttheme' to the name of your theme in all the template files.
 		 */
 		load_theme_textdomain( 'firsttheme', get_template_directory() . '/languages' );
@@ -121,9 +121,8 @@ add_action( 'widgets_init', 'firsttheme_widgets_init' );
  */
 function firsttheme_scripts() {
 	wp_enqueue_style( 'firsttheme-style', get_stylesheet_uri() );
-
     wp_enqueue_style( 'firsttheme-styleMainLib', get_template_directory_uri() . "/assets/css/lib.css" );
-    wp_enqueue_style( 'firsttheme-styleMain', get_template_directory_uri() . "/assets/css/main.css" );
+	wp_enqueue_style( 'firsttheme-styleMain', get_template_directory_uri() . "/assets/css/main.css" );
     wp_enqueue_style( 'firsttheme-styleMainMedia', get_template_directory_uri() . "/assets/css/media.css" );
 
 	wp_enqueue_script( 'firsttheme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
@@ -132,7 +131,7 @@ function firsttheme_scripts() {
     wp_enqueue_script( 'firsttheme-styleCommon', get_template_directory_uri() . '/assets/js/common.js', array(), '20151215', true );
 
 
-    wp_enqueue_script( 'firsttheme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+	wp_enqueue_script( 'firsttheme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -167,6 +166,12 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+
+
+
+
+//Створення типу запису, (продукт магазину)
+
 add_action( 'init', 'register_post_types' );
 function register_post_types(){
     register_post_type('products', array(
@@ -174,12 +179,12 @@ function register_post_types(){
         'labels' => array(
             'name'               => 'Продукти', // основное название для типа записи
             'singular_name'      => 'Продукт', // название для одной записи этого типа
-            'add_new'            => 'Добавить ____', // для добавления новой записи
-            'add_new_item'       => 'Добавление ____', // заголовка у вновь создаваемой записи в админ-панели.
-            'edit_item'          => 'Редактирование ____', // для редактирования типа записи
+            'add_new'            => 'Добавить продукт', // для добавления новой записи
+            'add_new_item'       => 'Добавление продукта', // заголовка у вновь создаваемой записи в админ-панели.
+            'edit_item'          => 'Редактирование продукта', // для редактирования типа записи
             'new_item'           => 'Новое ____', // текст новой записи
-            'view_item'          => 'Смотреть ____', // для просмотра записи этого типа.
-            'search_items'       => 'Искать ____', // для поиска по этим типам записи
+            'view_item'          => 'Смотреть продукт', // для просмотра записи этого типа.
+            'search_items'       => 'Искать продукт', // для поиска по этим типам записи
             'not_found'          => 'Не найдено', // если в результате поиска ничего не было найдено
             'not_found_in_trash' => 'Не найдено в корзине', // если не было найдено в корзине
             'parent_item_colon'  => '', // для родителей (у древовидных типов)
@@ -208,3 +213,55 @@ function register_post_types(){
         'query_var'           => true,
     ) );
 }
+
+$args = array(
+
+    /* (string) The title displayed on the options page. Required. */
+    'page_title' => 'Контакти',
+
+    /* (string) The title displayed in the wp-admin sidebar. Defaults to page_title */
+    'menu_title' => 'Контакти',
+
+    /* (string) The URL slug used to uniquely identify this options page.
+    Defaults to a url friendly version of menu_title */
+    'menu_slug' => '',
+
+    /* (string) The capability required for this menu to be displayed to the user. Defaults to edit_posts.
+    Read more about capability here: http://codex.wordpress.org/Roles_and_Capabilities */
+    'capability' => 'edit_posts',
+
+    /* (int|string) The position in the menu order this menu should appear.
+    WARNING: if two menu items use the same position attribute, one of the items may be overwritten so that only one item displays!
+    Risk of conflict can be reduced by using decimal instead of integer values, e.g. '63.3' instead of 63 (must use quotes).
+    Defaults to bottom of utility menu items */
+    'position' => false,
+
+    /* (string) The slug of another WP admin page. if set, this will become a child page. */
+    'parent_slug' => '',
+
+    /* (string) The icon class for this menu. Defaults to default WordPress gear.
+    Read more about dashicons here: https://developer.wordpress.org/resource/dashicons/ */
+    'icon_url' => false,
+
+    /* (boolean) If set to true, this options page will redirect to the first child page (if a child page exists).
+    If set to false, this parent page will appear alongside any child pages. Defaults to true */
+    'redirect' => true,
+
+    /* (int|string) The '$post_id' to save/load data to/from. Can be set to a numeric post ID (123), or a string ('user_2').
+    Defaults to 'options'. Added in v5.2.7 */
+    'post_id' => 'options',
+
+    /* (boolean)  Whether to load the option (values saved from this options page) when WordPress starts up.
+    Defaults to false. Added in v5.2.8. */
+    'autoload' => false,
+
+    /* (string) The update button text. Added in v5.3.7. */
+    'update_button'		=> __('Update', 'acf'),
+
+    /* (string) The message shown above the form on submit. Added in v5.6.0. */
+    'updated_message'	=> __("Options Updated", 'acf'),
+
+);
+
+acf_add_options_page( $args );
+

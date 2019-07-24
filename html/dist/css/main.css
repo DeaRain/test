@@ -10546,7 +10546,8 @@ body {
     font-stretch: normal;
     line-height: 1;
     letter-spacing: normal;
-    color: #1a1a1a; }
+    color: #1a1a1a;
+    text-transform: uppercase; }
     .right-drop-list .right-drop-list__header:hover {
       text-decoration: none; }
     .right-drop-list .right-drop-list__header::after {
@@ -10564,6 +10565,26 @@ body {
     z-index: 20;
     flex-direction: column;
     align-items: center; }
+    .right-drop-list .right-drop-list__container .qtranxs_widget {
+      margin-bottom: 0px; }
+      .right-drop-list .right-drop-list__container .qtranxs_widget .language-chooser {
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px; }
+        .right-drop-list .right-drop-list__container .qtranxs_widget .language-chooser li a {
+          padding: 5px 8px;
+          font-family: Geometria Medium;
+          font-size: 14px;
+          font-weight: bold;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1;
+          letter-spacing: normal;
+          text-transform: uppercase;
+          color: #1a1a1a; }
+          .right-drop-list .right-drop-list__container .qtranxs_widget .language-chooser li a:hover {
+            background: #b8daff;
+            text-decoration: none; }
   .right-drop-list .right-drop-list__container_active {
     display: flex; }
   .right-drop-list .right-drop-list__item {

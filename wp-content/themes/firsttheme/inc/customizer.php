@@ -1,8 +1,8 @@
 <?php
 /**
- * firsttheme Theme Customizer
+ * firstTheme Theme Customizer
  *
- * @package firsttheme
+ * @package firstTheme
  */
 
 /**

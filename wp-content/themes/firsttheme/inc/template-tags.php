@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package firsttheme
+ * @package firstTheme
  */
 
 if ( ! function_exists( 'firsttheme_posted_on' ) ) :
