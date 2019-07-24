@@ -32,69 +32,112 @@
     <div class="container">
         <div class="footer-container">
             <div class="footer-container__item">
-                <span class="footer-container__header">
-                    Про компанію
-                </span>
-                <div class="footer_container__toggle">
-                    <a href="#" class="footer-container__url">Про нас</a>
-                    <a href="#" class="footer-container__url">Галерея</a>
-                    <a href="#" class="footer-container__url">Таблиця розмірів</a>
-                    <a href="#" class="footer-container__url">Новини</a>
-                    <a href="#" class="footer-container__url">Відгуки</a>
-                    <a href="#" class="footer-container__url">Контакти</a>
-                </div>
+                <?php wp_nav_menu( [
+                    'theme_location'  => '',
+                    'menu'            => 'Menu-about',
+                    'container'       => false,
+                    'container_class' => false,
+                    'container_id'    => false,
+                    'menu_class'      => 'menu-footer',
+                    'menu_id'         => '',
+                    'echo'            => true,
+                    'fallback_cb'     => 'wp_page_menu',
+                    'before'          => '',
+                    'after'           => '',
+                    'link_before'     => '',
+                    'link_after'      => '',
+                    'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                    'depth'           => 0,
+                    'walker'          => '',
+                ] ); ?>
             </div>
             <div class="footer-container__item">
-                <span class="footer-container__header">
-                    магазин
-                </span>
-                <div class="footer_container__toggle">
-                    <a href="#" class="footer-container__url">Жінкам</a>
-                    <a href="#" class="footer-container__url">Чоловікам</a>
-                    <a href="#" class="footer-container__url">Дітям</a>
-                    <a href="#" class="footer-container__url">Sale</a>
-                    <a href="#" class="footer-container__url">Підписка</a>
-                    <a href="#" class="footer-container__url">Подарункові коробки</a>
-                </div>
+                <?php wp_nav_menu( [
+                    'theme_location'  => '',
+                    'menu'            => 'Menu-shop',
+                    'container'       => false,
+                    'container_class' => false,
+                    'container_id'    => false,
+                    'menu_class'      => 'menu-footer',
+                    'menu_id'         => '',
+                    'echo'            => true,
+                    'fallback_cb'     => 'wp_page_menu',
+                    'before'          => '',
+                    'after'           => '',
+                    'link_before'     => '',
+                    'link_after'      => '',
+                    'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                    'depth'           => 0,
+                    'walker'          => '',
+                ] ); ?>
             </div>
 
             <div class="footer-container__item">
-                <span class="footer-container__header">
-                    Клієнтам
-                </span>
-                <div class="footer_container__toggle">
-                    <a href="#" class="footer-container__url">Питання-відповідь</a>
-                    <a href="#" class="footer-container__url">Доставка і оплата</a>
-                    <a href="#" class="footer-container__url">Повернення товару</a>
-                    <a href="#" class="contact contact-footer-bot">Прайс-лист  <span class="icon-download"></span></a>
-                </div>
+                <?php wp_nav_menu( [
+                    'theme_location'  => '',
+                    'menu'            => 'Menu-client',
+                    'container'       => false,
+                    'container_class' => false,
+                    'container_id'    => false,
+                    'menu_class'      => 'menu-footer',
+                    'menu_id'         => '',
+                    'echo'            => true,
+                    'fallback_cb'     => 'wp_page_menu',
+                    'before'          => '',
+                    'after'           => '',
+                    'link_before'     => '',
+                    'link_after'      => '',
+                    'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                    'depth'           => 0,
+                    'walker'          => '',
+                ] ); ?>
+
+                <a href="<?= get_field("footer_price_url",'option'); ?>" class="contact contact-footer-bot"><?= get_field("footer_price_text",'option'); ?><span class="icon-download"></span></a>
             </div>
 
             <div class="footer-container__item footer-container__item_partner">
-                <span class="footer-container__header">
-                    Партнерам
-                </span>
-                <div class="footer_container__toggle">
-                    <a href="#" class="footer-container__url">Опт</a>
-                    <a href="#" class="footer-container__url">Крупний опт</a>
-                    <a href="#" class="footer-container__url">Дропшипінг</a>
-                    <a href="#" class="footer-container__url">Корпоративні замовлення</a>
-                </div>
+                <?php wp_nav_menu( [
+                    'theme_location'  => '',
+                    'menu'            => 'Menu-partner',
+                    'container'       => false,
+                    'container_class' => false,
+                    'container_id'    => false,
+                    'menu_class'      => 'menu-footer',
+                    'menu_id'         => '',
+                    'echo'            => true,
+                    'fallback_cb'     => 'wp_page_menu',
+                    'before'          => '',
+                    'after'           => '',
+                    'link_before'     => '',
+                    'link_after'      => '',
+                    'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                    'depth'           => 0,
+                    'walker'          => '',
+                ] ); ?>
             </div>
 
-            <div class="footer-container__item footer-container__item_last">
-                <span class="footer-container__header">
-                    Контакти
-                </span>
+            <div class="footer-container__item">
+                <ul id="menu-menu-about12234" class="menu-footer">
+                    <li id="menu-item-69412" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-69">
+                        <a href="#">Контакти</a>
+                        <ul class="sub-menu">
+
+                        </ul>
+                    </li>
+                </ul>
+
+                <?php $footer_phone = get_field("footer_phone",'option');
+                $footer_phone_cut = str_replace(array(' ', '(', ')', '-','+'),'',$footer_phone);?>
+
                 <div class="footer_container__toggle">
-                    <a href="#" class="contact contact-footer ">+38 (096) 762-40-96</a>
-                    <a href="#" class="contact contact-footer ">Nesterenkoluda.ln@gmail.com</a>
+                    <a href="tel:<?=$footer_phone_cut; ?>" class="contact contact-footer "><?= $footer_phone; ?></a>
+                    <a href="mailto:<?= get_field("footer_email",'option'); ?>" class="contact contact-footer "><?= get_field("footer_email",'option'); ?></a>
 
                     <div class="footer_container_soc">
-                        <a href="#" class="contact contact-soc"><span class="icon-facebook-logo"></span></a>
-                        <a href="#" class="contact contact-soc"><span class="icon-instagram-social-outlined-logo"></span></a>
-                        <a href="#" class="contact contact-soc"><span class="icon-twitter-social-outlined-logo"></span></a>
-                        <a href="#" class="contact contact-soc"><span class="icon-youtube"></span></a>
+                        <a href="<?= get_field("footer_facebook",'option'); ?>" class="contact contact-soc"><span class="icon-facebook-logo"></span></a>
+                        <a href="<?= get_field("footer_instagram",'option'); ?>" class="contact contact-soc"><span class="icon-instagram-social-outlined-logo"></span></a>
+                        <a href="<?= get_field("footer_twitter",'option'); ?>" class="contact contact-soc"><span class="icon-twitter-social-outlined-logo"></span></a>
+                        <a href="<?= get_field("footer_youtube",'option'); ?>" class="contact contact-soc"><span class="icon-youtube"></span></a>
                     </div>
                 </div>
             </div>
@@ -107,7 +150,7 @@
         <div class="container">
             <div class="copyright-container">
                 <div class="copyright-container__left">
-                    ©Сopyright 2018 - V&T SOCKS
+                    <?= get_field("footer_copyright",'option'); ?>
                 </div>
 
                 <div class="copyright-container__right">

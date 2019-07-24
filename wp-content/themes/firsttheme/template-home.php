@@ -3,6 +3,7 @@
 /* Template Name: Головна */
 
 $slider = get_field("slider");
+
 get_header();
 ?>
 
@@ -11,10 +12,11 @@ get_header();
     <?php foreach ($slider as $slide) : ?>
         <div class="main-slider__item">
             <img src="<?php echo $slide["photo_url"]?>" alt="">
+            <?php if(!($slide["button_text"]=="")) : ?>
             <a class="main-slider__button" href="<?php echo $slide["button_url"]?>"><?php echo $slide["button_text"]?></a>
+            <?php endif; ?>
         </div>
     <?php endforeach; ?>
-
 
 
 </div>
