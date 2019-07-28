@@ -51,6 +51,14 @@
                     <div class="production-slider slider__dots_main-theme slider__dots_our-productions-style slider__arrows_main-theme">
                         <div class="production-slider__item">
                             <img class="production-slider__item-img" src="img/sock1.png" alt="">
+                            <div class="production-slider__item-control-panel">
+                                <div class="interface-item interface-item_product-menu">
+                                    <span class="icon-heart interface-item__icon "></span>
+                                </div>
+                                <div class="interface-item interface-item_product-menu">
+                                    <span class="icon-shopping-bag interface-item__icon"></span>
+                                </div>
+                            </div>
                             <span class="production-slider__item-name">Шкарпетки короткі V&T</span>
                             <div class="production-slider__item-prices">
                                 <span class="production-slider__item-price">65.00 UAH</span>
@@ -61,6 +69,14 @@
                         </div>
                         <div class="production-slider__item">
                             <img class="production-slider__item-img" src="img/sock2.png" alt="">
+                            <div class="production-slider__item-control-panel">
+                                <div class="interface-item interface-item_product-menu">
+                                    <span class="icon-heart interface-item__icon "></span>
+                                </div>
+                                <div class="interface-item interface-item_product-menu">
+                                    <span class="icon-shopping-bag interface-item__icon"></span>
+                                </div>
+                            </div>
                             <span class="production-slider__item-name">Шкарпетки короткі V&T</span>
                             <div class="production-slider__item-prices">
                                 <span class="production-slider__item-price">65.00 UAH</span>
@@ -71,6 +87,14 @@
                         </div>
                         <div class="production-slider__item">
                             <img class="production-slider__item-img" src="img/sock3.png" alt="">
+                            <div class="production-slider__item-control-panel">
+                                <div class="interface-item interface-item_product-menu">
+                                    <span class="icon-heart interface-item__icon "></span>
+                                </div>
+                                <div class="interface-item interface-item_product-menu">
+                                    <span class="icon-shopping-bag interface-item__icon"></span>
+                                </div>
+                            </div>
                             <span class="production-slider__item-name">Шкарпетки короткі V&T</span>
                             <div class="production-slider__item-prices">
                                 <span class="production-slider__item-price">65.00 UAH</span>
@@ -81,8 +105,19 @@
                             </div>
                         </div>
                         <div class="production-slider__item">
+                            <a href="#" class="production-slider__item-url">
                             <img class="production-slider__item-img" src="img/sock4.png" alt="">
                             <span class="production-slider__item-name">Шкарпетки короткі V&T</span>
+                            </a>
+                            <div class="production-slider__item-control-panel">
+                                <div class="interface-item interface-item_product-menu">
+                                    <span class="icon-heart interface-item__icon "></span>
+                                </div>
+                                <div class="interface-item interface-item_product-menu">
+                                    <span class="icon-shopping-bag interface-item__icon"></span>
+                                </div>
+                            </div>
+
                             <div class="production-slider__item-prices">
                                 <span class="production-slider__item-price">65.00 UAH</span>
                             </div>
@@ -191,19 +226,15 @@
             Новини
         </span>
         <div class="news-container__news">
-            <div class="news-container">
                 <div class="news-block">
                     <img src="img/news1.jpg" alt="" class="news-block__img">
-                    <span class="news-block__header">Не впускайте можливість бути яскравим - кольорові шкарпетки в моді!</span>
+                    <a href="#" class="news-block__header">Не впускайте можливість бути яскравим - кольорові шкарпетки в моді!</a>
                     <span class="news-block__desc">Бажаєте бути модним? Мати свій особливий стиль і бути тим, кому наслідують? А можливо ви просто любите все прикольне і стильне? Тоді швидше знайдіть місце в своєму гардеробі для нетривіальних кольорових сучасних шкарпеток.</span>
                 </div>
-            </div>
-            <div class="news-container">
                 <div class="news-block">
                     <img src="img/news2.jpg" alt="" class="news-block__img">
-                    <span class="news-block__header">Босоніжки зі шкарпетками: жіноча мода, комфорт або несмак</span>
+                    <a href="#" class="news-block__header">Босоніжки зі шкарпетками: жіноча мода, комфорт або несмак</a>
                     <span class="news-block__desc">Бажаєте бути модним? Мати свій особливий стиль і бути тим, кому наслідують? А можливо ви просто любите все прикольне і стильне? Тоді швидше знайдіть місце в своєму гардеробі для нетривіальних кольорових сучасних шкарпеток.</span>
-                </div>
             </div>
         </div>
         <div class="news-container__button">
@@ -254,6 +285,75 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <script src="js/common.js"></script>
 
 <script>
+    $( document ).ready(function() {
+        if($(window).width()<768) {
+            var drop_menu = $('.header-container__right-drop-lists').detach();
+            drop_menu.appendTo('.left-menu__top-block');
+        }
+
+        $('.infoline-slider-js').slick({
+            // dots:true,
+            arrows:false,
+            slidesToShow: 6,
+            variableWidth: true,
+            // draggable: true
+            responsive: [
+                {
+                    breakpoint: 1199,
+                    settings: {
+                        variableWidth: false,
+                        arrows:true,
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        variableWidth: true,
+                        arrows:true,
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                    }
+                },
+                {
+                    breakpoint: 479,
+                    settings: {
+                        variableWidth: true,
+                        arrows:true,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                }
+            ]
+        });
+
+    });
+
+    $('.menu-item').click(function (e) {
+        if($(this).parent().is('.left-menu') || $(this).parent().is('.menu-footer')) {
+            if (e.target.getAttribute('href')=="javascript:void(0);") {
+                $(this).find('.sub-menu').toggle(50);
+
+                if($(this).parent().is('.menu-footer-contact')) {
+                    $(this).parent().parent().find('.footer_container__toggle').toggle(50);
+                }
+
+                if($(this).parent().is('.menu-footer-client')) {
+                    $(this).parent().parent().find('.contact-toogle').toggle(50);
+                }
+            }
+        }
+    });
+
+
+    $('.top-menu-changer').click(function () {
+        $(this).parent().find('.top-menu').toggle(50);
+    });
+
+    $('.top-menu__item-url').click(function () {
+        $(this).parent().find('.top-menu__item-container').toggle(50);
+    });
 
 </script>
 

@@ -8,7 +8,12 @@ body{
   padding: 0px;
   margin: 0px;
 }
-
+a:visited{
+  color: unset;
+}
+.header-flex-container{
+  position: relative;
+}
 .header-container {
   display: flex;
   flex-direction: row;
@@ -19,6 +24,110 @@ body{
     display: flex;
     flex-direction: row;
     flex:1;
+    .left-menu__wrapper-background{
+      cursor: grab;
+      position: fixed;
+      left: 0px;
+      top: 50%;
+      opacity: 0.3;
+      width: 100%;
+      height: 0px;
+      background: #000000;
+      z-index: 4;
+    }
+    .left-menu__wrapper{
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      width: 0px;
+      height: 100vh;
+      background: #ffffff;
+      z-index: 5;
+      overflow: auto;
+      .left-menu__menu{
+        top: 31px;
+        width: 435px;
+        right: 60px;
+        position: absolute;
+        .left-menu{
+          padding: 0px;
+          margin: 0px;
+          list-style-type: none;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          li{
+            padding: 27px 0px 28px 0px;
+            margin-bottom: 0px;
+            border-bottom: solid 1px #e6e6e6;
+            position: relative;
+            &.menu-item-has-children{
+              cursor: pointer;
+              a::after{
+                position: absolute;
+                top: 34px;
+                right: -2px;
+                font-size: 8px;
+                font-family: icomoon;
+                content: "\e900";
+                color: #1a1a1a;
+              }
+            }
+            a{
+              font-family: Geometria Bold;
+              font-size: 20px;
+              font-weight: bold;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1;
+              letter-spacing: 2.5px;
+              color: #1a1a1a;
+              text-transform: uppercase;
+              &:hover{
+                text-decoration: none;
+              }
+            }
+            ul.sub-menu{
+              display: none;
+              list-style-type: none;
+              padding: 0px;
+              margin: 0px;
+              margin-top: 24px;
+              li {
+                border-bottom: none;
+                padding: 0px;
+                margin: 0px;
+                margin-top: 9px;
+                a {
+                  font-family: Geometria;
+                  font-size: 16px;
+                  font-weight: normal;
+                  font-style: normal;
+                  font-stretch: normal;
+                  line-height: 1;
+                  letter-spacing: normal;
+                  color: #999999;
+                  text-transform: unset;
+                  &:hover {
+                    text-decoration: none;
+                  }
+                  &::after{
+                    content: none !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .left-menu__close-button{
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 20px;
+      }
+    }
       .header-container__phone{
         width: 100%;
         margin: auto 0px auto 118px;
@@ -132,6 +241,13 @@ body{
 .menu-button {
   display: flex;
   align-items: center;
+  cursor: pointer;
+  &:hover{
+    color: #e83c4d;
+    .menu-button__text{
+      color: #e83c4d;
+    }
+  }
     .menu-button__logo {
       font-size: 30px;
       margin-top: 3px;
@@ -149,6 +265,7 @@ body{
       letter-spacing: 2.5px;
       color: #1a1a1a;
     }
+
 }
 
 .contact {
@@ -166,8 +283,6 @@ body{
   color: #e83c4d;
   text-decoration: none;
 }
-
-
 .interface-item {
   &:last-child{
     margin-right: 17px;
@@ -178,7 +293,7 @@ body{
     font-size:25px;
     vertical-align: middle;
   }
-  .interface-item__icon:hover{
+  &:hover{
     color: #e83c4d;
     cursor: pointer;
   }
@@ -187,6 +302,7 @@ body{
     height: 15px;
     border: 2px solid red;
     border-radius: 50%;
+    cursor: pointer;
     //line-height: 12px;  /* подробнее про line-height */
     text-align: center;  /* выравнять текст по середине по горизонтали */
     background: red;
@@ -203,7 +319,14 @@ body{
     line-height: 12px;
   }
 }
-
+.interface-item_product-menu {
+  margin: 0px;
+  padding: 10px;
+  border: solid 1px #cccccc;
+  &:last-child{
+    margin-right: unset;
+  }
+}
 .top-menu-changer{
   display: none;
   flex-direction: row;
@@ -234,15 +357,21 @@ body{
   flex-direction: row;
   justify-content: space-between;
   list-style: none;
-  //position: relative;
   .top-menu__item{
     padding: 17px 0px 13px 0px;
     &:hover{
       .top-menu__item-container{
-        display: block;
+        //display: block;
+      }
+      .top-menu__item-url{
+        &:after{
+          width: 100%;
+        }
       }
     }
     .top-menu__item-url{
+      position:relative;
+
       text-decoration: none;
       font-family: Geometria Bold;
       font-size: 16px;
@@ -254,6 +383,21 @@ body{
       color: #1a1a1a;
       text-transform: uppercase;
       box-sizing: border-box;
+      &:after{
+        position: absolute;
+        left:50%;
+        top: 30px;
+        display: block;
+        content: "";
+        height: 2px;
+        width: 0px;
+        background-color: #e83c4d;
+
+        transition: width .3s ease-in-out;
+        -webkit-transform:translateX(-50%);
+        -moz-transform:translateX(-50%);
+        transform:translateX(-50%);
+      }
     }
     .top-menu__item-url_hot{
       color: #e83c4d;
@@ -265,13 +409,14 @@ body{
     display: none;
     background: #ffffff;
 
-    //width: 98vw;
+    //width: 100vw;
     width: 100%;
     transform: translateX(-50%);
     left: 50%;
     right: 50%;
-    top:175px;
+    //top:54px;
     //top:100%;
+    bottom: -254px;
     height: 254px;
 
     border-top: solid 1px #e6e6e6;
@@ -532,6 +677,20 @@ body{
       align-items: center;
 
       text-align: center;
+
+      &:hover{
+        .production-slider__item-control-panel{
+          opacity: 100;
+        }
+      }
+      .production-slider__item-url{
+        &:hover{
+          text-decoration: none;
+          .production-slider__item-name {
+            color: #e83c4d;
+          }
+        }
+      }
         .production-slider__item-img{
           border: solid 1px #e6e6e6;
           margin-bottom: 13px;
@@ -540,6 +699,19 @@ body{
           //margin-left: 50%;
           //transform: translateX(-50%);
 
+        }
+
+        .production-slider__item-control-panel{
+          position: absolute;
+          bottom:80px;
+          left: 50%;
+          transform: translateX(-50%);
+          opacity: 0;
+          transition: opacity 0.1s ease-out;
+
+          display: flex;
+          flex-direction: row;
+          background-color: #f6f4f4;
         }
         .production-slider__item-name{
           //margin-top: 10px;
@@ -710,8 +882,11 @@ body{
   text-transform: uppercase;
 
   &:hover{
-    color: #ffffff;
     text-decoration: none;
+    color: #ffffff;
+  }
+  &:visited{
+    color: #ffffff;
   }
 }
 .news-block{
@@ -721,6 +896,13 @@ body{
   //flex: 1 1 550px;
   width: 555px;
 
+  position: relative;
+  overflow: hidden;
+  &:hover{
+    .news-block__header:after{
+      top: 5px;
+    }
+  }
     .news-block__header{
       padding: 20px 0 12px 0px;
       width: 495px;
@@ -733,6 +915,29 @@ body{
       letter-spacing: 1px;
       text-align: center;
       color: #1a1a1a;
+
+      &:hover{
+        color: #e83c4d;
+      }
+
+      &:after{
+        position: absolute;
+        content: "Читати далі..";
+        color: #e83c4d;
+        z-index: 10;
+        top: -50px;
+        //top:5px;
+        left: 50%;
+        padding: 15px 30px;
+        transform: translateX(-50%);
+        background-color: rgba(27, 27, 27, 0.8);
+        text-shadow: 1px 1px black;
+        //opacity: 0.5;
+        transition: top .3s ease-in-out, left .3s ease-in-out;
+        //transition: ;
+        //padding: 200px;
+      }
+
     }
     .news-block__desc{
       width: 495px;
@@ -903,6 +1108,7 @@ body{
             text-transform: uppercase;
             &:hover{
               text-decoration: none;
+              color: black;
             }
           }
           ul{

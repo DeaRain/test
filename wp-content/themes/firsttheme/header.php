@@ -36,6 +36,35 @@
                     </span>
                 </div>
 
+                <div class="left-menu__wrapper-background">
+                </div>
+
+                <div class="left-menu__wrapper">
+
+                    <div class="left-menu__close-button">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/cross-remove-sign.svg" class="cross-remove-sign"></div>
+                    <div class="left-menu__menu">
+                        <?php wp_nav_menu( [
+                            'theme_location'  => '',
+                            'menu'            => 'Menu-left',
+                            'container'       => false,
+                            'container_class' => false,
+                            'container_id'    => false,
+                            'menu_class'      => 'left-menu',
+                            'menu_id'         => '',
+                            'echo'            => true,
+                            'fallback_cb'     => 'wp_page_menu',
+                            'before'          => '',
+                            'after'           => '',
+                            'link_before'     => '',
+                            'link_after'      => '',
+                            'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                            'depth'           => 0,
+                            'walker'          => '',
+                        ] ); ?>
+                    </div>
+                </div>
+
                 <?php $header_phone = get_field("header_phone",'option');
                 $header_phone_cut = str_replace(array(' ', '(', ')', '-','+'),'',$header_phone);?>
 
