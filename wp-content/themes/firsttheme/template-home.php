@@ -70,8 +70,18 @@ get_header();
                             <?php $product_fields = get_fields(); ?>
 
                             <div class="production-slider__item">
-                                <img class="production-slider__item-img" src="<?php the_post_thumbnail_url()?>" alt="">
-                                <span class="production-slider__item-name"><?php the_title()?></span>
+                                <a href="<?php the_permalink(); ?>" class="production-slider__item-url">
+                                    <img class="production-slider__item-img" src="<?php the_post_thumbnail_url()?>" alt="">
+                                    <span class="production-slider__item-name"><?php the_title()?></span>
+                                </a>
+                                <div class="production-slider__item-control-panel">
+                                    <div class="interface-item interface-item_product-menu">
+                                        <span class="icon-heart interface-item__icon "></span>
+                                    </div>
+                                    <div class="interface-item interface-item_product-menu">
+                                        <span class="icon-shopping-bag interface-item__icon"></span>
+                                    </div>
+                                </div>
                                 <div class="production-slider__item-prices">
                                     <span class="production-slider__item-price"><?php echo $product_fields["price"]." UAH"?></span>
                                     <?php if ($product_fields["price_old"]>0) : ?>
@@ -168,47 +178,44 @@ $posts = get_posts( array(
 
 
 <?php
-
-$terms = get_terms( array(
-    'taxonomy'      => array( 'taxonomy'), // название таксономии с WP 4.5
-    'orderby'       => 'id',
-    'order'         => 'ASC',
-    'hide_empty'    => true,
-    'object_ids'    => null,
-    'include'       => array(),
-    'exclude'       => array(),
-    'exclude_tree'  => array(),
-    'number'        => '',
-    'fields'        => 'all',
-    'count'         => false,
-    'slug'          => '',
-    'parent'        => '',
-    'hierarchical'  => true,
-    'child_of'      => 0,
-    'get'           => '', // ставим all чтобы получить все термины
-    'name__like'    => '',
-    'pad_counts'    => false,
-    'offset'        => '',
-    'search'        => '',
-    'cache_domain'  => 'core',
-    'name'          => '',    // str/arr поле name для получения термина по нему. C 4.2.
-    'childless'     => false, // true не получит (пропустит) термины у которых есть дочерние термины. C 4.2.
-    'update_term_meta_cache' => true, // подгружать метаданные в кэш
-    'meta_query'    => '',
-) );
-
-foreach( $terms as $post ){
-    echo ' '. get_field('label',$post)."<p>";
-    echo $post->name." ";
-    echo get_term_link($post);
-    echo '<pre>';
-    print_r($post);
-    echo '</pre>';
-}
-
-
-
-?>
+//
+//$terms = get_terms( array(
+//    'taxonomy'      => array( 'taxonomy'), // название таксономии с WP 4.5
+//    'orderby'       => 'id',
+//    'order'         => 'ASC',
+//    'hide_empty'    => true,
+//    'object_ids'    => null,
+//    'include'       => array(),
+//    'exclude'       => array(),
+//    'exclude_tree'  => array(),
+//    'number'        => '',
+//    'fields'        => 'all',
+//    'count'         => false,
+//    'slug'          => '',
+//    'parent'        => '',
+//    'hierarchical'  => true,
+//    'child_of'      => 0,
+//    'get'           => '', // ставим all чтобы получить все термины
+//    'name__like'    => '',
+//    'pad_counts'    => false,
+//    'offset'        => '',
+//    'search'        => '',
+//    'cache_domain'  => 'core',
+//    'name'          => '',    // str/arr поле name для получения термина по нему. C 4.2.
+//    'childless'     => false, // true не получит (пропустит) термины у которых есть дочерние термины. C 4.2.
+//    'update_term_meta_cache' => true, // подгружать метаданные в кэш
+//    'meta_query'    => '',
+//) );
+//
+//foreach( $terms as $post ){
+//    echo ' '. get_field('label',$post)."<p>";
+//    echo $post->name." ";
+//    echo get_term_link($post);
+//    echo '<pre>';
+//    print_r($post);
+//    echo '</pre>';
+//}
+//?>
 
 
 <div class="container">
@@ -222,7 +229,7 @@ foreach( $terms as $post ){
                     <div class="news-container">
                         <div class="news-block">
                             <img src="<?php the_post_thumbnail_url()?>" alt="" class="news-block__img">
-                            <span class="news-block__header"><?php the_title(); ?></span>
+                            <a href="<?php the_permalink(); ?>" class="news-block__header"><?php the_title(); ?></a>
                             <span class="news-block__desc"><?php the_excerpt(); ?></span>
 <!--                            <a href="--><?php //the_permalink(); ?><!--">Link</a>-->
                         </div>

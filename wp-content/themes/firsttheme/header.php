@@ -24,6 +24,7 @@
 
 
 <header>
+    <div class="header-flex-container">
     <div class="container">
         <div class="header-container">
             <div class="header-container__left">
@@ -40,7 +41,7 @@
                 </div>
 
                 <div class="left-menu__wrapper">
-
+                    <div class="left-menu__top-block"></div>
                     <div class="left-menu__close-button">
                         <img src="<?php echo get_template_directory_uri() ?>/assets/img/cross-remove-sign.svg" class="cross-remove-sign"></div>
                     <div class="left-menu__menu">
@@ -96,7 +97,7 @@
 
                 <div class="header-container__right-drop-lists">
                     <div class="right-drop-list">
-                        <a class="right-drop-list__header" href="#">UAH</a>
+                        <a class="right-drop-list__header" >UAH</a>
                         <!--                            <span class="icon-down-arrow-of-angle"></span>-->
                         <div class="right-drop-list__container">
                             <a class="right-drop-list__item" href="#">UAH</a>
@@ -105,7 +106,7 @@
                     </div>
 
                     <div class="right-drop-list">
-                        <a class="right-drop-list__header" href="#"><?php echo qtranxf_getLanguage(); ?></a>
+                        <a class="right-drop-list__header"><?php echo qtranxf_getLanguage(); ?></a>
                         <div class="right-drop-list__container">
                             <?php the_widget('qTranslateXWidget', array('widget-css-off' =>true,
                                 'hide-title' =>true,
@@ -129,8 +130,8 @@
                     <span class="icon-down-arrow-of-angle top-menu-changer__arrow"></span>
                 </div>
                 <ul class="top-menu">
-                    <li class="top-menu__item">
-                        <a href="#" class="top-menu__item-url">Жінкам</a>
+                    <li class="top-menu__item top-menu__item_dropdown">
+                        <a class="top-menu__item-url">Жінкам</a>
                         <div class="top-menu__item-container">
                             <div class="container">
                                 <div class="top-menu__item-container-inside">
@@ -162,8 +163,8 @@
                             </div>
                         </div>
                     </li>
-                    <li class="top-menu__item">
-                        <a href="#" class="top-menu__item-url">Чоловікам</a>
+                    <li class="top-menu__item top-menu__item_dropdown">
+                        <a class="top-menu__item-url">Чоловікам</a>
                         <div class="top-menu__item-container">
                             <div class="container">
                                 <div class="top-menu__item-container-inside">
@@ -195,8 +196,8 @@
                             </div>
                         </div>
                     </li>
-                    <li class="top-menu__item">
-                        <a href="#" class="top-menu__item-url">Дітям</a>
+                    <li class="top-menu__item top-menu__item_dropdown">
+                        <a class="top-menu__item-url">Дітям</a>
                         <div class="top-menu__item-container">
                             <div class="container">
                                 <div class="top-menu__item-container-inside">
@@ -240,5 +241,6 @@
                 </ul>
             </nav>
         </div>
+    </div>
     </div>
 </header>

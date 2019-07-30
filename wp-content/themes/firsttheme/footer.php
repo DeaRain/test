@@ -79,7 +79,7 @@
                     'container'       => false,
                     'container_class' => false,
                     'container_id'    => false,
-                    'menu_class'      => 'menu-footer',
+                    'menu_class'      => 'menu-footer menu-footer-client',
                     'menu_id'         => '',
                     'echo'            => true,
                     'fallback_cb'     => 'wp_page_menu',
@@ -92,7 +92,7 @@
                     'walker'          => '',
                 ] ); ?>
 
-                <a href="<?= get_field("footer_price_url",'option'); ?>" class="contact contact-footer-bot"><?= get_field("footer_price_text",'option'); ?><span class="icon-download"></span></a>
+                <a href="<?= get_field("footer_price_url",'option'); ?>" class="contact contact-footer-bot contact-toogle"><?= get_field("footer_price_text",'option'); ?><span class="icon-download"></span></a>
             </div>
 
             <div class="footer-container__item footer-container__item_partner">
@@ -117,9 +117,9 @@
             </div>
 
             <div class="footer-container__item">
-                <ul id="menu-menu-about12234" class="menu-footer">
+                <ul id="menu-menu-about12234" class="menu-footer menu-footer-contact">
                     <li id="menu-item-69412" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-69">
-                        <a href="#">Контакти</a>
+                        <a>Контакти</a>
                         <ul class="sub-menu">
 
                         </ul>
