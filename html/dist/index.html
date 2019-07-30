@@ -121,7 +121,7 @@
                     <span class="icon-down-arrow-of-angle top-menu-changer__arrow"></span>
                 </div>
                 <ul class="top-menu">
-                    <li class="top-menu__item">
+                    <li class="top-menu__item top-menu__item_dropdown">
                         <a href="#" class="top-menu__item-url">Жінкам</a>
                         <div class="top-menu__item-container">
                             <div class="container">
@@ -154,7 +154,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="top-menu__item">
+                    <li class="top-menu__item top-menu__item_dropdown">
                         <a href="#" class="top-menu__item-url">Чоловікам</a>
                         <div class="top-menu__item-container">
                             <div class="container">
@@ -187,7 +187,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="top-menu__item">
+                    <li class="top-menu__item top-menu__item_dropdown">
                         <a href="#" class="top-menu__item-url">Дітям</a>
                         <div class="top-menu__item-container">
                             <div class="container">
@@ -443,6 +443,7 @@
     </div>
 </div>
 
+
 <div class="container">
     <div class="news-container">
         <span class="news-container__header">
@@ -632,74 +633,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <script>
     $( document ).ready(function() {
-        if($(window).width()<768) {
-            var drop_menu = $('.header-container__right-drop-lists').detach();
-            drop_menu.appendTo('.left-menu__top-block');
-        }
 
-        $('.infoline-slider-js').slick({
-            // dots:true,
-            arrows:false,
-            slidesToShow: 6,
-            variableWidth: true,
-            // draggable: true
-            responsive: [
-                {
-                    breakpoint: 1199,
-                    settings: {
-                        variableWidth: false,
-                        arrows:true,
-                        slidesToShow: 3,
-                        slidesToScroll: 1,
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        variableWidth: true,
-                        arrows:true,
-                        slidesToShow: 2,
-                        slidesToScroll: 2,
-                    }
-                },
-                {
-                    breakpoint: 479,
-                    settings: {
-                        variableWidth: true,
-                        arrows:true,
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                    }
-                }
-            ]
-        });
+
 
     });
 
-    $('.menu-item').click(function (e) {
-        if($(this).parent().is('.left-menu') || $(this).parent().is('.menu-footer')) {
-            if (e.target.getAttribute('href')=="javascript:void(0);") {
-                $(this).find('.sub-menu').toggle(50);
 
-                if($(this).parent().is('.menu-footer-contact')) {
-                    $(this).parent().parent().find('.footer_container__toggle').toggle(50);
-                }
-
-                if($(this).parent().is('.menu-footer-client')) {
-                    $(this).parent().parent().find('.contact-toogle').toggle(50);
-                }
-            }
-        }
-    });
-
-
-    $('.top-menu-changer').click(function () {
-        $(this).parent().find('.top-menu').toggle(50);
-    });
-
-    $('.top-menu__item-url').click(function () {
-        $(this).parent().find('.top-menu__item-container').toggle(50);
-    });
 
 </script>
 
