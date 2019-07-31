@@ -11224,7 +11224,12 @@ a:visited {
     line-height: 1.2;
     letter-spacing: 1px;
     text-align: center;
-    color: #1a1a1a; }
+    color: #1a1a1a;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis; }
     .news-block .news-block__header:hover {
       color: #e83c4d; }
     .news-block .news-block__header:after {
@@ -11330,7 +11335,8 @@ a:visited {
     line-height: 1.2;
     letter-spacing: 2px;
     color: #1a1a1a;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    white-space: nowrap; }
   .subscribe-container .subscribe-container__text-box {
     margin-left: 38px;
     flex: auto;

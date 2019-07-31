@@ -481,8 +481,8 @@
     width: 555px;
     .news-block__header{
       //white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+      //white-space: normal;
+
       //padding: 20px 0 10px 0px;
       height: 60px;
       width: 290px;
