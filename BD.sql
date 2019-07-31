@@ -5,9 +5,6 @@ SET time_zone = '+00:00';
 SET foreign_key_checks = 0;
 SET sql_mode = 'NO_AUTO_VALUE_ON_ZERO';
 
-CREATE DATABASE `PixelWord` /*!40100 DEFAULT CHARACTER SET latin1 */;
-USE `PixelWord`;
-
 SET NAMES utf8mb4;
 
 DROP TABLE IF EXISTS `wp_commentmeta`;
@@ -1764,4 +1761,4 @@ CREATE TABLE `wp_users` (
 INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES
 (1,	'dearain',	'$P$BP1GwNXGrhpfp5Fb6OcIV5IVHrtbm11',	'dearain',	'steallmaster@gmail.com',	'',	'2019-07-23 11:30:37',	'',	0,	'dearain');
 
--- 2019-07-31 17:00:12
+-- 2019-07-31 17:18:35
