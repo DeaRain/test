@@ -7,6 +7,12 @@ $( document ).ready(function() {
         var drop_menu = $('.header-container__right-drop-lists').detach();
         drop_menu.appendTo('.left-menu__top-block');
     }
+
+    $('.js-main-slider').slick({
+        dots:true,
+        arrows:false,
+    });
+
     $('.infoline-slider-js').slick({
         // dots:true,
         arrows:false,

@@ -8,6 +8,9 @@ body{
   padding: 0px;
   margin: 0px;
 }
+.page{
+  margin: 0px;
+}
 a:visited{
   color: unset;
 }
@@ -652,6 +655,7 @@ a:visited{
           margin-left: auto;
           margin-right: 0px;
           .nav{
+            margin: 0px;
             //width: 250px;
             //padding-top: 20px;
           }
