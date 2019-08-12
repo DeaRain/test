@@ -40,8 +40,7 @@
         .left-menu__top-block {
           z-index: 5;
           //background: red;
-          margin-left: 50%;
-          transform: translateX(-50%);
+          margin-left: 60px;
           width: 435px;
           height: 31px;
           border-bottom: solid 1px #e6e6e6;
@@ -337,7 +336,7 @@
     button.slick-prev:before{
       font-size: 10px;
       font-family: icomoon;
-      content: "\e912";
+      content: "\e916";
       color: #1a1a1a;
       z-index: 3;
     }
@@ -352,7 +351,7 @@
     button.slick-next:before{
       font-size: 10px;
       font-family: icomoon;
-      content: "\e911";
+      content: "\e915";
       color: #1a1a1a;
       z-index: 3;
     }
@@ -824,8 +823,7 @@
         overflow: auto;
         .left-menu__top-block{
           //background: red;
-          margin-left: 50%;
-          transform: translateX(-50%);
+          margin-left: 15px;
           width: 290px;
           height: 31px;
           border-bottom: solid 1px #e6e6e6;
@@ -1181,7 +1179,7 @@
     button.slick-prev:before{
       font-size: 10px;
       font-family: icomoon;
-      content: "\e912";
+      content: "\e916";
       color: #1a1a1a;
       z-index: 3;
     }
@@ -1196,7 +1194,7 @@
     button.slick-next:before{
       font-size: 10px;
       font-family: icomoon;
-      content: "\e911";
+      content: "\e915";
       color: #1a1a1a;
       z-index: 3;
     }
@@ -1887,7 +1885,7 @@
     button.slick-prev:before{
       font-size: 10px;
       font-family: icomoon;
-      content: "\e912";
+      content: "\e916";
       color: #1a1a1a;
       z-index: 3;
     }
@@ -1902,7 +1900,7 @@
     button.slick-next:before{
       font-size: 10px;
       font-family: icomoon;
-      content: "\e911";
+      content: "\e915";
       color: #1a1a1a;
       z-index: 3;
     }

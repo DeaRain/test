@@ -24,8 +24,7 @@
     top: 50px; }
   .header-container .header-container__left .left-menu__wrapper .left-menu__top-block {
     z-index: 5;
-    margin-left: 50%;
-    transform: translateX(-50%);
+    margin-left: 60px;
     width: 435px;
     height: 31px;
     border-bottom: solid 1px #e6e6e6; }
@@ -594,8 +593,7 @@
     z-index: 5;
     overflow: auto; }
   .header-container .header-container__left .left-menu__wrapper .left-menu__top-block {
-    margin-left: 50%;
-    transform: translateX(-50%);
+    margin-left: 15px;
     width: 290px;
     height: 31px;
     border-bottom: solid 1px #e6e6e6; }

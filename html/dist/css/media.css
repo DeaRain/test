@@ -24,8 +24,7 @@
         top: 50px; }
       .header-container .header-container__left .left-menu__wrapper .left-menu__top-block {
         z-index: 5;
-        margin-left: 50%;
-        transform: translateX(-50%);
+        margin-left: 60px;
         width: 435px;
         height: 31px;
         border-bottom: solid 1px #e6e6e6; }
@@ -225,7 +224,7 @@
   .slider__arrows_info-theme button.slick-prev:before {
     font-size: 10px;
     font-family: icomoon;
-    content: "\e912";
+    content: "\e916";
     color: #1a1a1a;
     z-index: 3; }
   .slider__arrows_info-theme button.slick-next {
@@ -238,7 +237,7 @@
   .slider__arrows_info-theme button.slick-next:before {
     font-size: 10px;
     font-family: icomoon;
-    content: "\e911";
+    content: "\e915";
     color: #1a1a1a;
     z-index: 3; }
   .infoline {
@@ -594,8 +593,7 @@
         z-index: 5;
         overflow: auto; }
         .header-container .header-container__left .left-menu__wrapper .left-menu__top-block {
-          margin-left: 50%;
-          transform: translateX(-50%);
+          margin-left: 15px;
           width: 290px;
           height: 31px;
           border-bottom: solid 1px #e6e6e6; }
@@ -857,7 +855,7 @@
   .slider__arrows_info-theme button.slick-prev:before {
     font-size: 10px;
     font-family: icomoon;
-    content: "\e912";
+    content: "\e916";
     color: #1a1a1a;
     z-index: 3; }
   .slider__arrows_info-theme button.slick-next {
@@ -870,7 +868,7 @@
   .slider__arrows_info-theme button.slick-next:before {
     font-size: 10px;
     font-family: icomoon;
-    content: "\e911";
+    content: "\e915";
     color: #1a1a1a;
     z-index: 3; }
   .production-slider {
@@ -1370,7 +1368,7 @@
   .slider__arrows_info-theme button.slick-prev:before {
     font-size: 10px;
     font-family: icomoon;
-    content: "\e912";
+    content: "\e916";
     color: #1a1a1a;
     z-index: 3; }
   .slider__arrows_info-theme button.slick-next {
@@ -1383,7 +1381,7 @@
   .slider__arrows_info-theme button.slick-next:before {
     font-size: 10px;
     font-family: icomoon;
-    content: "\e911";
+    content: "\e915";
     color: #1a1a1a;
     z-index: 3; }
   .production-slider .slick-track {
