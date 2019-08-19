@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+
+//= partials/header.html
+
+
+<p>
+<p>
+<p>
+
+<div class="slider-for" style="width: 200px">
+    <img class="sing-prod__slider-img" src="img/sock1.png" alt="">
+    <img class="sing-prod__slider-img" src="img/sock2.png" alt="">
+    <img class="sing-prod__slider-img" src="img/sock3.png" alt="">
+    <img class="sing-prod__slider-img" src="img/sock4.png" alt="">
+</div>
+<div class="slider-nav" style="width: 500px">
+    <img class="sing-prod__slider-img" src="img/sock1.png" alt="">
+    <img class="sing-prod__slider-img" src="img/sock2.png" alt="">
+    <img class="sing-prod__slider-img" src="img/sock3.png" alt="">
+    <img class="sing-prod__slider-img" src="img/sock4.png" alt="">
+</div>
+
+<p>
+<p>
+<p><p>
+<p>
+<p>
+
+//= partials/footer.html
+
+<script src="js/lib.js"></script>
+<script src="js/common.js"></script>
+
+<script>
+$(document).ready(function () {
+
+    $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-nav'
+    });
+    $('.slider-nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        dots: true,
+        centerMode: true,
+        focusOnSelect: true
+    });
+
+});
+</script>
+</body>
+
+</html>

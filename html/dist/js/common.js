@@ -235,12 +235,21 @@ $(document).ready(function () {
         $(this).find('.footer_container__toggle').toggleClass('footer_container__toggle_active');
     });
 
+    $('.my-alert').click(function (e) {
+        $('.my-alert').toggle(100);
+    });
     $(document).click(function (e) { // событие клика по веб-документу
         var div = $(".right-drop-list"); // тут указываем ID элемента
         if (!div.is(e.target) // если клик был не по нашему блоку
             && div.has(e.target).length === 0) { // и не по его дочерним элементам
             div.find('.right-drop-list__container').removeClass('right-drop-list__container_active');// скрываем его
         }
+    });
+
+    $(function() {
+        $('.products__selector').selectric({
+            arrowButtonMarkup: '<span class="icon-down-arrow-of-angle select__button""></span>',
+        });
     });
 
 
