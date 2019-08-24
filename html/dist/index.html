@@ -109,10 +109,11 @@
                         <span class="interface-item__counter">4</span>
                     </div>
                     <div class="interface-item">
-                        <span class="icon-shopping-bag interface-item__icon"></span>
-                        <span class="interface-item__counter">4</span>
+                        <a href="#">           <span class="icon-shopping-bag interface-item__icon"></span>
+                            <span class="interface-item__counter">4</span></a>
+
                     </div>
-                    <div class="interface-item">
+                    <div id="auth_menu" class="interface-item">
                         <span class="icon-user interface-item__icon"></span>
                     </div>
 
@@ -167,6 +168,72 @@
                 </div>
             </div>
         </div>
+
+        <div class="auth-container"></div>
+
+        <div class="auth auth_hide">
+            <div class="auth__sub-head">авторизація
+                <span id="auth_close" class="icon-cross-remove-sign"></span>
+            </div>
+            <div class="auth__container">
+                <div class="auth__left">
+                    <div class="auth__sub-head2">Вхід</div>
+                    <div class="auth__input">
+                        <input type="text" placeholder="Email">
+                    </div>
+                    <div class="auth__input">
+                        <input type="text" placeholder="Пароль">
+                    </div>
+                    <div class="auth__divine">
+                        <div class="auth__checkbox">
+                            <input type="checkbox" id="registerr">
+                            <label for="registerr">Показати пароль</label>
+                        </div>
+                        <div class="auth__forgot">
+                            <a href="#">Забули пароль?</a>
+                        </div>
+                    </div>
+                    <div class="auth__login">
+                        <a href="#">Вхід</a>
+                    </div>
+                    <span class="auth__span">Вхід через соц мережі</span>
+                    <div class="auth__soc">
+                        <div class="auth__facebook">
+                            <a href="#">facebook</a>
+                        </div>
+                        <div class="auth__google">
+                            <a href="#">google +</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="auth__right">
+                    <div class="auth__sub-head2">Реєстрація</div>
+                    <div class="auth__input">
+                        <input type="text" placeholder="Ім’я">
+                    </div>
+                    <div class="auth__input">
+                        <input type="text" placeholder="Прізвище">
+                    </div>
+                    <div class="auth__input">
+                        <input type="text" placeholder="Телефон">
+                    </div>
+                    <div class="auth__input">
+                        <input type="text" placeholder="Email">
+                    </div>
+                    <div class="auth__input">
+                        <input type="text" placeholder="Пароль">
+                    </div>
+                    <div class="auth__checkbox">
+                        <input type="checkbox" id="registers">
+                        <label for="registers">Показати пароль</label>
+                    </div>
+                    <div class="auth__register">
+                        <a href="#">Зареєструватись</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <div class="container">
             <div class="header-menu-container">
@@ -426,6 +493,15 @@
                                 <img class="production-slider__item-img" src="img/sock2.jpg" alt="">
                                 <span class="production-slider__item-name">Шкарпетки короткі V&T</span>
                             </a>
+
+                            <div class="production-slider__item-control-panel">
+                                <div class="interface-item interface-item_product-menu">
+                                    <span class="icon-heart interface-item__icon "></span>
+                                </div>
+                                <div class="interface-item interface-item_product-menu">
+                                    <span class="icon-shopping-bag interface-item__icon"></span>
+                                </div>
+                            </div>
                             <div class="production-slider__item-prices">
                                 <span class="production-slider__item-price">65.00 UAH</span>
                                 <span class="production-slider__item-old-price">70.00 UAH</span>
@@ -439,6 +515,15 @@
                                 <img class="production-slider__item-img" src="img/sock1.jpg" alt="">
                                 <span class="production-slider__item-name">Шкарпетки короткі V&T</span>
                             </a>
+                            <div class="production-slider__item-control-panel">
+                                <div class="interface-item interface-item_product-menu">
+                                    <span class="icon-heart interface-item__icon "></span>
+                                </div>
+                                <div class="interface-item interface-item_product-menu">
+                                    <span class="icon-shopping-bag interface-item__icon"></span>
+                                </div>
+                            </div>
+
                             <div class="production-slider__item-prices">
                                 <span class="production-slider__item-price">65.00 UAH</span>
                                 <span class="production-slider__item-old-price">70.00 UAH</span>
@@ -452,6 +537,15 @@
                                 <img class="production-slider__item-img" src="img/sock1.jpg" alt="">
                                 <span class="production-slider__item-name">Шкарпетки короткі V&T</span>
                             </a>
+                            <div class="production-slider__item-control-panel">
+                                <div class="interface-item interface-item_product-menu">
+                                    <span class="icon-heart interface-item__icon "></span>
+                                </div>
+                                <div class="interface-item interface-item_product-menu">
+                                    <span class="icon-shopping-bag interface-item__icon"></span>
+                                </div>
+                            </div>
+
                             <div class="production-slider__item-prices">
                                 <span class="production-slider__item-price">65.00 UAH</span>
                                 <span class="production-slider__item-old-price">70.00 UAH</span>
@@ -461,6 +555,7 @@
                             </div>
                         </div>
                     </div>
+
 
                 </div>
                 <div id="panel2" class="tab-pane fade">
@@ -717,6 +812,32 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <script>
 $(document).ready(function () {
 
+    $('#auth_menu').click(function () {
+        // $('.auth').toggle();
+        $('.auth').toggleClass('auth_hide');
+        $('.auth-container').animate({height: "100vh", top: "0px"}, 300);
+        $('.auth').animate({opacity: "1"}, 400);
+    });
+
+    $('.auth-container').click(function () {
+        $('.auth').animate({opacity: "0"}, 300);
+        $('.auth-container').animate({height: "0px", top: "50vh"}, 300);
+        $('.auth-container').animate({top: "0vh"}, 1);
+        function authHide (){
+            $('.auth').toggleClass('auth_hide');
+        }
+        setTimeout(authHide, 300);
+    });
+
+    $('#auth_close').click(function () {
+        $('.auth').animate({opacity: "0"}, 300);
+        $('.auth-container').animate({height: "0px", top: "50vh"}, 300);
+        $('.auth-container').animate({top: "0vh"}, 1);
+        function authHide (){
+            $('.auth').toggleClass('auth_hide');
+        }
+        setTimeout(authHide, 300);
+    });
 
 });
 </script>

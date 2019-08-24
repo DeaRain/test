@@ -37,8 +37,8 @@
                 laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
                 velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
                 in culpa qui officia deserunt mollit anim id est laborum.
-                <p>
-                <p>
+                <br>
+                <p></p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et
                     dolore magna aliqua.
@@ -67,16 +67,16 @@
                         <a class="filter-list__name filter-list__name_active" href="http://open.loc/index.php?route=product/category&amp;path=61">Чоловікам</a>
                         <ul>
 
-                            <li><a href="http://open.loc/index.php?route=product/category&amp;path=61_75">Довгі шкарпетки (6)</a></li>
+                            <li><a href="http://open.loc/index.php?route=product/category&amp;path=61_75">Довгі шкарпетки</a></li>
 
 
-                            <li><a href="http://open.loc/index.php?route=product/category&amp;path=61_76">Класичні шкарпетки (0)</a></li>
+                            <li><a href="http://open.loc/index.php?route=product/category&amp;path=61_76">Класичні шкарпетки</a></li>
 
 
-                            <li><a href="http://open.loc/index.php?route=product/category&amp;path=61_77">Короткі шкарпетки (12)</a></li>
+                            <li><a href="http://open.loc/index.php?route=product/category&amp;path=61_77">Короткі шкарпетки</a></li>
 
 
-                            <li><a href="http://open.loc/index.php?route=product/category&amp;path=61_78">Слід, підслідок (0)</a></li>
+                            <li><a href="http://open.loc/index.php?route=product/category&amp;path=61_78">Слід, підслідок</a></li>
 
                         </ul>
                     </div>
@@ -109,7 +109,7 @@
                                 <div class="mfilter-heading">
                                     <div class="mfilter-heading-content">
                                         <div class="mfilter-heading-text">
-                                            <span>Manufacturers</span>
+                                            <span>Бренд</span>
 
                                         </div>
                                         <i class="mfilter-head-icon"></i>
@@ -596,7 +596,7 @@
                                 <div class="mfilter-heading">
                                     <div class="mfilter-heading-content">
                                         <div class="mfilter-heading-text">
-                                            <span>Price</span>
+                                            <span>Ціна</span>
 
                                         </div>
                                         <i class="mfilter-head-icon"></i>
@@ -613,20 +613,22 @@
                                                                 id="mfilter-opts-price-min"
                                                                 type="text"
                                                                 class="form-control"
-                                                                value=""
+                                                                value="200"
                                                         />
                                                         <input
                                                                 id="mfilter-opts-price-max"
                                                                 type="text"
                                                                 class="form-control"
-                                                                value=""
+                                                                value="2000"
                                                         />
                                                     </div>
-                                                    <div class="mfilter-price-slider">
-                                                        <div id="mfilter-price-slider" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
-                                                            <div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 0%; width: 100%;"></div>
-                                                            <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 0%;"></span>
-                                                            <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 100%;"></span>
+                                                    <div class="vesrtka">
+                                                        <div class="mfilter-price-slider">
+                                                            <div id="mfilter-price-slider" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
+                                                                <div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 0%; width: 175px; height: 3px"></div>
+                                                                <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 0%;"></span>
+                                                                <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 182px;"></span>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -658,10 +660,10 @@
                             </button>
                         </div>
                         <div class="products__sort">
-                            <label class="control-label" for="input-sort">Сортувати по:</label>
+                            <label class="control-label" for="input-sort">Сортувати по</label>
                             <select id="input-sort" class="products__selector" onchange="location = this.value;">
                                 <option value="http://open.loc/index.php?route=product/category&amp;path=61&amp;sort=p.sort_order&amp;order=ASC"
-                                        selected="selected">По умолчанию</option>
+                                        selected="selected">Новинкам</option>
                                 <option value="http://open.loc/index.php?route=product/category&amp;path=61&amp;sort=pd.name&amp;order=ASC">Название (А - Я)</option>
                                 <option value="http://open.loc/index.php?route=product/category&amp;path=61&amp;sort=pd.name&amp;order=DESC">Название (Я - А)</option>
                                 <option value="http://open.loc/index.php?route=product/category&amp;path=61&amp;sort=p.price&amp;order=ASC">Цена (низкая &gt; высокая)</option>
@@ -673,16 +675,8 @@
                             </select>
                         </div>
                     </div>
-                    <!--                <label class="control-label" for="input-limit">-->
-                    <!--</label>-->
-                    <!--                <select id="input-limit" class="form-control" onchange="location = this.value;">-->
-                    <!--                    -->                    <!--                        -->                    <!--                            <option value="-->
-                    <!--" selected="selected">-->
-                    <!--</option>-->
-                    <!--                        -->                    <!--                            <option value="--><!--">-->
-                    <!--</option>-->
-                    <!--                        -->                    <!--                    -->                    <!--                </select>-->
 
+<!--                    <div class="products__body">-->
                     <div class="products__body products__body_4">
 
                         <div class="prod">
@@ -691,9 +685,7 @@
                                 <img src="http://open.loc/image/cache/catalog/sock1-228x228.png"
                                      alt="Шкарпетки довгі V&amp;T "
                                      title="Шкарпетки довгі V&amp;T " class="prod__img"/>
-
-
-                                <span class="prod__name">Шкарпетки довгі V&amp;T </span>
+                                <span class="prod__name">Шкарпетки короткі V&amp;T </span>
                             </a>
                             <div class="prod__control-panel">
                                 <div class="interface-item interface-item_product-menu"
@@ -706,35 +698,6 @@
                                 </div>
                             </div>
                             <div class="prod__prices">
-                                <span class="prod__price">80.00 UAH </span>
-                            </div>
-                            <div class="prod__extend-info">
-                                NEW
-                            </div>
-
-                        </div>
-
-                        <div class="prod">
-                            <a href="http://open.loc/index.php?route=product/product&amp;path=61&amp;product_id=69" class="prod__item-url">
-
-                                <img src="http://open.loc/image/cache/catalog/sock2-228x228.jpg"
-                                     alt="Шкарпетки довгі V&amp;T "
-                                     title="Шкарпетки довгі V&amp;T " class="prod__img"/>
-
-
-                                <span class="prod__name">Шкарпетки довгі V&amp;T </span>
-                            </a>
-                            <div class="prod__control-panel">
-                                <div class="interface-item interface-item_product-menu"
-                                     onclick="wishlist.add('69');">
-                                    <span class="icon-heart interface-item__icon"></span>
-                                </div>
-                                <div class="interface-item interface-item_product-menu"
-                                     onclick="cart.add('69', '1');">
-                                    <span class="icon-shopping-bag interface-item__icon"></span>
-                                </div>
-                            </div>
-                            <div class="prod__prices">
                                 <span class="prod__price">65.00 UAH </span>
                             </div>
                             <div class="prod__extend-info">
@@ -742,36 +705,6 @@
                             </div>
 
                         </div>
-
-                        <div class="prod">
-                            <a href="http://open.loc/index.php?route=product/product&amp;path=61&amp;product_id=72" class="prod__item-url">
-
-                                <img src="http://open.loc/image/cache/catalog/sock4-228x228.png"
-                                     alt="Шкарпетки класичні V&amp;T "
-                                     title="Шкарпетки класичні V&amp;T " class="prod__img"/>
-
-
-                                <span class="prod__name">Шкарпетки класичні V&amp;T </span>
-                            </a>
-                            <div class="prod__control-panel">
-                                <div class="interface-item interface-item_product-menu"
-                                     onclick="wishlist.add('72');">
-                                    <span class="icon-heart interface-item__icon"></span>
-                                </div>
-                                <div class="interface-item interface-item_product-menu"
-                                     onclick="cart.add('72', '1');">
-                                    <span class="icon-shopping-bag interface-item__icon"></span>
-                                </div>
-                            </div>
-                            <div class="prod__prices">
-                                <span class="prod__price">99.00 UAH </span>
-                            </div>
-                            <div class="prod__extend-info">
-                                NEW
-                            </div>
-
-                        </div>
-
                         <div class="prod">
                             <a href="http://open.loc/index.php?route=product/product&amp;path=61&amp;product_id=70" class="prod__item-url">
 
@@ -780,7 +713,7 @@
                                      title="Шкарпетки класичні V&amp;T " class="prod__img"/>
 
 
-                                <span class="prod__name">Шкарпетки класичні V&amp;T </span>
+                                <span class="prod__name">Шкарпетки короткі V&amp;T </span>
                             </a>
                             <div class="prod__control-panel">
                                 <div class="interface-item interface-item_product-menu"
@@ -800,329 +733,469 @@
                             </div>
 
                         </div>
-
                         <div class="prod">
-                            <a href="http://open.loc/index.php?route=product/product&amp;path=61&amp;product_id=79" class="prod__item-url">
-
-                                <img src="http://open.loc/image/cache/catalog/sock2-228x228.png"
-                                     alt="Шкарпетки короткі AJOUR"
-                                     title="Шкарпетки короткі AJOUR" class="prod__img"/>
-
-
-                                <span class="prod__name">Шкарпетки короткі AJOUR</span>
-                            </a>
-                            <div class="prod__control-panel">
-                                <div class="interface-item interface-item_product-menu"
-                                     onclick="wishlist.add('79');">
-                                    <span class="icon-heart interface-item__icon"></span>
-                                </div>
-                                <div class="interface-item interface-item_product-menu"
-                                     onclick="cart.add('79', '1');">
-                                    <span class="icon-shopping-bag interface-item__icon"></span>
-                                </div>
-                            </div>
-                            <div class="prod__prices">
-                                <span class="prod__price">70.00 UAH </span>
-                                <span class="prod__old-price">50.00 UAH </span>
-                            </div>
-                            <div class="prod__extend-info">
-                                29%                                    </div>
-
-                        </div>
-
-                        <div class="prod">
-                            <a href="http://open.loc/index.php?route=product/product&amp;path=61&amp;product_id=74" class="prod__item-url">
-
-                                <img src="http://open.loc/image/cache/catalog/sock2-228x228.png"
-                                     alt="Шкарпетки короткі AJOUR"
-                                     title="Шкарпетки короткі AJOUR" class="prod__img"/>
-
-
-                                <span class="prod__name">Шкарпетки короткі AJOUR</span>
-                            </a>
-                            <div class="prod__control-panel">
-                                <div class="interface-item interface-item_product-menu"
-                                     onclick="wishlist.add('74');">
-                                    <span class="icon-heart interface-item__icon"></span>
-                                </div>
-                                <div class="interface-item interface-item_product-menu"
-                                     onclick="cart.add('74', '1');">
-                                    <span class="icon-shopping-bag interface-item__icon"></span>
-                                </div>
-                            </div>
-                            <div class="prod__prices">
-                                <span class="prod__price">70.00 UAH </span>
-                                <span class="prod__old-price">50.00 UAH </span>
-                            </div>
-                            <div class="prod__extend-info">
-                                NEW
-                            </div>
-
-                        </div>
-
-                        <div class="prod">
-                            <a href="http://open.loc/index.php?route=product/product&amp;path=61&amp;product_id=80" class="prod__item-url">
-
-                                <img src="http://open.loc/image/cache/catalog/sock2-228x228.jpg"
-                                     alt="Шкарпетки короткі AJOUR"
-                                     title="Шкарпетки короткі AJOUR" class="prod__img"/>
-
-
-                                <span class="prod__name">Шкарпетки короткі AJOUR</span>
-                            </a>
-                            <div class="prod__control-panel">
-                                <div class="interface-item interface-item_product-menu"
-                                     onclick="wishlist.add('80');">
-                                    <span class="icon-heart interface-item__icon"></span>
-                                </div>
-                                <div class="interface-item interface-item_product-menu"
-                                     onclick="cart.add('80', '1');">
-                                    <span class="icon-shopping-bag interface-item__icon"></span>
-                                </div>
-                            </div>
-                            <div class="prod__prices">
-                                <span class="prod__price">100.00 UAH </span>
-                            </div>
-
-                        </div>
-
-                        <div class="prod">
-                            <a href="http://open.loc/index.php?route=product/product&amp;path=61&amp;product_id=75" class="prod__item-url">
-
-                                <img src="http://open.loc/image/cache/catalog/sock2-228x228.jpg"
-                                     alt="Шкарпетки короткі AJOUR"
-                                     title="Шкарпетки короткі AJOUR" class="prod__img"/>
-
-
-                                <span class="prod__name">Шкарпетки короткі AJOUR</span>
-                            </a>
-                            <div class="prod__control-panel">
-                                <div class="interface-item interface-item_product-menu"
-                                     onclick="wishlist.add('75');">
-                                    <span class="icon-heart interface-item__icon"></span>
-                                </div>
-                                <div class="interface-item interface-item_product-menu"
-                                     onclick="cart.add('75', '1');">
-                                    <span class="icon-shopping-bag interface-item__icon"></span>
-                                </div>
-                            </div>
-                            <div class="prod__prices">
-                                <span class="prod__price">100.00 UAH </span>
-                            </div>
-                            <div class="prod__extend-info">
-                                NEW
-                            </div>
-
-                        </div>
-
-                        <div class="prod">
-                            <a href="http://open.loc/index.php?route=product/product&amp;path=61&amp;product_id=82" class="prod__item-url">
-
-                                <img src="http://open.loc/image/cache/catalog/sock2-228x228.jpg"
-                                     alt="Шкарпетки короткі V&amp;T "
-                                     title="Шкарпетки короткі V&amp;T " class="prod__img"/>
-
-
-                                <span class="prod__name">Шкарпетки короткі V&amp;T </span>
-                            </a>
-                            <div class="prod__control-panel">
-                                <div class="interface-item interface-item_product-menu"
-                                     onclick="wishlist.add('82');">
-                                    <span class="icon-heart interface-item__icon"></span>
-                                </div>
-                                <div class="interface-item interface-item_product-menu"
-                                     onclick="cart.add('82', '1');">
-                                    <span class="icon-shopping-bag interface-item__icon"></span>
-                                </div>
-                            </div>
-                            <div class="prod__prices">
-                                <span class="prod__price">75.00 UAH </span>
-                                <span class="prod__old-price">50.00 UAH </span>
-                            </div>
-                            <div class="prod__extend-info">
-                                33%                                    </div>
-
-                        </div>
-
-                        <div class="prod">
-                            <a href="http://open.loc/index.php?route=product/product&amp;path=61&amp;product_id=73" class="prod__item-url">
-
-                                <img src="http://open.loc/image/cache/catalog/sock2-228x228.jpg"
-                                     alt="Шкарпетки короткі V&amp;T "
-                                     title="Шкарпетки короткі V&amp;T " class="prod__img"/>
-
-
-                                <span class="prod__name">Шкарпетки короткі V&amp;T </span>
-                            </a>
-                            <div class="prod__control-panel">
-                                <div class="interface-item interface-item_product-menu"
-                                     onclick="wishlist.add('73');">
-                                    <span class="icon-heart interface-item__icon"></span>
-                                </div>
-                                <div class="interface-item interface-item_product-menu"
-                                     onclick="cart.add('73', '1');">
-                                    <span class="icon-shopping-bag interface-item__icon"></span>
-                                </div>
-                            </div>
-                            <div class="prod__prices">
-                                <span class="prod__price">75.00 UAH </span>
-                                <span class="prod__old-price">50.00 UAH </span>
-                            </div>
-                            <div class="prod__extend-info">
-                                NEW
-                            </div>
-
-                        </div>
-
-                        <div class="prod">
-                            <a href="http://open.loc/index.php?route=product/product&amp;path=61&amp;product_id=54" class="prod__item-url">
-
-                                <img src="http://open.loc/image/cache/catalog/sock2-228x228.png"
-                                     alt="Шкарпетки короткі V&amp;T "
-                                     title="Шкарпетки короткі V&amp;T " class="prod__img"/>
-
-
-                                <span class="prod__name">Шкарпетки короткі V&amp;T </span>
-                            </a>
-                            <div class="prod__control-panel">
-                                <div class="interface-item interface-item_product-menu"
-                                     onclick="wishlist.add('54');">
-                                    <span class="icon-heart interface-item__icon"></span>
-                                </div>
-                                <div class="interface-item interface-item_product-menu"
-                                     onclick="cart.add('54', '1');">
-                                    <span class="icon-shopping-bag interface-item__icon"></span>
-                                </div>
-                            </div>
-                            <div class="prod__prices">
-                                <span class="prod__price">65.00 UAH </span>
-                                <span class="prod__old-price">40.00 UAH </span>
-                            </div>
-                            <div class="prod__extend-info">
-                                NEW
-                            </div>
-
-                        </div>
-
-                        <div class="prod">
-                            <a href="http://open.loc/index.php?route=product/product&amp;path=61&amp;product_id=81" class="prod__item-url">
-
-                                <img src="http://open.loc/image/cache/catalog/sock2-228x228.png"
-                                     alt="Шкарпетки короткі V&amp;T "
-                                     title="Шкарпетки короткі V&amp;T " class="prod__img"/>
-
-
-                                <span class="prod__name">Шкарпетки короткі V&amp;T </span>
-                            </a>
-                            <div class="prod__control-panel">
-                                <div class="interface-item interface-item_product-menu"
-                                     onclick="wishlist.add('81');">
-                                    <span class="icon-heart interface-item__icon"></span>
-                                </div>
-                                <div class="interface-item interface-item_product-menu"
-                                     onclick="cart.add('81', '1');">
-                                    <span class="icon-shopping-bag interface-item__icon"></span>
-                                </div>
-                            </div>
-                            <div class="prod__prices">
-                                <span class="prod__price">65.00 UAH </span>
-                                <span class="prod__old-price">40.00 UAH </span>
-                            </div>
-                            <div class="prod__extend-info">
-                                38%                                    </div>
-
-                        </div>
-
-                        <div class="prod">
-                            <a href="http://open.loc/index.php?route=product/product&amp;path=61&amp;product_id=77" class="prod__item-url">
+                            <a href="http://open.loc/index.php?route=product/product&amp;path=61&amp;product_id=72" class="prod__item-url">
 
                                 <img src="http://open.loc/image/cache/catalog/sock4-228x228.png"
-                                     alt="Шкарпетки короткі WIN"
-                                     title="Шкарпетки короткі WIN" class="prod__img"/>
+                                     alt="Шкарпетки класичні V&amp;T "
+                                     title="Шкарпетки класичні V&amp;T " class="prod__img"/>
 
 
-                                <span class="prod__name">Шкарпетки короткі WIN</span>
+                                <span class="prod__name">Шкарпетки короткі V&amp;T </span>
                             </a>
                             <div class="prod__control-panel">
                                 <div class="interface-item interface-item_product-menu"
-                                     onclick="wishlist.add('77');">
+                                     onclick="wishlist.add('72');">
                                     <span class="icon-heart interface-item__icon"></span>
                                 </div>
                                 <div class="interface-item interface-item_product-menu"
-                                     onclick="cart.add('77', '1');">
-                                    <span class="icon-shopping-bag interface-item__icon"></span>
-                                </div>
-                            </div>
-                            <div class="prod__prices">
-                                <span class="prod__price">99.00 UAH </span>
-                            </div>
-                            <div class="prod__extend-info">
-                                NEW
-                            </div>
-
-                        </div>
-
-                        <div class="prod">
-                            <a href="http://open.loc/index.php?route=product/product&amp;path=61&amp;product_id=83" class="prod__item-url">
-
-                                <img src="http://open.loc/image/cache/catalog/sock2-228x228.png"
-                                     alt="Шкарпетки короткі WIN"
-                                     title="Шкарпетки короткі WIN" class="prod__img"/>
-
-
-                                <span class="prod__name">Шкарпетки короткі WIN</span>
-                            </a>
-                            <div class="prod__control-panel">
-                                <div class="interface-item interface-item_product-menu"
-                                     onclick="wishlist.add('83');">
-                                    <span class="icon-heart interface-item__icon"></span>
-                                </div>
-                                <div class="interface-item interface-item_product-menu"
-                                     onclick="cart.add('83', '1');">
+                                     onclick="cart.add('72', '1');">
                                     <span class="icon-shopping-bag interface-item__icon"></span>
                                 </div>
                             </div>
                             <div class="prod__prices">
                                 <span class="prod__price">65.00 UAH </span>
-                                <span class="prod__old-price">40.00 UAH </span>
+                                <span class="prod__old-price">70.00 UAH </span>
                             </div>
                             <div class="prod__extend-info">
-                                38%                                    </div>
+                                -10%
+                            </div>
 
                         </div>
 
                         <div class="prod">
-                            <a href="http://open.loc/index.php?route=product/product&amp;path=61&amp;product_id=78" class="prod__item-url">
+                            <a href="http://open.loc/index.php?route=product/product&amp;path=61&amp;product_id=71" class="prod__item-url">
 
-                                <img src="http://open.loc/image/cache/catalog/sock2-228x228.jpg"
-                                     alt="Шкарпетки короткі WIN"
-                                     title="Шкарпетки короткі WIN" class="prod__img"/>
+                                <img src="http://open.loc/image/cache/catalog/sock1-228x228.png"
+                                     alt="Шкарпетки довгі V&amp;T "
+                                     title="Шкарпетки довгі V&amp;T " class="prod__img"/>
 
 
-                                <span class="prod__name">Шкарпетки короткі WIN</span>
+                                <span class="prod__name">Шкарпетки короткі V&amp;T </span>
                             </a>
                             <div class="prod__control-panel">
                                 <div class="interface-item interface-item_product-menu"
-                                     onclick="wishlist.add('78');">
+                                     onclick="wishlist.add('71');">
                                     <span class="icon-heart interface-item__icon"></span>
                                 </div>
                                 <div class="interface-item interface-item_product-menu"
-                                     onclick="cart.add('78', '1');">
+                                     onclick="cart.add('71', '1');">
                                     <span class="icon-shopping-bag interface-item__icon"></span>
                                 </div>
                             </div>
                             <div class="prod__prices">
-                                <span class="prod__price">75.00 UAH </span>
-                                <span class="prod__old-price">50.00 UAH </span>
+                                <span class="prod__price">65.00 UAH </span>
                             </div>
                             <div class="prod__extend-info">
                                 NEW
                             </div>
 
                         </div>
+                        <div class="prod">
+                            <a href="http://open.loc/index.php?route=product/product&amp;path=61&amp;product_id=70" class="prod__item-url">
+
+                                <img src="http://open.loc/image/cache/catalog/sock3-228x228.png"
+                                     alt="Шкарпетки класичні V&amp;T "
+                                     title="Шкарпетки класичні V&amp;T " class="prod__img"/>
+
+
+                                <span class="prod__name">Шкарпетки короткі V&amp;T </span>
+                            </a>
+                            <div class="prod__control-panel">
+                                <div class="interface-item interface-item_product-menu"
+                                     onclick="wishlist.add('70');">
+                                    <span class="icon-heart interface-item__icon"></span>
+                                </div>
+                                <div class="interface-item interface-item_product-menu"
+                                     onclick="cart.add('70', '1');">
+                                    <span class="icon-shopping-bag interface-item__icon"></span>
+                                </div>
+                            </div>
+                            <div class="prod__prices">
+                                <span class="prod__price">65.00 UAH </span>
+                            </div>
+                            <div class="prod__extend-info">
+                                NEW
+                            </div>
+
+                        </div>
+                        <div class="prod">
+                            <a href="http://open.loc/index.php?route=product/product&amp;path=61&amp;product_id=72" class="prod__item-url">
+
+                                <img src="http://open.loc/image/cache/catalog/sock4-228x228.png"
+                                     alt="Шкарпетки класичні V&amp;T "
+                                     title="Шкарпетки класичні V&amp;T " class="prod__img"/>
+
+
+                                <span class="prod__name">Шкарпетки короткі V&amp;T </span>
+                            </a>
+                            <div class="prod__control-panel">
+                                <div class="interface-item interface-item_product-menu"
+                                     onclick="wishlist.add('72');">
+                                    <span class="icon-heart interface-item__icon"></span>
+                                </div>
+                                <div class="interface-item interface-item_product-menu"
+                                     onclick="cart.add('72', '1');">
+                                    <span class="icon-shopping-bag interface-item__icon"></span>
+                                </div>
+                            </div>
+                            <div class="prod__prices">
+                                <span class="prod__price">65.00 UAH </span>
+                                <span class="prod__old-price">70.00 UAH </span>
+                            </div>
+                            <div class="prod__extend-info">
+                                -10%
+                            </div>
+
+                        </div>
+
+                        <div class="prod">
+                            <a href="http://open.loc/index.php?route=product/product&amp;path=61&amp;product_id=71" class="prod__item-url">
+
+                                <img src="http://open.loc/image/cache/catalog/sock1-228x228.png"
+                                     alt="Шкарпетки довгі V&amp;T "
+                                     title="Шкарпетки довгі V&amp;T " class="prod__img"/>
+
+
+                                <span class="prod__name">Шкарпетки короткі V&amp;T </span>
+                            </a>
+                            <div class="prod__control-panel">
+                                <div class="interface-item interface-item_product-menu"
+                                     onclick="wishlist.add('71');">
+                                    <span class="icon-heart interface-item__icon"></span>
+                                </div>
+                                <div class="interface-item interface-item_product-menu"
+                                     onclick="cart.add('71', '1');">
+                                    <span class="icon-shopping-bag interface-item__icon"></span>
+                                </div>
+                            </div>
+                            <div class="prod__prices">
+                                <span class="prod__price">65.00 UAH </span>
+                            </div>
+                            <div class="prod__extend-info">
+                                NEW
+                            </div>
+
+                        </div>
+                        <div class="prod">
+                            <a href="http://open.loc/index.php?route=product/product&amp;path=61&amp;product_id=70" class="prod__item-url">
+
+                                <img src="http://open.loc/image/cache/catalog/sock3-228x228.png"
+                                     alt="Шкарпетки класичні V&amp;T "
+                                     title="Шкарпетки класичні V&amp;T " class="prod__img"/>
+
+
+                                <span class="prod__name">Шкарпетки короткі V&amp;T </span>
+                            </a>
+                            <div class="prod__control-panel">
+                                <div class="interface-item interface-item_product-menu"
+                                     onclick="wishlist.add('70');">
+                                    <span class="icon-heart interface-item__icon"></span>
+                                </div>
+                                <div class="interface-item interface-item_product-menu"
+                                     onclick="cart.add('70', '1');">
+                                    <span class="icon-shopping-bag interface-item__icon"></span>
+                                </div>
+                            </div>
+                            <div class="prod__prices">
+                                <span class="prod__price">65.00 UAH </span>
+                            </div>
+                            <div class="prod__extend-info">
+                                NEW
+                            </div>
+
+                        </div>
+                        <div class="prod">
+                            <a href="http://open.loc/index.php?route=product/product&amp;path=61&amp;product_id=72" class="prod__item-url">
+
+                                <img src="http://open.loc/image/cache/catalog/sock4-228x228.png"
+                                     alt="Шкарпетки класичні V&amp;T "
+                                     title="Шкарпетки класичні V&amp;T " class="prod__img"/>
+
+
+                                <span class="prod__name">Шкарпетки короткі V&amp;T </span>
+                            </a>
+                            <div class="prod__control-panel">
+                                <div class="interface-item interface-item_product-menu"
+                                     onclick="wishlist.add('72');">
+                                    <span class="icon-heart interface-item__icon"></span>
+                                </div>
+                                <div class="interface-item interface-item_product-menu"
+                                     onclick="cart.add('72', '1');">
+                                    <span class="icon-shopping-bag interface-item__icon"></span>
+                                </div>
+                            </div>
+                            <div class="prod__prices">
+                                <span class="prod__price">65.00 UAH </span>
+                                <span class="prod__old-price">70.00 UAH </span>
+                            </div>
+                            <div class="prod__extend-info">
+                                -10%
+                            </div>
+
+                        </div>
+
+                        <div class="prod">
+                            <a href="http://open.loc/index.php?route=product/product&amp;path=61&amp;product_id=71" class="prod__item-url">
+
+                                <img src="http://open.loc/image/cache/catalog/sock1-228x228.png"
+                                     alt="Шкарпетки довгі V&amp;T "
+                                     title="Шкарпетки довгі V&amp;T " class="prod__img"/>
+
+
+                                <span class="prod__name">Шкарпетки короткі V&amp;T </span>
+                            </a>
+                            <div class="prod__control-panel">
+                                <div class="interface-item interface-item_product-menu"
+                                     onclick="wishlist.add('71');">
+                                    <span class="icon-heart interface-item__icon"></span>
+                                </div>
+                                <div class="interface-item interface-item_product-menu"
+                                     onclick="cart.add('71', '1');">
+                                    <span class="icon-shopping-bag interface-item__icon"></span>
+                                </div>
+                            </div>
+                            <div class="prod__prices">
+                                <span class="prod__price">65.00 UAH </span>
+                            </div>
+                            <div class="prod__extend-info">
+                                NEW
+                            </div>
+
+                        </div>
+                        <div class="prod">
+                            <a href="http://open.loc/index.php?route=product/product&amp;path=61&amp;product_id=70" class="prod__item-url">
+
+                                <img src="http://open.loc/image/cache/catalog/sock3-228x228.png"
+                                     alt="Шкарпетки класичні V&amp;T "
+                                     title="Шкарпетки класичні V&amp;T " class="prod__img"/>
+
+
+                                <span class="prod__name">Шкарпетки короткі V&amp;T </span>
+                            </a>
+                            <div class="prod__control-panel">
+                                <div class="interface-item interface-item_product-menu"
+                                     onclick="wishlist.add('70');">
+                                    <span class="icon-heart interface-item__icon"></span>
+                                </div>
+                                <div class="interface-item interface-item_product-menu"
+                                     onclick="cart.add('70', '1');">
+                                    <span class="icon-shopping-bag interface-item__icon"></span>
+                                </div>
+                            </div>
+                            <div class="prod__prices">
+                                <span class="prod__price">65.00 UAH </span>
+                            </div>
+                            <div class="prod__extend-info">
+                                NEW
+                            </div>
+
+                        </div>
+                        <div class="prod">
+                            <a href="http://open.loc/index.php?route=product/product&amp;path=61&amp;product_id=72" class="prod__item-url">
+
+                                <img src="http://open.loc/image/cache/catalog/sock4-228x228.png"
+                                     alt="Шкарпетки класичні V&amp;T "
+                                     title="Шкарпетки класичні V&amp;T " class="prod__img"/>
+
+
+                                <span class="prod__name">Шкарпетки короткі V&amp;T </span>
+                            </a>
+                            <div class="prod__control-panel">
+                                <div class="interface-item interface-item_product-menu"
+                                     onclick="wishlist.add('72');">
+                                    <span class="icon-heart interface-item__icon"></span>
+                                </div>
+                                <div class="interface-item interface-item_product-menu"
+                                     onclick="cart.add('72', '1');">
+                                    <span class="icon-shopping-bag interface-item__icon"></span>
+                                </div>
+                            </div>
+                            <div class="prod__prices">
+                                <span class="prod__price">65.00 UAH </span>
+                                <span class="prod__old-price">70.00 UAH </span>
+                            </div>
+                            <div class="prod__extend-info">
+                                -10%
+                            </div>
+
+                        </div>
+
+                        <div class="prod">
+                            <a href="http://open.loc/index.php?route=product/product&amp;path=61&amp;product_id=71" class="prod__item-url">
+
+                                <img src="http://open.loc/image/cache/catalog/sock1-228x228.png"
+                                     alt="Шкарпетки довгі V&amp;T "
+                                     title="Шкарпетки довгі V&amp;T " class="prod__img"/>
+
+
+                                <span class="prod__name">Шкарпетки короткі V&amp;T </span>
+                            </a>
+                            <div class="prod__control-panel">
+                                <div class="interface-item interface-item_product-menu"
+                                     onclick="wishlist.add('71');">
+                                    <span class="icon-heart interface-item__icon"></span>
+                                </div>
+                                <div class="interface-item interface-item_product-menu"
+                                     onclick="cart.add('71', '1');">
+                                    <span class="icon-shopping-bag interface-item__icon"></span>
+                                </div>
+                            </div>
+                            <div class="prod__prices">
+                                <span class="prod__price">65.00 UAH </span>
+                            </div>
+                            <div class="prod__extend-info">
+                                NEW
+                            </div>
+
+                        </div>
+                        <div class="prod">
+                            <a href="http://open.loc/index.php?route=product/product&amp;path=61&amp;product_id=70" class="prod__item-url">
+
+                                <img src="http://open.loc/image/cache/catalog/sock3-228x228.png"
+                                     alt="Шкарпетки класичні V&amp;T "
+                                     title="Шкарпетки класичні V&amp;T " class="prod__img"/>
+
+
+                                <span class="prod__name">Шкарпетки короткі V&amp;T </span>
+                            </a>
+                            <div class="prod__control-panel">
+                                <div class="interface-item interface-item_product-menu"
+                                     onclick="wishlist.add('70');">
+                                    <span class="icon-heart interface-item__icon"></span>
+                                </div>
+                                <div class="interface-item interface-item_product-menu"
+                                     onclick="cart.add('70', '1');">
+                                    <span class="icon-shopping-bag interface-item__icon"></span>
+                                </div>
+                            </div>
+                            <div class="prod__prices">
+                                <span class="prod__price">65.00 UAH </span>
+                            </div>
+                            <div class="prod__extend-info">
+                                NEW
+                            </div>
+
+                        </div>
+                        <div class="prod">
+                            <a href="http://open.loc/index.php?route=product/product&amp;path=61&amp;product_id=72" class="prod__item-url">
+
+                                <img src="http://open.loc/image/cache/catalog/sock4-228x228.png"
+                                     alt="Шкарпетки класичні V&amp;T "
+                                     title="Шкарпетки класичні V&amp;T " class="prod__img"/>
+
+
+                                <span class="prod__name">Шкарпетки короткі V&amp;T </span>
+                            </a>
+                            <div class="prod__control-panel">
+                                <div class="interface-item interface-item_product-menu"
+                                     onclick="wishlist.add('72');">
+                                    <span class="icon-heart interface-item__icon"></span>
+                                </div>
+                                <div class="interface-item interface-item_product-menu"
+                                     onclick="cart.add('72', '1');">
+                                    <span class="icon-shopping-bag interface-item__icon"></span>
+                                </div>
+                            </div>
+                            <div class="prod__prices">
+                                <span class="prod__price">65.00 UAH </span>
+                                <span class="prod__old-price">70.00 UAH </span>
+                            </div>
+                            <div class="prod__extend-info">
+                                -10%
+                            </div>
+
+                        </div>
+
+                        <div class="prod">
+                            <a href="http://open.loc/index.php?route=product/product&amp;path=61&amp;product_id=71" class="prod__item-url">
+
+                                <img src="http://open.loc/image/cache/catalog/sock1-228x228.png"
+                                     alt="Шкарпетки довгі V&amp;T "
+                                     title="Шкарпетки довгі V&amp;T " class="prod__img"/>
+
+
+                                <span class="prod__name">Шкарпетки короткі V&amp;T </span>
+                            </a>
+                            <div class="prod__control-panel">
+                                <div class="interface-item interface-item_product-menu"
+                                     onclick="wishlist.add('71');">
+                                    <span class="icon-heart interface-item__icon"></span>
+                                </div>
+                                <div class="interface-item interface-item_product-menu"
+                                     onclick="cart.add('71', '1');">
+                                    <span class="icon-shopping-bag interface-item__icon"></span>
+                                </div>
+                            </div>
+                            <div class="prod__prices">
+                                <span class="prod__price">65.00 UAH </span>
+                            </div>
+                            <div class="prod__extend-info">
+                                NEW
+                            </div>
+
+                        </div>
+                        <div class="prod">
+                            <a href="http://open.loc/index.php?route=product/product&amp;path=61&amp;product_id=70" class="prod__item-url">
+
+                                <img src="http://open.loc/image/cache/catalog/sock3-228x228.png"
+                                     alt="Шкарпетки класичні V&amp;T "
+                                     title="Шкарпетки класичні V&amp;T " class="prod__img"/>
+
+
+                                <span class="prod__name">Шкарпетки короткі V&amp;T </span>
+                            </a>
+                            <div class="prod__control-panel">
+                                <div class="interface-item interface-item_product-menu"
+                                     onclick="wishlist.add('70');">
+                                    <span class="icon-heart interface-item__icon"></span>
+                                </div>
+                                <div class="interface-item interface-item_product-menu"
+                                     onclick="cart.add('70', '1');">
+                                    <span class="icon-shopping-bag interface-item__icon"></span>
+                                </div>
+                            </div>
+                            <div class="prod__prices">
+                                <span class="prod__price">65.00 UAH </span>
+                            </div>
+                            <div class="prod__extend-info">
+                                NEW
+                            </div>
+
+                        </div>
+                        <div class="prod">
+                            <a href="http://open.loc/index.php?route=product/product&amp;path=61&amp;product_id=72" class="prod__item-url">
+
+                                <img src="http://open.loc/image/cache/catalog/sock4-228x228.png"
+                                     alt="Шкарпетки класичні V&amp;T "
+                                     title="Шкарпетки класичні V&amp;T " class="prod__img"/>
+
+
+                                <span class="prod__name">Шкарпетки короткі V&amp;T </span>
+                            </a>
+                            <div class="prod__control-panel">
+                                <div class="interface-item interface-item_product-menu"
+                                     onclick="wishlist.add('72');">
+                                    <span class="icon-heart interface-item__icon"></span>
+                                </div>
+                                <div class="interface-item interface-item_product-menu"
+                                     onclick="cart.add('72', '1');">
+                                    <span class="icon-shopping-bag interface-item__icon"></span>
+                                </div>
+                            </div>
+                            <div class="prod__prices">
+                                <span class="prod__price">65.00 UAH </span>
+                                <span class="prod__old-price">70.00 UAH </span>
+                            </div>
+                            <div class="prod__extend-info">
+                                -10%
+                            </div>
+
+                        </div>
+
                     </div>
                     <div class="products__footer">
-                        <ul class="pagination"><li><a href="http://open.loc/index.php?route=product/category&amp;path=61&amp;page=2">2</a></li><li class="active"><span>1</span></li><li><a href="http://open.loc/index.php?route=product/category&amp;path=61&amp;page=2">2</a></li><li><a href="http://open.loc/index.php?route=product/category&amp;path=61&amp;page=2">НАСТУПНА &gt;</a></li></ul>                    </div>
+                        <ul class="pagination"><li><a href="http://open.loc/index.php?route=product/category&amp;path=62_81&amp;limit=1&amp;page=4">&lt; ПОПЕРЕДНЯ</a></li><li><a href="http://open.loc/index.php?route=product/category&amp;path=62_81&amp;limit=1&amp;page=1">1</a></li><li><a href="http://open.loc/index.php?route=product/category&amp;path=62_81&amp;limit=1&amp;page=2">...</a></li><li><a href="http://open.loc/index.php?route=product/category&amp;path=62_81&amp;limit=1&amp;page=3">3</a></li><li><a href="http://open.loc/index.php?route=product/category&amp;path=62_81&amp;limit=1&amp;page=4">4</a></li><li class="active"><span>5</span></li><li><a href="http://open.loc/index.php?route=product/category&amp;path=62_81&amp;limit=1&amp;page=6">6</a></li><li><a href="http://open.loc/index.php?route=product/category&amp;path=62_81&amp;limit=1&amp;page=7">7</a></li><li><a href="http://open.loc/index.php?route=product/category&amp;path=62_81&amp;limit=1&amp;page=8">...</a></li><li><a href="http://open.loc/index.php?route=product/category&amp;path=62_81&amp;limit=1&amp;page=9">19</a></li><li><a href="http://open.loc/index.php?route=product/category&amp;path=62_81&amp;limit=1&amp;page=6">НАСТУПНА &gt;</a></li></ul>                    </div>
                 </div>
             </div>
         </div>
@@ -1135,7 +1208,7 @@
         <div class="cat-text">
             <span>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-<p> <p>
+                <br> <p></p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             </span>
         </div>
@@ -1149,7 +1222,30 @@
 <script src="js/common.js"></script>
 
 <script>
+    $('#list-view').click(function() {
 
+        $('#grid-view').removeClass('products__button_active');
+        $('#list-view').addClass('products__button_active');
+
+        $('.products__body').removeClass('products__body_4');
+
+        localStorage.setItem('display', 'list');
+    });
+
+    $('#grid-view').click(function() {
+        $('#list-view').removeClass('products__button_active');
+        $('#grid-view').addClass('products__button_active');
+
+        $('.products__body').addClass('products__body_4');
+
+        localStorage.setItem('display', 'grid');
+    });
+
+    if (localStorage.getItem('display') == 'list') {
+        $('#list-view').trigger('click');
+    } else {
+        $('#grid-view').trigger('click');
+    }
 </script>
 
 </body>

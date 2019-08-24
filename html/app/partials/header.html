@@ -95,10 +95,11 @@
                         <span class="interface-item__counter">4</span>
                     </div>
                     <div class="interface-item">
-                        <span class="icon-shopping-bag interface-item__icon"></span>
-                        <span class="interface-item__counter">4</span>
+                        <a href="#">           <span class="icon-shopping-bag interface-item__icon"></span>
+                            <span class="interface-item__counter">4</span></a>
+
                     </div>
-                    <div class="interface-item">
+                    <div id="auth_menu" class="interface-item">
                         <span class="icon-user interface-item__icon"></span>
                     </div>
 
@@ -153,6 +154,72 @@
                 </div>
             </div>
         </div>
+
+        <div class="auth-container"></div>
+
+        <div class="auth auth_hide">
+            <div class="auth__sub-head">авторизація
+                <span id="auth_close" class="icon-cross-remove-sign"></span>
+            </div>
+            <div class="auth__container">
+                <div class="auth__left">
+                    <div class="auth__sub-head2">Вхід</div>
+                    <div class="auth__input">
+                        <input type="text" placeholder="Email">
+                    </div>
+                    <div class="auth__input">
+                        <input type="text" placeholder="Пароль">
+                    </div>
+                    <div class="auth__divine">
+                        <div class="auth__checkbox">
+                            <input type="checkbox" id="registerr">
+                            <label for="registerr">Показати пароль</label>
+                        </div>
+                        <div class="auth__forgot">
+                            <a href="#">Забули пароль?</a>
+                        </div>
+                    </div>
+                    <div class="auth__login">
+                        <a href="#">Вхід</a>
+                    </div>
+                    <span class="auth__span">Вхід через соц мережі</span>
+                    <div class="auth__soc">
+                        <div class="auth__facebook">
+                            <a href="#">facebook</a>
+                        </div>
+                        <div class="auth__google">
+                            <a href="#">google +</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="auth__right">
+                    <div class="auth__sub-head2">Реєстрація</div>
+                    <div class="auth__input">
+                        <input type="text" placeholder="Ім’я">
+                    </div>
+                    <div class="auth__input">
+                        <input type="text" placeholder="Прізвище">
+                    </div>
+                    <div class="auth__input">
+                        <input type="text" placeholder="Телефон">
+                    </div>
+                    <div class="auth__input">
+                        <input type="text" placeholder="Email">
+                    </div>
+                    <div class="auth__input">
+                        <input type="text" placeholder="Пароль">
+                    </div>
+                    <div class="auth__checkbox">
+                        <input type="checkbox" id="registers">
+                        <label for="registers">Показати пароль</label>
+                    </div>
+                    <div class="auth__register">
+                        <a href="#">Зареєструватись</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <div class="container">
             <div class="header-menu-container">

@@ -137,6 +137,15 @@
                                 <img class="production-slider__item-img" src="img/sock2.jpg" alt="">
                                 <span class="production-slider__item-name">Шкарпетки короткі V&T</span>
                             </a>
+
+                            <div class="production-slider__item-control-panel">
+                                <div class="interface-item interface-item_product-menu">
+                                    <span class="icon-heart interface-item__icon "></span>
+                                </div>
+                                <div class="interface-item interface-item_product-menu">
+                                    <span class="icon-shopping-bag interface-item__icon"></span>
+                                </div>
+                            </div>
                             <div class="production-slider__item-prices">
                                 <span class="production-slider__item-price">65.00 UAH</span>
                                 <span class="production-slider__item-old-price">70.00 UAH</span>
@@ -150,6 +159,15 @@
                                 <img class="production-slider__item-img" src="img/sock1.jpg" alt="">
                                 <span class="production-slider__item-name">Шкарпетки короткі V&T</span>
                             </a>
+                            <div class="production-slider__item-control-panel">
+                                <div class="interface-item interface-item_product-menu">
+                                    <span class="icon-heart interface-item__icon "></span>
+                                </div>
+                                <div class="interface-item interface-item_product-menu">
+                                    <span class="icon-shopping-bag interface-item__icon"></span>
+                                </div>
+                            </div>
+
                             <div class="production-slider__item-prices">
                                 <span class="production-slider__item-price">65.00 UAH</span>
                                 <span class="production-slider__item-old-price">70.00 UAH</span>
@@ -163,6 +181,15 @@
                                 <img class="production-slider__item-img" src="img/sock1.jpg" alt="">
                                 <span class="production-slider__item-name">Шкарпетки короткі V&T</span>
                             </a>
+                            <div class="production-slider__item-control-panel">
+                                <div class="interface-item interface-item_product-menu">
+                                    <span class="icon-heart interface-item__icon "></span>
+                                </div>
+                                <div class="interface-item interface-item_product-menu">
+                                    <span class="icon-shopping-bag interface-item__icon"></span>
+                                </div>
+                            </div>
+
                             <div class="production-slider__item-prices">
                                 <span class="production-slider__item-price">65.00 UAH</span>
                                 <span class="production-slider__item-old-price">70.00 UAH</span>
@@ -172,6 +199,7 @@
                             </div>
                         </div>
                     </div>
+
 
                 </div>
                 <div id="panel2" class="tab-pane fade">
@@ -302,6 +330,32 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <script>
 $(document).ready(function () {
 
+    $('#auth_menu').click(function () {
+        // $('.auth').toggle();
+        $('.auth').toggleClass('auth_hide');
+        $('.auth-container').animate({height: "100vh", top: "0px"}, 300);
+        $('.auth').animate({opacity: "1"}, 400);
+    });
+
+    $('.auth-container').click(function () {
+        $('.auth').animate({opacity: "0"}, 300);
+        $('.auth-container').animate({height: "0px", top: "50vh"}, 300);
+        $('.auth-container').animate({top: "0vh"}, 1);
+        function authHide (){
+            $('.auth').toggleClass('auth_hide');
+        }
+        setTimeout(authHide, 300);
+    });
+
+    $('#auth_close').click(function () {
+        $('.auth').animate({opacity: "0"}, 300);
+        $('.auth-container').animate({height: "0px", top: "50vh"}, 300);
+        $('.auth-container').animate({top: "0vh"}, 1);
+        function authHide (){
+            $('.auth').toggleClass('auth_hide');
+        }
+        setTimeout(authHide, 300);
+    });
 
 });
 </script>
