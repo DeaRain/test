@@ -10769,7 +10769,6 @@ a:visited {
             .header-container .header-container__left .left-menu__wrapper .left-menu__menu .left-menu li a {
               font-family: Geometria Bold;
               font-size: 20px;
-              font-weight: bold;
               font-style: normal;
               font-stretch: normal;
               line-height: 1;
@@ -10885,7 +10884,6 @@ a:visited {
           padding: 5px 8px;
           font-family: Geometria Medium;
           font-size: 14px;
-          font-weight: bold;
           font-style: normal;
           font-stretch: normal;
           line-height: 1;
@@ -10901,7 +10899,6 @@ a:visited {
     padding: 5px 8px;
     font-family: Geometria Medium;
     font-size: 14px;
-    font-weight: bold;
     font-style: normal;
     font-stretch: normal;
     line-height: 1;
@@ -11027,7 +11024,6 @@ a:visited {
     right: -5px;
     font-family: Geometria Medium;
     font-size: 10px;
-    font-weight: bold;
     font-style: normal;
     font-stretch: normal;
     letter-spacing: normal;
@@ -11049,7 +11045,6 @@ a:visited {
   .top-menu-changer .top-menu-changer__text {
     font-family: Geometria Bold;
     font-size: 14px;
-    font-weight: bold;
     font-style: normal;
     font-stretch: normal;
     line-height: 0.86;
@@ -11089,7 +11084,6 @@ a:visited {
       text-decoration: none;
       font-family: Geometria Bold;
       font-size: 16px;
-      font-weight: bold;
       font-style: normal;
       font-stretch: normal;
       line-height: 1;
@@ -11263,7 +11257,6 @@ a:visited {
       white-space: nowrap;
       font-family: Geometria Bold;
       font-size: 24px;
-      font-weight: bold;
       font-style: normal;
       font-stretch: normal;
       line-height: 1;
@@ -11282,7 +11275,6 @@ a:visited {
         margin-left: 29px;
         font-family: Geometria Bold;
         font-size: 14px;
-        font-weight: bold;
         font-style: normal;
         font-stretch: normal;
         line-height: 1;
@@ -11297,7 +11289,6 @@ a:visited {
   margin-top: 38px;
   font-family: Geometria Bold;
   font-size: 20px;
-  font-weight: bold;
   font-style: normal;
   font-stretch: normal;
   line-height: 1;
@@ -11355,7 +11346,6 @@ a:visited {
     .production-slider .production-slider__item .production-slider__item-price {
       font-family: Geometria Bold;
       font-size: 16px;
-      font-weight: bold;
       font-style: normal;
       font-stretch: normal;
       line-height: 1;
@@ -11453,7 +11443,6 @@ a:visited {
     padding: 65px 0px 56px 0px;
     font-family: Geometria Bold;
     font-size: 24px;
-    font-weight: bold;
     font-style: normal;
     font-stretch: normal;
     line-height: 1;
@@ -11497,7 +11486,6 @@ a:visited {
     width: 495px;
     font-family: Geometria Bold;
     font-size: 20px;
-    font-weight: bold;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.2;
@@ -11544,9 +11532,8 @@ a:visited {
     padding-left: 4px;
     margin-top: 6px;
     padding-bottom: 57px;
-    font-family: Geometria;
+    font-family: Geometria Bold;
     font-size: 24px;
-    font-weight: bold;
     font-style: normal;
     font-stretch: normal;
     line-height: 1;
@@ -11581,7 +11568,6 @@ a:visited {
     padding: 65px 0 55px;
     font-family: Geometria Bold;
     font-size: 24px;
-    font-weight: bold;
     font-style: normal;
     font-stretch: normal;
     line-height: 1;
@@ -11610,7 +11596,6 @@ a:visited {
     margin-bottom: 12px;
     font-family: Geometria Bold;
     font-size: 20px;
-    font-weight: bold;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.2;
@@ -11647,7 +11632,6 @@ a:visited {
   top: 70px;
   font-family: Geometria;
   font-size: 20px;
-  font-weight: bold;
   width: 300px;
   margin-left: -150px;
   cursor: pointer;
@@ -11683,7 +11667,6 @@ a:visited {
         margin-bottom: 16px;
         font-family: Geometria Bold;
         font-size: 14px;
-        font-weight: bold;
         font-style: normal;
         font-stretch: normal;
         line-height: 1.14;
@@ -11795,7 +11778,6 @@ a:visited {
     font-family: Geometria Bold;
     margin-left: 3px;
     font-size: 12px;
-    font-weight: bold;
     font-style: normal;
     font-stretch: normal;
     line-height: 1;
@@ -11829,7 +11811,6 @@ a:visited {
       padding-bottom: 28px;
       font-family: Geometria Bold;
       font-size: 24px;
-      font-weight: bold;
       font-style: normal;
       font-stretch: normal;
       line-height: 1;
@@ -11858,6 +11839,19 @@ a:visited {
     flex: 0 1 263px; }
   .catalog .catalog__right-block {
     flex: 1 1 auto; }
+
+.products__filter {
+  display: none;
+  text-align: center;
+  font-size: 16px;
+  border-bottom: 1px solid black;
+  font-family: Geometria;
+  color: #1a1a1a;
+  width: 50px;
+  margin-left: 0px;
+  cursor: pointer; }
+  .products__filter:hover {
+    color: #e83c4d; }
 
 .products {
   display: flex;
@@ -11930,7 +11924,6 @@ a:visited {
       list-style-type: none;
       font-family: Geometria Bold;
       font-size: 14px;
-      font-weight: bold;
       font-style: normal;
       font-stretch: normal;
       line-height: 1;
@@ -12022,7 +12015,6 @@ a:visited {
     padding-left: 4px;
     font-family: Geometria Bold;
     font-size: 16px;
-    font-weight: bold;
     font-style: normal;
     font-stretch: normal;
     line-height: 1;
@@ -12050,7 +12042,6 @@ a:visited {
     background-color: #f6f4f4;
     font-family: Geometria Bold;
     font-size: 14px;
-    font-weight: bold;
     font-style: normal;
     font-stretch: normal;
     line-height: 46px;
@@ -12083,7 +12074,6 @@ a:visited {
     height: 40px;
     font-family: Geometria Bold;
     font-size: 14px;
-    font-weight: bold;
     font-style: normal;
     font-stretch: normal;
     letter-spacing: normal;
@@ -12097,7 +12087,6 @@ a:visited {
   text-transform: uppercase;
   font-family: Geometria Bold;
   font-size: 20px;
-  font-weight: bold;
   font-style: normal;
   font-stretch: normal;
   line-height: 1;
@@ -12114,7 +12103,6 @@ a:visited {
     text-transform: uppercase;
     font-family: Geometria Bold;
     font-size: 16px;
-    font-weight: bold;
     font-style: normal;
     font-stretch: normal;
     line-height: 1;
@@ -12178,7 +12166,6 @@ a:visited {
     .filter-list .filter-list__item .filter-list__name_active:after {
       content: '_';
       position: absolute;
-      font-weight: bold;
       font-size: 14px;
       right: -4px;
       top: 25px; }
@@ -12222,7 +12209,6 @@ a:visited {
   text-transform: uppercase;
   font-family: Geometria Bold;
   font-size: 20px;
-  font-weight: bold;
   font-style: normal;
   font-stretch: normal;
   line-height: 1;
@@ -12289,7 +12275,6 @@ a:visited {
       text-transform: uppercase;
       font-family: Geometria Bold;
       font-size: 16px;
-      font-weight: bold;
       font-style: normal;
       font-stretch: normal;
       line-height: 1;
@@ -12302,7 +12287,6 @@ a:visited {
       .box-content li .mfilter-heading span:after {
         content: '_';
         position: absolute;
-        font-weight: bold;
         font-size: 14px;
         right: -4px;
         bottom: 7px; }
@@ -12553,7 +12537,6 @@ a:visited {
         margin-right: 13px;
         font-family: Geometria;
         font-size: 14px;
-        font-weight: bold;
         font-style: normal;
         font-stretch: normal;
         line-height: 1;
@@ -12573,7 +12556,6 @@ a:visited {
       background-color: #f6f4f4;
       font-family: Geometria;
       font-size: 12px;
-      font-weight: bold;
       font-style: normal;
       font-stretch: normal;
       line-height: 45px;
@@ -12602,7 +12584,6 @@ a:visited {
       padding-bottom: 27px;
       font-family: Geometria Bold;
       font-size: 24px;
-      font-weight: bold;
       font-style: normal;
       font-stretch: normal;
       line-height: 1;
@@ -12757,7 +12738,6 @@ a:visited {
         .sing-prod .sing-prod__right .sing-prod__prices .sing-prod__opt b {
           margin-left: 1px;
           font-family: Geometria Bold;
-          font-weight: bold;
           color: #1a1a1a; }
       .sing-prod .sing-prod__right .sing-prod__prices .sing-prod__price-cur .sing-prod__old-price {
         height: 16px;
@@ -12776,7 +12756,6 @@ a:visited {
         margin-top: 8px;
         font-family: Geometria;
         font-size: 30px;
-        font-weight: bold;
         font-style: normal;
         font-stretch: normal;
         line-height: 1;
@@ -12836,7 +12815,6 @@ a:visited {
         text-align: center;
         font-family: Geometria;
         font-size: 14px;
-        font-weight: bold;
         font-style: normal;
         font-stretch: normal;
         line-height: 65px;
@@ -12900,7 +12878,6 @@ a:visited {
 .basket-header {
   font-family: Geometria Bold;
   font-size: 24px;
-  font-weight: bold;
   font-style: normal;
   font-stretch: normal;
   line-height: 1;
@@ -12925,7 +12902,6 @@ a:visited {
       padding: 35px 0px 26px;
       font-family: Geometria Bold;
       font-size: 16px;
-      font-weight: bold;
       font-style: normal;
       font-stretch: normal;
       line-height: 1;
@@ -12940,7 +12916,6 @@ a:visited {
       padding: 31px 0px 30px;
       font-family: Geometria Bold;
       font-size: 14px;
-      font-weight: bold;
       font-style: normal;
       font-stretch: normal;
       line-height: 1;
@@ -13080,9 +13055,8 @@ a:visited {
         width: 240px;
         height: 60px;
         border: solid 1px #1a1a1a;
-        font-family: Geometria;
+        font-family: Geometria Bold;
         font-size: 14px;
-        font-weight: bold;
         font-style: normal;
         font-stretch: normal;
         line-height: 61px;
@@ -13145,7 +13119,6 @@ a:visited {
         position: absolute;
         font-family: Geometria Bold;
         font-size: 16px;
-        font-weight: bold;
         font-style: normal;
         font-stretch: normal;
         line-height: 1;
@@ -13236,7 +13209,6 @@ a:visited {
         margin-right: 15px;
         font-family: Geometria Bold;
         font-size: 16px;
-        font-weight: bold;
         font-style: normal;
         font-stretch: normal;
         line-height: 1;
@@ -13250,9 +13222,8 @@ a:visited {
     .basket .basket__buttons .basket_b-left, .basket .basket__buttons .basket_b-right {
       width: 270px;
       height: 60px;
-      font-family: Geometria;
+      font-family: Geometria Bold;
       font-size: 14px;
-      font-weight: bold;
       font-style: normal;
       font-stretch: normal;
       line-height: 1;
@@ -13278,7 +13249,6 @@ a:visited {
 .product__header {
   font-family: Geometria Bold;
   font-size: 20px;
-  font-weight: bold;
   font-style: normal;
   font-stretch: normal;
   line-height: 1;
@@ -13312,7 +13282,6 @@ a:visited {
         .reviews .review .review__header .review__h-left .review__name {
           font-family: Geometria Bold;
           font-size: 16px;
-          font-weight: bold;
           font-style: normal;
           font-stretch: normal;
           line-height: 1;
@@ -13363,7 +13332,6 @@ a:visited {
     .feed .feed__button span {
       font-family: Geometria;
       font-size: 14px;
-      font-weight: bold;
       font-style: normal;
       font-stretch: normal;
       line-height: 60px;
@@ -13431,7 +13399,6 @@ a:visited {
     padding: 35px 0px 26px;
     font-family: Geometria Bold;
     font-size: 16px;
-    font-weight: bold;
     font-style: normal;
     font-stretch: normal;
     line-height: 1;
@@ -13461,7 +13428,6 @@ a:visited {
         padding: 27px 0px 12px;
         font-family: Geometria Bold;
         font-size: 14px;
-        font-weight: bold;
         font-style: normal;
         font-stretch: normal;
         line-height: 1;
@@ -13549,14 +13515,13 @@ a:visited {
             color: #e83c4d;
             text-decoration: none; }
       .auth .auth__container .auth__left .auth__register, .auth .auth__container .auth__right .auth__register {
-        width: 360px;
+        width: 290px;
         height: 60px;
         background-color: #1a1a1a;
         margin-top: 16px; }
         .auth .auth__container .auth__left .auth__register a, .auth .auth__container .auth__right .auth__register a {
           font-family: Geometria Bold;
           font-size: 14px;
-          font-weight: bold;
           font-style: normal;
           font-stretch: normal;
           line-height: 1;
@@ -13582,7 +13547,6 @@ a:visited {
         .auth .auth__container .auth__left .auth__soc .auth__facebook a, .auth .auth__container .auth__left .auth__soc .auth__google a, .auth .auth__container .auth__right .auth__soc .auth__facebook a, .auth .auth__container .auth__right .auth__soc .auth__google a {
           font-family: Geometria Bold;
           font-size: 14px;
-          font-weight: bold;
           font-style: normal;
           font-stretch: normal;
           line-height: 1;
@@ -13614,7 +13578,6 @@ a:visited {
           padding: 24px 0px 18px;
           font-family: Geometria Bold;
           font-size: 14px;
-          font-weight: bold;
           font-style: normal;
           font-stretch: normal;
           line-height: 1;

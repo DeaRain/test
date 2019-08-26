@@ -170,9 +170,10 @@
             </div>
         </div>
 
-        <div class="auth-container"></div>
+        <div class="auth-container" ></div>
 
-        <div class="auth auth_hide">
+        <div class="auth auth_hide" >
+<!--        <div class="auth auth_hide">-->
             <div class="auth__sub-head">авторизація
                 <span id="auth_close" class="icon-cross-remove-sign"></span>
             </div>
@@ -405,6 +406,11 @@
 
 
 <div class="container">
+
+    <div class="products__filter">
+        <span class="icon-magnifying-glass interface-item__icon interface-item-search"></span>
+    </div>
+
     <div class="catalog">
         <div class="catalog__left-block">
             <aside id="column-left">
@@ -1704,6 +1710,19 @@
 <script src="js/common.js"></script>
 
 <script>
+
+
+    $('.products__filter').click(function () {
+        if ($(window).width() < 993) {
+            $('.catalog__left-block').toggle(50);
+        }
+    });
+
+    $('.mfilter-heading').click(function () {
+        $(this).parent().find('.mfilter-content-opts').toggle(50);
+        $(this).toggleClass('mfilter-collapsed');
+    });
+
     $('#list-view').click(function() {
 
         $('#grid-view').removeClass('products__button_active');

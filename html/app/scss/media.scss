@@ -10,10 +10,155 @@
   }
 }
 @media (min-width: 768px) and (max-width: 992px){
+  .products__filter{
+    display: block;
+  }
+  .catalog{
+    overflow: hidden;
+    .catalog__left-block{
+      display: none;
+    }
+  }
+  .products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .products__selector{
+      width: 200px;
+      height: 40px;
+      border: solid 1px #e6e6e6;
+      background: none;
+      margin-left: 12px;
+    }
+    .products__button{
+      width: 40px;
+      height: 40px;
+      border: solid 1px #e6e6e6;
+      background: none;
+      //font-family: Geometria;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      color: #333333;
+      margin-left: 15px;
+    }
+    .products__button_active{
+      border: solid 1px #1a1a1a;
+    }
+    .products__header{
+      //font-family: Geometria;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      color: #999999;
+      height: 86px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      .products__view{
+        display: none;
+      }
+      .products__sort{
+        margin-left: 30px;
+        .selectric{
+          background: none;
+        }
+        label{
+          padding-top: 10px;
+          padding-left: 9px;
+          padding-right: 15px;
+        }
+        display: flex;
+        align-items: center;
+      }
+      //background: #0b2e13;
+    }
+    .products__body{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-left: -1px;
+      width: 650px;
+      padding-bottom: 31px;
+    }
+    .products__footer{
+      border-top: solid 1px #e6e6e6;
+      height: 81px;
+      display: flex;
+      justify-content: center;
+      //margin-left: 30px;
+      ul{
+        margin-top: 31px;
+        width: 100%;
+        display: flex;
+        list-style-type: none;
+        font-family: Geometria Bold;
+        font-size: 14px;
+        //font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        text-align: center;
+        color: #999999;
+        span{
+          color: #1a1a1a;
+        }
+        a{
+          color: #999999;
+        }
+        li{
+          padding: 0px 15px;
+        }
+        li:first-child{
+          padding: 0px;
+          margin-right: auto;
+          letter-spacing: 2px;
+        }
+        .active:first-of-type{
+          margin-left: auto;
+          margin-right: unset;
+          padding: 0 15px;
+        }
+        .active:last-of-type{
+          margin-left: unset;
+          margin-right: auto;
+        }
+        li:last-child{
+          letter-spacing: 2px;
+          padding: 0px 0px 0px 13px;
+          margin-left: auto;
+        }
+        li:last-child .active{
+          margin-right: auto;
+        }
+      }
+      //background: #0d84e3;
+    }
+  }
+
   .container {
     max-width: 750px;
   }
 
+  .auth{
+    width: 760px;
+    .auth__container{
+      .auth__right{
+        margin-left: 15px;
+      }
+    }
+  }
+
+  .cat-text{
+    width: 100%;
+  }
   .header-container {
     .header-container__left {
       margin-right: auto;
@@ -98,9 +243,9 @@
     display: flex;
     padding: 23px 0 19px;
     .top-menu-changer__text{
-      font-family: Geometria;
+      //font-family: Geometria;
       font-size: 16px;
-      font-weight: bold;
+      //font-weight: bold;
       font-style: normal;
       font-stretch: normal;
       line-height: 1;
@@ -141,7 +286,7 @@
       .top-menu__item-url{
         font-family: Geometria Bold;
         font-size: 12px;
-        font-weight: bold;
+        //font-weight: bold;
         font-style: normal;
         font-stretch: normal;
         line-height: 1;
@@ -187,7 +332,7 @@
           }
           .top-menu__item-container-item-header {
             margin-top: 4px;
-            font-family: Geometria;
+            //font-family: Geometria;
             font-size: 14px;
             font-weight: normal;
             font-style: normal;
@@ -272,7 +417,7 @@
         margin-top: 1px;
         font-family: Geometria Bold;
         font-size: 20px;
-        font-weight: bold;
+        //font-weight: bold;
         font-style: normal;
         font-stretch: normal;
         line-height: 1;
@@ -294,7 +439,7 @@
         a{
           font-family: Geometria Bold;
           font-size: 12px;
-          font-weight: bold;
+          //font-weight: bold;
           font-style: normal;
           font-stretch: normal;
           line-height: 1.17;
@@ -391,9 +536,9 @@
     }
     .infoline__header{
       margin-bottom: 15px;
-      font-family: Geometria;
+      //font-family: Geometria;
       font-size: 14px;
-      font-weight: bold;
+      //font-weight: bold;
       font-style: normal;
       font-stretch: normal;
       line-height: 1;
@@ -405,7 +550,7 @@
       width: 219px;
       margin-bottom: 14px;
       //margin-top: 5px;
-      font-family: Geometria;
+      //font-family: Geometria;
       font-size: 14px;
       font-weight: normal;
       font-style: normal;
@@ -438,7 +583,7 @@
       padding: 52px 0px 26px 0px;
       font-family: Geometria Bold;
       font-size: 20px;
-      font-weight: bold;
+      //font-weight: bold;
       font-style: normal;
       font-stretch: normal;
       line-height: 1;
@@ -452,9 +597,9 @@
     }
   }
   .main-theme-button{
-    font-family: Geometria;
+    //font-family: Geometria;
     font-size: 14px;
-    font-weight: bold;
+    //font-weight: bold;
     font-style: normal;
     font-stretch: normal;
     line-height: 1;
@@ -490,7 +635,7 @@
       width: 290px;
       font-family: Geometria Bold;
       font-size: 16px;
-      font-weight: bold;
+      //font-weight: bold;
       font-style: normal;
       font-stretch: normal;
       line-height: 1.25;
@@ -503,7 +648,7 @@
       margin-top: 13px;
       width: 314px;
       height: 80px;
-      font-family: Geometria;
+      //font-family: Geometria;
       font-size: 14px;
       font-weight: normal;
       font-style: normal;
@@ -529,9 +674,9 @@
       margin-top: 6px;
       padding-top: 0px;
       padding-bottom: 49px;
-      font-family: Geometria;
+      //font-family: Geometria;
       font-size: 20px;
-      font-weight: bold;
+      //font-weight: bold;
       font-style: normal;
       font-stretch: normal;
       line-height: 1;
@@ -542,7 +687,7 @@
     }
     .about__desc{
       width: 720px;
-      font-family: Geometria;
+      //font-family: Geometria;
       font-size: 14px;
       font-weight: normal;
       font-style: italic;
@@ -570,7 +715,7 @@
       padding: 55px 0 45px;
       font-family: Geometria Bold;
       font-size: 20px;
-      font-weight: bold;
+      //font-weight: bold;
       font-style: normal;
       font-stretch: normal;
       line-height: 1;
@@ -602,7 +747,7 @@
       margin-bottom: 12px;
       font-family: Geometria Bold;
       font-size: 18px;
-      font-weight: bold;
+      //font-weight: bold;
       font-style: normal;
       font-stretch: normal;
       line-height: 1;
@@ -624,7 +769,7 @@
       height: 60px;
       border: solid 1px #e6e6e6;
       background-color: #ffffff;
-      font-family: Geometria;
+      //font-family: Geometria;
       font-size: 14px;
       font-weight: normal;
       font-style: normal;
@@ -688,7 +833,7 @@
             margin-bottom: 16px;
             font-family: Geometria Bold;
             font-size: 14px;
-            font-weight: bold;
+            //font-weight: bold;
             font-style: normal;
             font-stretch: normal;
             line-height: 1.14;
@@ -708,7 +853,7 @@
             li {
               padding-bottom: 4px;
               a {
-                font-family: Geometria;
+                //font-family: Geometria;
                 font-size: 14px;
                 font-weight: normal;
                 font-style: normal;
@@ -770,7 +915,7 @@
     padding: 15px 0 13px;
 
     .copyright-container__left {
-      font-family: Geometria;
+      //font-family: Geometria;
       font-size: 12px;
       font-weight: normal;
       font-style: normal;
@@ -820,7 +965,7 @@
           }
           div{
             margin-left: 4px;
-            font-family: Geometria;
+            //font-family: Geometria;
             font-size: 12px;
           }
         }
@@ -911,7 +1056,7 @@
         padding: 35px 0px 26px;
         font-family: Geometria Bold;
         font-size: 16px;
-        font-weight: bold;
+        //font-weight: bold;
         font-style: normal;
         font-stretch: normal;
         line-height: 1;
@@ -927,7 +1072,7 @@
         padding: 31px 0px 30px;
         font-family: Geometria Bold;
         font-size: 14px;
-        font-weight: bold;
+        //font-weight: bold;
         font-style: normal;
         font-stretch: normal;
         line-height: 1;
@@ -968,7 +1113,7 @@
         height: 60px;
         background-color: #ffffff;
         span.label {
-          font-family: Geometria;
+          //font-family: Geometria;
           font-size: 14px;
           font-weight: normal;
           font-style: normal;
@@ -1002,7 +1147,7 @@
           height: 20px;
         }
         label{
-          font-family: Geometria;
+          //font-family: Geometria;
           font-size: 14px;
           font-weight: normal;
           font-style: normal;
@@ -1039,7 +1184,7 @@
         background-color: #ffffff;
         input {
           padding: 23px 0px 15px 19px;
-          font-family: Geometria;
+          //font-family: Geometria;
           width: 100%;
           font-size: 14px;
           font-weight: normal;
@@ -1069,7 +1214,7 @@
           width: 460px;
           height: 120px;
           resize: none;
-          font-family: Geometria;
+          //font-family: Geometria;
           font-size: 14px;
           font-weight: normal;
           font-style: normal;
@@ -1094,9 +1239,9 @@
           width: 240px;
           height: 60px;
           border: solid 1px #1a1a1a;
-          font-family: Geometria;
+          //font-family: Geometria;
           font-size: 14px;
-          font-weight: bold;
+          //font-weight: bold;
           font-style: normal;
           font-stretch: normal;
           line-height: 61px;
@@ -1151,7 +1296,7 @@
           position: absolute;
           left: 130px;
           top: 15px;
-          font-family: Geometria;
+          //font-family: Geometria;
           font-size: 14px;
           font-weight: normal;
           font-style: normal;
@@ -1172,7 +1317,7 @@
           position: absolute;
           font-family: Geometria Bold;
           font-size: 16px;
-          font-weight: bold;
+          //font-weight: bold;
           font-style: normal;
           font-stretch: normal;
           line-height: 1;
@@ -1194,7 +1339,7 @@
           justify-content: space-between;
           .sing-prod__c-header{
             margin-top: 3px;
-            font-family: Geometria;
+            //font-family: Geometria;
             font-size: 12px;
             font-weight: normal;
             font-style: normal;
@@ -1215,7 +1360,7 @@
               border: none;
               padding: 3px 0px;
               width: 66px;
-              font-family: Geometria;
+              //font-family: Geometria;
               font-size: 14px;
               font-weight: normal;
               font-style: normal;
@@ -1264,7 +1409,7 @@
         padding-top: 15px;
         .basket_r-left{
           margin-left: 15px;
-          font-family: Geometria;
+          //font-family: Geometria;
           font-size: 16px;
           font-weight: normal;
           font-style: normal;
@@ -1277,7 +1422,7 @@
           margin-right: 15px;
           font-family: Geometria Bold;
           font-size: 16px;
-          font-weight: bold;
+          //font-weight: bold;
           font-style: normal;
           font-stretch: normal;
           line-height: 1;
@@ -1294,9 +1439,9 @@
       .basket_b-left, .basket_b-right{
         width: 270px;
         height: 60px;
-        font-family: Geometria;
+        //font-family: Geometria;
         font-size: 14px;
-        font-weight: bold;
+        //font-weight: bold;
         font-style: normal;
         font-stretch: normal;
         line-height: 1;
@@ -1320,6 +1465,50 @@
     }
   }
 
+  .cat-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //margin: 20px 0px;
+    padding: 20px 0px 30px;
+    img{
+      width: 700px;
+      height: 353px;
+    }
+    .cat-info__right-block{
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      padding-left: 0px;
+      align-items: center;
+      .cat-info__header{
+        padding-bottom: 10px;
+        font-family: Geometria Bold;
+        font-size: 24px;
+        //font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1;
+        letter-spacing: 3px;
+        color: #1a1a1a;
+        text-transform: uppercase;
+      }
+      .cat-info__desc{
+        width: 700px;
+        //font-family: Geometria;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: italic;
+        font-stretch: normal;
+        line-height: 1.43;
+        letter-spacing: 1px;
+        color: #1a1a1a;
+        p{
+          padding-top: 4px;
+        }
+      }
+    }
+  }
 
 
 
@@ -1327,10 +1516,266 @@
 
 
 @media (max-width: 479px) {
-.basket-header{
+
+  .auth{
+    width: 310px;
+    .auth__container{
+      width: 310px;
+      flex-direction: column;
+      .auth__left{
+        .auth__span{
+          margin-top: 40px;
+        }
+      }
+      .auth__right{
+        margin-left: 0px;
+      }
+      .auth__left, .auth__right{
+        width: 310px;
+        .auth__checkbox {
+          display: flex;
+          align-items: center;
+          width: 290px;
+        }
+        .auth__input {
+          margin-top: 15px;
+          width: 290px;
+        }
+        .auth__divine{
+          width: 280px;
+          .auth__checkbox{
+            width: 150px;
+            label{
+              font-size: 12px;
+            }
+          }
+          .auth__forgot{
+            margin-bottom: 12px;
+            a{
+              font-size: 12px;
+            }
+          }
+        }
+        .auth__soc{
+          width: 290px;
+          margin-top: 27px;
+          .auth__facebook{
+            width: 140px;
+            height: 60px;
+            background-color: #3a5a98;
+          }
+          .auth__google{
+            width: 140px;
+            height: 60px;
+            background-color: #dd4b39;
+          }
+          .auth__facebook, .auth__google{
+            a{
+              font-size: 12px;
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+  .products__filter{
+    display: block;
+  }
+  .catalog{
+    overflow: hidden;
+    position: relative;
+    .catalog__left-block{
+      display: none;
+    }
+  }
+  .products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .products__selector{
+      width: 200px;
+      height: 40px;
+      border: solid 1px #e6e6e6;
+      background: none;
+      margin-left: 12px;
+    }
+    .products__button{
+      width: 40px;
+      height: 40px;
+      border: solid 1px #e6e6e6;
+      background: none;
+      //font-family: Geometria;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      color: #333333;
+      margin-left: 15px;
+    }
+    .products__button_active{
+      border: solid 1px #1a1a1a;
+    }
+    .products__header{
+      //font-family: Geometria;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      color: #999999;
+      height: 86px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      align-self: center;
+      .products__view{
+        display: none;
+      }
+      .products__sort{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        .selectric{
+          background: none;
+        }
+        label{
+          padding-top: 10px;
+          padding-left: 9px;
+          padding-right: 15px;
+        }
+        display: flex;
+        align-items: center;
+      }
+      //background: #0b2e13;
+    }
+    .products__body{
+      align-self: center;
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      margin-left: -15px;
+      width: 300px;
+      padding-bottom: 31px;
+    }
+    .products__footer{
+      border-top: solid 1px #e6e6e6;
+      height: unset;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      margin-left: 0px;
+      ul{
+        margin-top: 15px;
+        width: 280px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        list-style-type: none;
+        font-family: Geometria Bold;
+        font-size: 10px;
+        //font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        text-align: center;
+        color: #999999;
+        span{
+          color: #1a1a1a;
+        }
+        a{
+          color: #999999;
+        }
+        li{
+          margin-top: 15px;
+          padding: 0px 15px;
+        }
+        li:first-child{
+          padding: 0px;
+          margin-right: auto;
+          letter-spacing: 2px;
+        }
+        .active:first-of-type{
+          margin-left: auto;
+          margin-right: unset;
+          padding: 0 15px;
+        }
+        .active:last-of-type{
+          margin-left: unset;
+          margin-right: auto;
+        }
+        li:last-child{
+          letter-spacing: 2px;
+          padding: 0px 0px 0px 13px;
+          margin-left: auto;
+        }
+        li:last-child .active{
+          margin-right: auto;
+        }
+      }
+      //background: #0d84e3;
+    }
+  }
+
+
+  .cat-text{
+    display: none;
+  }
+  .cat-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //margin: 20px 0px;
+    padding: 20px 0px 30px;
+    img{
+      width: 300px;
+      height: 151px;
+    }
+    .cat-info__right-block{
+      margin-top: 25px;
+      display: flex;
+      flex-direction: column;
+      padding-left: 0px;
+      align-items: center;
+      .cat-info__header{
+        padding-bottom: 15px;
+        font-family: Geometria Bold;
+        font-size: 16px;
+        //font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1;
+        letter-spacing: 3px;
+        color: #1a1a1a;
+        text-transform: uppercase;
+      }
+      .cat-info__desc{
+        display: none;
+        width: 700px;
+        //font-family: Geometria;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: italic;
+        font-stretch: normal;
+        line-height: 1.43;
+        letter-spacing: 1px;
+        color: #1a1a1a;
+        p{
+          padding-top: 4px;
+        }
+      }
+    }
+  }
+
+
+  .basket-header{
   padding: 25px 0px;
 }
-
   .basket{
     display: flex;
     margin-bottom: 58px;
@@ -1350,7 +1795,7 @@
         padding: 35px 0px 26px;
         font-family: Geometria Bold;
         font-size: 14px;
-        font-weight: bold;
+        //font-weight: bold;
         font-style: normal;
         font-stretch: normal;
         line-height: 1;
@@ -1366,7 +1811,7 @@
         padding: 31px 0px 30px;
         font-family: Geometria Bold;
         font-size: 12px;
-        font-weight: bold;
+        //font-weight: bold;
         font-style: normal;
         font-stretch: normal;
         line-height: 1;
@@ -1402,7 +1847,7 @@
         height: 60px;
         background-color: #ffffff;
         span.label {
-          font-family: Geometria;
+          //font-family: Geometria;
           font-size: 14px;
           font-weight: normal;
           font-style: normal;
@@ -1436,7 +1881,7 @@
           height: 20px;
         }
         label{
-          font-family: Geometria;
+          //font-family: Geometria;
           font-size: 14px;
           font-weight: normal;
           font-style: normal;
@@ -1473,7 +1918,7 @@
         background-color: #ffffff;
         input {
           padding: 23px 0px 15px 19px;
-          font-family: Geometria;
+          //font-family: Geometria;
           width: 100%;
           font-size: 14px;
           font-weight: normal;
@@ -1503,7 +1948,7 @@
           width: 270px;
           height: 120px;
           resize: none;
-          font-family: Geometria;
+          //font-family: Geometria;
           font-size: 14px;
           font-weight: normal;
           font-style: normal;
@@ -1532,9 +1977,9 @@
           margin-top: 15px;
           height: 60px;
           border: solid 1px #1a1a1a;
-          font-family: Geometria;
+          //font-family: Geometria;
           font-size: 14px;
-          font-weight: bold;
+          //font-weight: bold;
           font-style: normal;
           font-stretch: normal;
           line-height: 61px;
@@ -1589,7 +2034,7 @@
           position: absolute;
           left: 80px;
           top: 15px;
-          font-family: Geometria;
+          //font-family: Geometria;
           font-size: 14px;
           font-weight: normal;
           font-style: normal;
@@ -1610,7 +2055,7 @@
           position: absolute;
           font-family: Geometria Bold;
           font-size: 16px;
-          font-weight: bold;
+          //font-weight: bold;
           font-style: normal;
           font-stretch: normal;
           line-height: 1;
@@ -1632,7 +2077,7 @@
           justify-content: space-between;
           .sing-prod__c-header{
             margin-top: 3px;
-            font-family: Geometria;
+            //font-family: Geometria;
             font-size: 12px;
             font-weight: normal;
             font-style: normal;
@@ -1653,7 +2098,7 @@
               border: none;
               padding: 3px 0px;
               width: 66px;
-              font-family: Geometria;
+              //font-family: Geometria;
               font-size: 14px;
               font-weight: normal;
               font-style: normal;
@@ -1702,7 +2147,7 @@
         padding-top: 15px;
         .basket_r-left{
           margin-left: 15px;
-          font-family: Geometria;
+          //font-family: Geometria;
           font-size: 16px;
           font-weight: normal;
           font-style: normal;
@@ -1715,7 +2160,7 @@
           margin-right: 15px;
           font-family: Geometria Bold;
           font-size: 16px;
-          font-weight: bold;
+          //font-weight: bold;
           font-style: normal;
           font-stretch: normal;
           line-height: 1;
@@ -1734,9 +2179,9 @@
       .basket_b-left, .basket_b-right{
         width: 270px;
         height: 60px;
-        font-family: Geometria;
+        //font-family: Geometria;
         font-size: 14px;
-        font-weight: bold;
+        //font-weight: bold;
         font-style: normal;
         font-stretch: normal;
         line-height: 1;
@@ -1760,6 +2205,7 @@
       }
     }
   }
+
 
   .sing-prod{
     margin-top: 30px;
@@ -1807,7 +2253,7 @@
           }
           div{
             margin-left: 4px;
-            font-family: Geometria;
+            //font-family: Geometria;
             font-size: 12px;
           }
         }
@@ -1929,7 +2375,7 @@
           .review__name{
             font-family: Geometria Bold;
             font-size: 12px;
-            font-weight: bold;
+            //font-weight: bold;
             font-style: normal;
             font-stretch: normal;
             line-height: 1;
@@ -1938,7 +2384,7 @@
           }
           .review__date{
             margin-left: 10px;
-            font-family: Geometria;
+            //font-family: Geometria;
             font-size: 12px;
             font-weight: normal;
             font-style: normal;
@@ -1984,6 +2430,9 @@
 
 
 @media (max-width: 767px) {
+  .products__filter{
+    display: block;
+  }
   .header-container {
     flex-wrap: wrap;
     align-items: flex-start;
@@ -2060,7 +2509,7 @@
               a{
                 font-family: Geometria Bold;
                 font-size: 12px;
-                font-weight: bold;
+                //font-weight: bold;
                 font-style: normal;
                 font-stretch: normal;
                 line-height: 1;
@@ -2083,7 +2532,7 @@
                   margin: 0px;
                   margin-top: 4px;
                   a {
-                    font-family: Geometria;
+                    //font-family: Geometria;
                     font-size: 14px;
                     font-weight: normal;
                     font-style: normal;
@@ -2193,7 +2642,7 @@
       .top-menu__item-url{
         font-family: Geometria Bold;
         font-size: 12px;
-        font-weight: bold;
+        //font-weight: bold;
         font-style: normal;
         font-stretch: normal;
         line-height: 1;
@@ -2239,7 +2688,7 @@
           }
           .top-menu__item-container-item-header {
             margin-top: 4px;
-            font-family: Geometria;
+            //font-family: Geometria;
             font-size: 14px;
             font-weight: normal;
             font-style: normal;
@@ -2305,7 +2754,7 @@
         margin-top: 1px;
         font-family: Geometria Bold;
         font-size: 16px;
-        font-weight: bold;
+        //font-weight: bold;
         font-style: normal;
         font-stretch: normal;
         line-height: 1;
@@ -2327,7 +2776,7 @@
         a{
           font-family: Geometria Bold;
           font-size: 12px;
-          font-weight: bold;
+          //font-weight: bold;
           font-style: normal;
           font-stretch: normal;
           line-height: 1.17;
@@ -2428,7 +2877,7 @@
 
       .production-slider__item-name{
         //margin-top: 10px;
-        font-family: Geometria;
+        //font-family: Geometria;
         font-size: 14px;
         font-weight: normal;
         font-style: normal;
@@ -2444,7 +2893,7 @@
       .production-slider__item-price{
         font-family: Geometria Bold;
         font-size: 16px;
-        font-weight: bold;
+        //font-weight: bold;
         font-style: normal;
         font-stretch: normal;
         line-height: 1;
@@ -2455,7 +2904,7 @@
       .production-slider__item-old-price{
         margin-left: 10px;
         text-decoration: line-through;
-        font-family: Geometria;
+        //font-family: Geometria;
         font-size: 12px;
         font-weight: normal;
         font-style: normal;
@@ -2474,9 +2923,9 @@
         width: 45px;
         height: 45px;
         background-color: #f6f4f4;
-        font-family: Geometria;
+        //font-family: Geometria;
         font-size: 14px;
-        font-weight: bold;
+        //font-weight: bold;
         font-style: normal;
         font-stretch: normal;
         line-height: 45px;
@@ -2531,9 +2980,9 @@
     }
     .infoline__header{
       margin-bottom: 15px;
-      font-family: Geometria;
+      //font-family: Geometria;
       font-size: 14px;
-      font-weight: bold;
+      //font-weight: bold;
       font-style: normal;
       font-stretch: normal;
       line-height: 1;
@@ -2545,7 +2994,7 @@
       width: 219px;
       margin-bottom: 14px;
       //margin-top: 5px;
-      font-family: Geometria;
+      //font-family: Geometria;
       font-size: 14px;
       font-weight: normal;
       font-style: normal;
@@ -2580,7 +3029,7 @@
       padding: 34px 0px 26px 0px;
       font-family: Geometria Bold;
       font-size: 16px;
-      font-weight: bold;
+      //font-weight: bold;
       font-style: normal;
       font-stretch: normal;
       line-height: 1;
@@ -2594,9 +3043,9 @@
     }
   }
   .main-theme-button{
-    font-family: Geometria;
+    //font-family: Geometria;
     font-size: 12px;
-    font-weight: bold;
+    //font-weight: bold;
     font-style: normal;
     font-stretch: normal;
     line-height: 1;
@@ -2632,7 +3081,7 @@
       width: 290px;
       font-family: Geometria Bold;
       font-size: 16px;
-      font-weight: bold;
+      //font-weight: bold;
       font-style: normal;
       font-stretch: normal;
       line-height: 1.25;
@@ -2645,7 +3094,7 @@
       margin-top: 13px;
       width: 290px;
       height: 80px;
-      font-family: Geometria;
+      //font-family: Geometria;
       font-size: 14px;
       font-weight: normal;
       font-style: normal;
@@ -2683,9 +3132,9 @@
     .about__header{
       margin-top: 5px;
       padding-bottom: 28px;
-      font-family: Geometria;
+      //font-family: Geometria;
       font-size: 16px;
-      font-weight: bold;
+      //font-weight: bold;
       font-style: normal;
       font-stretch: normal;
       line-height: 1;
@@ -2723,7 +3172,7 @@
       padding: 34px 0 26px;
       font-family: Geometria Bold;
       font-size: 16px;
-      font-weight: bold;
+      //font-weight: bold;
       font-style: normal;
       font-stretch: normal;
       line-height: 1;
@@ -2754,7 +3203,7 @@
       margin-bottom: 12px;
       font-family: Geometria Bold;
       font-size: 12px;
-      font-weight: bold;
+      //font-weight: bold;
       font-style: normal;
       font-stretch: normal;
       line-height: 1;
@@ -2775,7 +3224,7 @@
       height: 50px;
       border: solid 1px #e6e6e6;
       background-color: #ffffff;
-      font-family: Geometria;
+      //font-family: Geometria;
       font-size: 14px;
       font-weight: normal;
       font-style: normal;
@@ -2862,7 +3311,7 @@
               a {
                 font-family: Geometria Bold;
                 font-size: 14px;
-                font-weight: bold;
+                //font-weight: bold;
                 font-style: normal;
                 font-stretch: normal;
                 line-height: 1.14;
@@ -2890,7 +3339,7 @@
                   margin-top: 9px;
 
                   a {
-                    font-family: Geometria;
+                    //font-family: Geometria;
                     font-size: 14px;
                     font-weight: normal;
                     font-style: normal;
@@ -2934,7 +3383,7 @@
     margin-top: 0px;
     padding: 21px 0 35px;
     .copyright-container__left{
-      font-family: Geometria;
+      //font-family: Geometria;
       font-size: 12px;
       font-weight: normal;
       font-style: normal;
@@ -2950,12 +3399,154 @@
 
 }
 @media (min-width: 1200px) {
+  .catalog__left-block{
+    display: flex !important;
+  }
   .container {
     max-width: 1170px;
   }
 }
 
-@media (min-width: 479px) and (max-width: 755px) {
+@media (min-width: 479px) and (max-width: 765px) {
+
+
+  .catalog{
+    overflow: hidden;
+    .catalog__left-block{
+      display: none;
+    }
+  }
+  .products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .products__selector{
+      width: 200px;
+      height: 40px;
+      border: solid 1px #e6e6e6;
+      background: none;
+      margin-left: 12px;
+    }
+    .products__button{
+      width: 40px;
+      height: 40px;
+      border: solid 1px #e6e6e6;
+      background: none;
+      //font-family: Geometria;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      color: #333333;
+      margin-left: 15px;
+    }
+    .products__button_active{
+      border: solid 1px #1a1a1a;
+    }
+    .products__header{
+      //font-family: Geometria;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      color: #999999;
+      height: 86px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      .products__view{
+        display: none;
+      }
+      .products__sort{
+        margin-left: 20px;
+        .selectric{
+          background: none;
+        }
+        label{
+          padding-top: 10px;
+          padding-left: 9px;
+          padding-right: 15px;
+        }
+        display: flex;
+        align-items: center;
+      }
+      //background: #0b2e13;
+    }
+    .products__body{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-left: -1px;
+      width: 480px;
+      padding-bottom: 31px;
+    }
+    .products__footer{
+      border-top: solid 1px #e6e6e6;
+      height: 81px;
+      display: flex;
+      justify-content: center;
+      margin-left: 0px;
+      ul{
+        margin-top: 15px;
+        width: 420px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        list-style-type: none;
+        font-family: Geometria Bold;
+        font-size: 12px;
+        //font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        text-align: center;
+        color: #999999;
+        span{
+          color: #1a1a1a;
+        }
+        a{
+          color: #999999;
+        }
+        li{
+          margin-top: 15px;
+          padding: 0px 15px;
+        }
+        li:first-child{
+          padding: 0px;
+          margin-right: auto;
+          letter-spacing: 2px;
+        }
+        .active:first-of-type{
+          margin-left: auto;
+          margin-right: unset;
+          padding: 0 15px;
+        }
+        .active:last-of-type{
+          margin-left: unset;
+          margin-right: auto;
+        }
+        li:last-child{
+          letter-spacing: 2px;
+          padding: 0px 0px 0px 13px;
+          margin-left: auto;
+        }
+        li:last-child .active{
+          margin-right: auto;
+        }
+      }
+      //background: #0d84e3;
+    }
+  }
+
+
+  .cat-text{
+    width: 100%;
+  }
   .news-block{
     width: 480px;
     .news-block__img{
@@ -2974,6 +3565,51 @@
   .about{
     .about__desc{
       width: 420px;
+    }
+  }
+
+  .cat-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //margin: 20px 0px;
+    padding: 20px 0px 30px;
+    img{
+      width: 400px;
+      height: 202px;
+    }
+    .cat-info__right-block{
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      padding-left: 0px;
+      align-items: center;
+      .cat-info__header{
+        padding-bottom: 10px;
+        font-family: Geometria Bold;
+        font-size: 24px;
+        //font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1;
+        letter-spacing: 3px;
+        color: #1a1a1a;
+        text-transform: uppercase;
+      }
+      .cat-info__desc{
+        width: 400px;
+        //font-family: Geometria;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: italic;
+        font-stretch: normal;
+        line-height: 1.43;
+        letter-spacing: 1px;
+        color: #1a1a1a;
+        p{
+          padding-top: 4px;
+        }
+      }
     }
   }
 
@@ -3017,7 +3653,7 @@
           }
           div{
             margin-left: 4px;
-            font-family: Geometria;
+            //font-family: Geometria;
             font-size: 12px;
           }
         }
@@ -3091,6 +3727,20 @@
   }
 
 
+  .auth{
+    width: 450px;
+    .auth__container{
+      flex-direction: column;
+      .auth__left{
+        .auth__span{
+          margin-top: 40px;
+        }
+      }
+      .auth__right{
+        margin-left: 0px;
+      }
+    }
+  }
 
   .basket{
     display: flex;
@@ -3111,7 +3761,7 @@
         padding: 35px 0px 26px;
         font-family: Geometria Bold;
         font-size: 16px;
-        font-weight: bold;
+        //font-weight: bold;
         font-style: normal;
         font-stretch: normal;
         line-height: 1;
@@ -3127,7 +3777,7 @@
         padding: 31px 0px 30px;
         font-family: Geometria Bold;
         font-size: 14px;
-        font-weight: bold;
+        //font-weight: bold;
         font-style: normal;
         font-stretch: normal;
         line-height: 1;
@@ -3168,7 +3818,7 @@
         height: 60px;
         background-color: #ffffff;
         span.label {
-          font-family: Geometria;
+          //font-family: Geometria;
           font-size: 14px;
           font-weight: normal;
           font-style: normal;
@@ -3202,7 +3852,7 @@
           height: 20px;
         }
         label{
-          font-family: Geometria;
+          //font-family: Geometria;
           font-size: 14px;
           font-weight: normal;
           font-style: normal;
@@ -3239,7 +3889,7 @@
         background-color: #ffffff;
         input {
           padding: 23px 0px 15px 19px;
-          font-family: Geometria;
+          //font-family: Geometria;
           width: 100%;
           font-size: 14px;
           font-weight: normal;
@@ -3269,7 +3919,7 @@
           width: 395px;
           height: 120px;
           resize: none;
-          font-family: Geometria;
+          //font-family: Geometria;
           font-size: 14px;
           font-weight: normal;
           font-style: normal;
@@ -3294,9 +3944,9 @@
           width: 240px;
           height: 60px;
           border: solid 1px #1a1a1a;
-          font-family: Geometria;
+          //font-family: Geometria;
           font-size: 14px;
-          font-weight: bold;
+          //font-weight: bold;
           font-style: normal;
           font-stretch: normal;
           line-height: 61px;
@@ -3351,7 +4001,7 @@
           position: absolute;
           left: 120px;
           top: 15px;
-          font-family: Geometria;
+          //font-family: Geometria;
           font-size: 14px;
           font-weight: normal;
           font-style: normal;
@@ -3372,7 +4022,7 @@
           position: absolute;
           font-family: Geometria Bold;
           font-size: 16px;
-          font-weight: bold;
+          //font-weight: bold;
           font-style: normal;
           font-stretch: normal;
           line-height: 1;
@@ -3394,7 +4044,7 @@
           justify-content: space-between;
           .sing-prod__c-header{
             margin-top: 3px;
-            font-family: Geometria;
+            //font-family: Geometria;
             font-size: 12px;
             font-weight: normal;
             font-style: normal;
@@ -3415,7 +4065,7 @@
               border: none;
               padding: 3px 0px;
               width: 66px;
-              font-family: Geometria;
+              //font-family: Geometria;
               font-size: 14px;
               font-weight: normal;
               font-style: normal;
@@ -3464,7 +4114,7 @@
         padding-top: 15px;
         .basket_r-left{
           margin-left: 15px;
-          font-family: Geometria;
+          //font-family: Geometria;
           font-size: 16px;
           font-weight: normal;
           font-style: normal;
@@ -3477,7 +4127,7 @@
           margin-right: 15px;
           font-family: Geometria Bold;
           font-size: 16px;
-          font-weight: bold;
+          //font-weight: bold;
           font-style: normal;
           font-stretch: normal;
           line-height: 1;
@@ -3496,9 +4146,9 @@
       .basket_b-left, .basket_b-right{
         width: 270px;
         height: 60px;
-        font-family: Geometria;
+        //font-family: Geometria;
         font-size: 14px;
-        font-weight: bold;
+        //font-weight: bold;
         font-style: normal;
         font-stretch: normal;
         line-height: 1;
@@ -3531,6 +4181,9 @@
 @media (min-width: 993px) and (max-width: 1199px) {
   .container {
     max-width: 970px;
+  }
+  .catalog__left-block{
+    display: flex !important;
   }
   .header-container {
     .header-container__left {
@@ -3580,9 +4233,9 @@
     }
     .infoline__header{
       margin-bottom: 15px;
-      font-family: Geometria;
+      //font-family: Geometria;
       font-size: 14px;
-      font-weight: bold;
+      //font-weight: bold;
       font-style: normal;
       font-stretch: normal;
       line-height: 1;
@@ -3594,7 +4247,7 @@
       width: 219px;
       margin-bottom: 14px;
       //margin-top: 5px;
-      font-family: Geometria;
+      //font-family: Geometria;
       font-size: 14px;
       font-weight: normal;
       font-style: normal;
@@ -3761,7 +4414,7 @@
         padding: 35px 0px 26px;
         font-family: Geometria Bold;
         font-size: 16px;
-        font-weight: bold;
+        //font-weight: bold;
         font-style: normal;
         font-stretch: normal;
         line-height: 1;
@@ -3777,7 +4430,7 @@
         padding: 31px 0px 30px;
         font-family: Geometria Bold;
         font-size: 14px;
-        font-weight: bold;
+        //font-weight: bold;
         font-style: normal;
         font-stretch: normal;
         line-height: 1;
@@ -3818,7 +4471,7 @@
         height: 60px;
         background-color: #ffffff;
         span.label {
-          font-family: Geometria;
+          //font-family: Geometria;
           font-size: 14px;
           font-weight: normal;
           font-style: normal;
@@ -3852,7 +4505,7 @@
           height: 20px;
         }
         label{
-          font-family: Geometria;
+          //font-family: Geometria;
           font-size: 14px;
           font-weight: normal;
           font-style: normal;
@@ -3889,7 +4542,7 @@
         background-color: #ffffff;
         input {
           padding: 23px 0px 15px 19px;
-          font-family: Geometria;
+          //font-family: Geometria;
           width: 100%;
           font-size: 14px;
           font-weight: normal;
@@ -3919,7 +4572,7 @@
           width: 410px;
           height: 120px;
           resize: none;
-          font-family: Geometria;
+          //font-family: Geometria;
           font-size: 14px;
           font-weight: normal;
           font-style: normal;
@@ -3944,9 +4597,9 @@
           width: 240px;
           height: 60px;
           border: solid 1px #1a1a1a;
-          font-family: Geometria;
+          //font-family: Geometria;
           font-size: 14px;
-          font-weight: bold;
+          //font-weight: bold;
           font-style: normal;
           font-stretch: normal;
           line-height: 61px;
@@ -4001,7 +4654,7 @@
           position: absolute;
           left: 130px;
           top: 15px;
-          font-family: Geometria;
+          //font-family: Geometria;
           font-size: 14px;
           font-weight: normal;
           font-style: normal;
@@ -4022,7 +4675,7 @@
           position: absolute;
           font-family: Geometria Bold;
           font-size: 16px;
-          font-weight: bold;
+          //font-weight: bold;
           font-style: normal;
           font-stretch: normal;
           line-height: 1;
@@ -4044,7 +4697,7 @@
           justify-content: space-between;
           .sing-prod__c-header{
             margin-top: 3px;
-            font-family: Geometria;
+            //font-family: Geometria;
             font-size: 12px;
             font-weight: normal;
             font-style: normal;
@@ -4065,7 +4718,7 @@
               border: none;
               padding: 3px 0px;
               width: 66px;
-              font-family: Geometria;
+              //font-family: Geometria;
               font-size: 14px;
               font-weight: normal;
               font-style: normal;
@@ -4114,7 +4767,7 @@
         padding-top: 15px;
         .basket_r-left{
           margin-left: 15px;
-          font-family: Geometria;
+          //font-family: Geometria;
           font-size: 16px;
           font-weight: normal;
           font-style: normal;
@@ -4127,7 +4780,7 @@
           margin-right: 15px;
           font-family: Geometria Bold;
           font-size: 16px;
-          font-weight: bold;
+          //font-weight: bold;
           font-style: normal;
           font-stretch: normal;
           line-height: 1;
@@ -4144,9 +4797,9 @@
       .basket_b-left, .basket_b-right{
         width: 215px;
         height: 60px;
-        font-family: Geometria;
+        //font-family: Geometria;
         font-size: 10px;
-        font-weight: bold;
+        //font-weight: bold;
         font-style: normal;
         font-stretch: normal;
         line-height: 1;
@@ -4169,5 +4822,175 @@
       }
     }
   }
+
+  .cat-info{
+    display: flex;
+    //margin: 20px 0px;
+    padding: 44px 0px;
+    img{
+      width: 400px;
+      height: 202px;
+    }
+    .cat-info__right-block{
+      margin-top: 0px;
+      display: flex;
+      flex-direction: column;
+      padding-left: 20px;
+      .cat-info__header{
+        padding-bottom: 10px;
+        font-family: Geometria Bold;
+        font-size: 24px;
+        //font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1;
+        letter-spacing: 3px;
+        color: #1a1a1a;
+        text-transform: uppercase;
+      }
+      .cat-info__desc{
+        width: 500px;
+        //font-family: Geometria;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: italic;
+        font-stretch: normal;
+        line-height: 1.43;
+        letter-spacing: 1px;
+        color: #1a1a1a;
+        p{
+          padding-top: 4px;
+        }
+      }
+    }
+  }
+
+  .products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .products__selector{
+      width: 200px;
+      height: 40px;
+      border: solid 1px #e6e6e6;
+      background: none;
+      margin-left: 12px;
+    }
+    .products__button{
+      width: 40px;
+      height: 40px;
+      border: solid 1px #e6e6e6;
+      background: none;
+      //font-family: Geometria;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      color: #333333;
+      margin-left: 15px;
+    }
+    .products__button_active{
+      border: solid 1px #1a1a1a;
+    }
+    .products__header{
+      //font-family: Geometria;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      color: #999999;
+      height: 86px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      align-self: flex-start;
+      .products__view{
+        display: none;
+      }
+      .products__sort{
+        margin-left: 30px;
+        .selectric{
+          background: none;
+        }
+        label{
+          padding-top: 10px;
+          padding-left: 9px;
+          padding-right: 15px;
+        }
+        display: flex;
+        align-items: center;
+      }
+      //background: #0b2e13;
+    }
+    .products__body{
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      margin-left: -1px;
+      width: 650px;
+      padding-bottom: 31px;
+    }
+    .products__footer{
+      border-top: solid 1px #e6e6e6;
+      height: 81px;
+      display: flex;
+      justify-content: center;
+      //margin-left: 30px;
+      ul{
+        margin-top: 31px;
+        width: 100%;
+        display: flex;
+        list-style-type: none;
+        font-family: Geometria Bold;
+        font-size: 14px;
+        //font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        text-align: center;
+        color: #999999;
+        span{
+          color: #1a1a1a;
+        }
+        a{
+          color: #999999;
+        }
+        li{
+          padding: 0px 15px;
+        }
+        li:first-child{
+          padding: 0px;
+          margin-right: auto;
+          letter-spacing: 2px;
+        }
+        .active:first-of-type{
+          margin-left: auto;
+          margin-right: unset;
+          padding: 0 15px;
+        }
+        .active:last-of-type{
+          margin-left: unset;
+          margin-right: auto;
+        }
+        li:last-child{
+          letter-spacing: 2px;
+          padding: 0px 0px 0px 13px;
+          margin-left: auto;
+        }
+        li:last-child .active{
+          margin-right: auto;
+        }
+      }
+      //background: #0d84e3;
+    }
+  }
+
+
+
 
 }
