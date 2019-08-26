@@ -201,12 +201,7 @@ $(document).ready(function () {
         }
     });
 
-    $('.top-menu__item-url').click(function (e) {
-        if ($(window).width() < 993) {
-            $(this).parent().find('.top-menu__item-container').toggle(50);
-            $(this).parent().toggleClass('after-rotate');
-        }
-    });
+
 
     $('.right-drop-list').click(function () {
         $(this).find('.right-drop-list__container').toggleClass('right-drop-list__container_active');

@@ -330,6 +330,14 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <script>
 $(document).ready(function () {
 
+    $('.top-menu__item_dropdown').click(function (e) {
+        if ($(window).width() < 993) {
+            console.log("+++");
+            $(this).find('.top-menu__item-container').toggle(50);
+            $(this).toggleClass('after-rotate');
+        }
+    });
+
     $('#auth_menu').click(function () {
         // $('.auth').toggle();
         $('.auth').toggleClass('auth_hide');

@@ -722,6 +722,7 @@ a:visited{
     align-items: center;
 
     .our-productions__header{
+      padding-left: 4px;
       margin-top: 3px;
       white-space: nowrap;
       font-family: Geometria Bold;
@@ -739,14 +740,14 @@ a:visited{
     }
     .our-productions__tabs{
       margin-left: auto;
-      margin-right: 0px;
+      margin-right: -3px;
       .nav{
         margin: 0px;
         //width: 250px;
         //padding-top: 20px;
       }
       a{
-        margin-left: 30px;
+        margin-left: 29px;
         font-family: Geometria Bold;
         font-size: 14px;
         font-weight: bold;
@@ -1054,7 +1055,7 @@ a:visited{
     &:after{
       position: absolute;
       content: "Читати далі..";
-      color: #e83c4d;
+      color: #ffffff;
       z-index: 10;
       top: -70px;
       //top:5px;
@@ -1089,8 +1090,9 @@ a:visited{
   flex-direction: column;
   align-items: center;
   .about__header{
-    margin-top: 5px;
-    padding-bottom: 60px;
+    padding-left: 4px;
+    margin-top: 6px;
+    padding-bottom: 57px;
     font-family: Geometria;
     font-size: 24px;
     font-weight: bold;
@@ -1380,9 +1382,14 @@ a:visited{
 }
 .my-breadcrumb{
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
-  padding: 21px 0px 17px;
+  padding: 16px 0px 17px;
   li{
+    padding-top: 5px;
+    a{
+      color: #1a1a1a;
+    }
     font-family: Geometria Bold;
     margin-left: 3px;
     font-size: 12px;
@@ -1569,6 +1576,7 @@ a:visited{
       .active:first-of-type{
         margin-left: auto;
         margin-right: unset;
+        padding: 0 15px;
       }
       .active:last-of-type{
         margin-left: unset;
@@ -1972,6 +1980,9 @@ a:visited{
     padding: 0px;
     .mfilter-iscroll{
       max-height: unset !important;
+      .mfilter-options{
+        padding: 0px !important;
+      }
     }
   }
   ul{
@@ -1996,6 +2007,7 @@ a:visited{
       position: relative;
       .mfilter-heading-content{
         position: relative;
+        padding: 0px;
       }
       span{
         &:after {
@@ -2013,8 +2025,8 @@ a:visited{
         &:after{
           content: '+';
           position: absolute;
-          right: -1px;
-          top: 7px;
+          right: -3px;
+          top: 1px;
         }
       }
     }
