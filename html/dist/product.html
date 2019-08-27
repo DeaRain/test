@@ -168,7 +168,9 @@
                 </div>
             </div>
         </div>
-
+        <div class="popup-container">
+<!--            <div class="my-popup">Оберіть колір<span class="poppup-close icon-cross-remove-sign"></span></div>-->
+        </div>
         <div class="auth-container" ></div>
 
         <div class="auth auth_hide" >
@@ -494,7 +496,7 @@
             </div>
             <div class="sing-prod__prices">
                 <div class="sing-prod__opt">
-                    Оптова ціна (від 5 упаковок): <b>60.00 UAH </b>
+                    Оптова ціна (від 5 упаковок): <b>60.00 UAH</b>
                 </div>
                 <div class="sing-prod__price-cur">
                     <div class="sing-prod__old-price">
@@ -1115,48 +1117,6 @@
 
 <script src="js/lib.js"></script>
 <script src="js/common.js"></script>
-
-<script>
-    $(document).ready(function () {
-
-        $('.feed__button').click(function (e) {
-            $('.feed__container').toggleClass('feed__container__hide');
-        });
-
-        $('#value-up').click(function (e) {
-            $('#input-quantity').val(parseInt($('#input-quantity').val()) + 1);
-        });
-
-        $('#disc').click(function (e) {
-            $('.sing-prod__details').toggleClass("disc_active")
-        });
-
-        $('#value-down').click(function (e) {
-            var count = parseInt($('#input-quantity').val());
-            if (count > 1) {
-                $('#input-quantity').val(count - 1);
-            }
-        });
-
-        $('.sing-prod__img').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            fade: true,
-            asNavFor: '.sing-prod__slider'
-        });
-        $('.sing-prod__slider').slick({
-            slidesToShow: 5,
-            slidesToScroll: 1,
-            asNavFor: '.sing-prod__img',
-            variableWidth: true,
-            // dots: true,
-            // centerMode: true,
-            focusOnSelect: true
-        });
-
-    });
-</script>
 
 </body>
 </html>

@@ -1,9 +1,9 @@
-@media (min-width: 1199px)  {
+@media (min-width: 993px)  {
   .top-menu {
     .top-menu__item {
       &:hover {
         .top-menu__item-container {
-          display: block;
+          display: block !important;
         }
       }
     }
@@ -280,7 +280,7 @@
       position: relative;
       &:hover{
         .top-menu__item-container{
-          //display: unset;
+          display: unset;
         }
       }
       .top-menu__item-url{
@@ -819,7 +819,6 @@
           align-items: center;
         }
       }
-
       .menu-footer{
         padding: 0px;
         margin: 0px;
@@ -846,6 +845,7 @@
             }
           }
           ul{
+            display: block !important;
             list-style-type: none;
             padding: 0px;
             margin: 0px;
@@ -941,6 +941,9 @@
         left:2px;
         width: 296px;
         height: 40px;
+        .sing-prod__saleTime{
+          font-size: 12px;
+        }
       }
       .sing-prod__slider{
         margin-top: 50px;
@@ -2223,6 +2226,9 @@
         left:0px;
         width: 300px;
         height: 40px;
+        .sing-prod__saleTime{
+          font-size: 12px;
+        }
       }
       .sing-prod__slider{
         display: none;
@@ -3399,6 +3405,17 @@
 
 }
 @media (min-width: 1200px) {
+  .top-menu{
+    display: flex !important;
+  }
+  .menu-footer {
+    li {
+      ul {
+        display: block !important;
+      }
+    }
+  }
+
   .catalog__left-block{
     display: flex !important;
   }
@@ -3629,6 +3646,9 @@
         left:20px;
         width: 350px;
         height: 40px;
+        .sing-prod__saleTime{
+          font-size: 12px;
+        }
       }
       .sing-prod__slider{
         margin-top: 15px;
@@ -4179,6 +4199,16 @@
 
 
 @media (min-width: 993px) and (max-width: 1199px) {
+  .top-menu{
+    display: flex !important;
+  }
+  .menu-footer {
+    li {
+      ul {
+        display: block !important;
+      }
+    }
+  }
   .container {
     max-width: 970px;
   }
@@ -4344,7 +4374,7 @@
       .sing-prod__sale{
         top:390px;
         left:15px;
-        width: 400px;
+        width: 420px;
         height: 40px;
       }
       .sing-prod__slider{

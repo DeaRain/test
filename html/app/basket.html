@@ -409,32 +409,6 @@
 
 <script src="js/lib.js"></script>
 <script src="js/common.js"></script>
-<script>
-    $(function() {
-        $('.basket__select').selectric({
-            arrowButtonMarkup: '<span class="icon-down-arrow-of-angle select__button""></span>',
-        });
-    });
-
-
-    $(document).ready(function () {
-
-        $('.icon-right-chevron-1_3').click(function (e) {
-            $(this).parent().find('input').val(parseInt($(this).parent().find('input').val()) + 1);
-            // $(this).parent().find('button').trigger('click');
-
-        });
-        $('.icon-right-chevron-1_2').click(function (e) {
-            var count = parseInt($(this).parent().find('input').val());
-            if (count > 1) {
-                $(this).parent().find('input').val(count - 1);
-            }
-            // $(this).parent().find('button').trigger('click');
-        });
-    });
-
-</script>
-
 
 </body>
 </html>

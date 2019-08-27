@@ -2342,7 +2342,7 @@ font-size: 16px;
       .sing-prod__saleTime{
         padding-top: 4px;
         margin-right: 13px;
-        font-family: Geometria;
+        font-family: Geometria Bold;
         font-size: 14px;
         //font-weight: bold;
         font-style: normal;
@@ -2490,6 +2490,7 @@ font-size: 16px;
       color: #1a1a1a;
       b{
         font-family: Geometria Bold;
+        font-weight: normal;
       }
       .icon-ruler{
         font-size: 16px;
@@ -2598,7 +2599,7 @@ font-size: 16px;
         b{
           margin-left: 1px;
           font-family: Geometria Bold;
-          //font-weight: bold;
+          font-weight: normal;
           color: #1a1a1a;
         }
       }
@@ -2619,7 +2620,7 @@ font-size: 16px;
         .sing-prod__price{
           padding-right: 1px;
           margin-top: 8px;
-          font-family: Geometria;
+          font-family: Geometria Bold;
           font-size: 30px;
           //font-weight: bold;
           font-style: normal;
@@ -2688,7 +2689,7 @@ font-size: 16px;
         border: solid 1px #1a1a1a;
         text-transform: uppercase;
         text-align: center;
-        font-family: Geometria;
+        font-family: Geometria Bold;
         font-size: 14px;
         //font-weight: bold;
         font-style: normal;
@@ -3308,7 +3309,7 @@ font-size: 16px;
     text-align: center;
     cursor: pointer;
     span{
-      font-family: Geometria;
+      font-family: Geometria Bold;
       font-size: 14px;
       //font-weight: bold;
       font-style: normal;
@@ -3619,4 +3620,59 @@ font-size: 16px;
 }
 .auth_hide{
   display: none;
+}
+
+.popup-container{
+  .my-popup{
+    position: fixed;
+    right: 30px;
+    padding: 0px 8px 5px 10px;
+    height: 40px;
+    min-width: 200px;
+    display: none;
+    background: #ffffff;
+    z-index: 10;
+    border: 2px solid #000000;
+    align-items: flex-end;
+    justify-content: space-between;
+    transition: bottom 0.5s;
+    span{
+      padding: 9px 0px 0px 15px;
+      font-size: 12px;
+      align-self: flex-start;
+      &:hover{
+        cursor: pointer;
+        color: #e83c4d;
+      }
+    }
+    &:nth-child(1){
+      display: flex;
+      bottom: 100px;
+    }
+    &:nth-child(2){
+      display: flex;
+      bottom: 160px;
+    }
+    &:nth-child(3){
+      display: flex;
+      bottom: 220px;
+    }
+    &:nth-child(4){
+      display: flex;
+      bottom: 280px;
+    }
+    &:nth-child(5){
+      display: flex;
+      bottom: 340px;
+    }
+    &:nth-child(6){
+      display: flex;
+      bottom: 400px;
+    }
+    &:nth-child(6){
+      display: flex;
+      bottom: 460px;
+    }
+  }
+
 }
